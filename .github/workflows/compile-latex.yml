@@ -15,19 +15,11 @@ jobs:
       run: sudo apt-get install texlive-full texlive-bibtex-extra biber
     - name: Compile LaTeX document using Makefile
       run: make all
-    - name: Commit PDF
-      env:
-        ROOTNAME: main  # Define the variable here for use in this step
+    - name: Commit and push PDF if changed
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add $ROOTNAME.pdf
-        git commit -m "Update $ROOTNAME.pdf" -a || echo "No changes to commit"
-        git push --set-upstream https://${{ secrets.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 }}@github.com/azizosharke/FinalYearCapstoneProject.git main
-    - name: Upload PDF as artifact
+        git add main.pdf
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update main.pdf" && git push)
       env:
-        ROOTNAME: main  # Define the variable here for use in this step
-      uses: actions/upload-artifact@v2
-      with:
-        name: compiled-pdf
-        path: ${{ env.ROOTNAME }}.pdf
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
