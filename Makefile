@@ -3,7 +3,11 @@ PDFFILE = $(ROOTNAME).pdf
 TEXFILE = $(ROOTNAME).tex
 LATEX = pdflatex
 
-all: base 
+.PHONY: all base clean pdf
+
+all: base
+
+pdf: base
 
 base:
 	$(LATEX) $(ROOTNAME)
