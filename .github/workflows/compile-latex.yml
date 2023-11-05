@@ -3,7 +3,7 @@ name: Compile LaTeX document
 on:
   push:
     branches:
-      - main  # or your default branch name
+      - main  # Replace 'main' with your default branch if it's named differently
 
 jobs:
   build_latex:
@@ -16,14 +16,18 @@ jobs:
     - name: Compile LaTeX document using Makefile
       run: make all
     - name: Commit PDF
+      env:
+        ROOTNAME: main  # Define the variable here for use in this step
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add $(ROOTNAME).pdf
-        git commit -m "Update $(ROOTNAME).pdf" -a || echo "No changes to commit"
-        git push --set-upstream https://${{ secrets.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 }}@github.com/USERNAME/REPOSITORY.git main
+        git add $ROOTNAME.pdf
+        git commit -m "Update $ROOTNAME.pdf" -a || echo "No changes to commit"
+        git push --set-upstream https://${{ secrets.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 }}@github.com/azizosharke/FinalYearCapstoneProject.git main
     - name: Upload PDF as artifact
+      env:
+        ROOTNAME: main  # Define the variable here for use in this step
       uses: actions/upload-artifact@v2
       with:
         name: compiled-pdf
-        path: $(ROOTNAME).pdf
+        path: ${{ env.ROOTNAME }}.pdf
