@@ -16,17 +16,18 @@ jobs:
     - name: Install TeX Live
       run: |
         sudo apt-get update
-        sudo apt-get install --yes texlive-full
+        sudo apt-get install --yes texlive-latex-base texlive-fonts-recommended texlive-latex-extra biber
 
     - name: Compile LaTeX document
-      run: make pdf
+      run: make all
 
     - name: Commit PDF to repository
       run: |
+        git fetch --unshallow || true
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add ${PDFFILE}
-        git commit -m "Automatically update PDF"
-        git push
+        # Only commit if there were changes
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Automatically update PDF" && git push)
       env:
         PDFFILE: main.pdf
