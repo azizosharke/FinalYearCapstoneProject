@@ -1,0 +1,32 @@
+name: Compile LaTeX Document
+
+on:
+  push:
+    branches:
+      - main  # Replace with your branch name if different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install TeX Live
+      run: |
+        sudo apt-get update
+        sudo apt-get install --yes texlive-full
+
+    - name: Compile LaTeX document
+      run: make pdf
+
+    - name: Commit PDF to repository
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add ${PDFFILE}
+        git commit -m "Automatically update PDF"
+        git push
+      env:
+        PDFFILE: main.pdf
