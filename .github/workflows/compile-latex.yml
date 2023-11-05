@@ -1,33 +1,31 @@
-name: Compile LaTeX Document
+name: Compile LaTeX document
 
 on:
   push:
     branches:
-      - main  # Replace with your branch name if different
+      - main  # or your default branch name
 
 jobs:
-  build:
+  build_latex:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Install TeX Live
-      run: |
-        sudo apt-get update
-        sudo apt-get install --yes texlive-latex-base texlive-fonts-recommended texlive-latex-extra biber
-
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Install LaTeX
+      run: sudo apt-get install texlive-full
     - name: Compile LaTeX document
-      run: make main.pdf
-
-    - name: Commit PDF to repository
+      run: pdflatex main.tex
+    - name: Commit PDF
       run: |
-        git fetch --unshallow || true
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add ${PDFFILE}
-        # Only commit if there were changes
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Automatically update PDF" && git push)
-      env:
-        PDFFILE: main.pdf
+        git add main.pdf
+        git commit -m "Update main.pdf" -a || echo "No changes to commit"
+        git push origin
+    - name: Upload PDF as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: compiled-pdf
+        path: main.pdf
