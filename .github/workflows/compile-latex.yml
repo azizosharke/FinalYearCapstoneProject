@@ -19,7 +19,7 @@ jobs:
         sudo apt-get install --yes texlive-latex-base texlive-fonts-recommended texlive-latex-extra biber
 
     - name: Compile LaTeX document
-      run: make all
+      run: make main.pdf
 
     - name: Commit PDF to repository
       run: |
