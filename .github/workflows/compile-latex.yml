@@ -1,33 +1,36 @@
-name: Compile LaTeX document
+name: Build LaTeX and Commit PDF
 
 on:
   push:
     branches:
-      - main  # or your default branch name
+      - main
 
 jobs:
-  build_latex:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-    - name: Install LaTeX
-      run: sudo apt-get install texlive-full
-
-    - name: Compile LaTeX document
-      run: pdflatex main.tex
-
-    - name: Commit PDF
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add main.pdf
-        git commit -m "Update main.pdf" -a || echo "No changes to commit"
-        git push --set-upstream https://${{ secrets.MY_GITHUB_TOKEN }}@github.com/azizosharke/FinalYearCapstoneProject.git main
-
-    - name: Upload PDF as artifact
-      uses: actions/upload-artifact@v2
+    - name: Set up LaTeX
+      uses: xu-cheng/latex-action@v2
       with:
-        name: compiled-pdf
-        path: main.pdf
+        root_file: main.tex # Change to your LaTeX main file name
+        args: |
+          -shell-escape
+          -interaction=nonstopmode
+
+    - name: Build LaTeX
+      run: |
+        latexmk -pdf -f -jobname=output/main main.tex
+      working-directory: ${{ github.workspace }}
+
+    - name: Commit and Push PDF
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add output/*.pdf
+        git commit -m "Auto-generated PDF"
+        git push
+      working-directory: ${{ github.workspace }}
