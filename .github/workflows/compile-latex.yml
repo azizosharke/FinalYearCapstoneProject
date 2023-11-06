@@ -23,6 +23,8 @@ jobs:
       run: |
         git_creds="${{ secrets.GH_GIT_CREDENTIALS }}"
         git config --global credential.helper store <<< "${git_creds}"
+        git config --global user.name "azizosharke"
+        git config --global user.email "abdelaza@tcd.ie"
       shell: bash
 
     - name: Build and Commit PDF
