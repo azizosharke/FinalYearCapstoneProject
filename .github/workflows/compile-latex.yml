@@ -3,7 +3,7 @@ name: Compile LaTeX document
 on:
   push:
     branches:
-      - main  # Replace 'main' with your default branch if it's named differently
+      - main  # Replace with your default branch if it's not 'main'
 
 jobs:
   build_latex:
@@ -11,15 +11,27 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install LaTeX and dependencies
-      run: sudo apt-get install texlive-full texlive-bibtex-extra biber
-    - name: Compile LaTeX document using Makefile
-      run: make all
-    - name: Commit and push PDF if changed
+
+    - name: Install LaTeX
+      run: sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+    - name: Compile LaTeX Document
+      run: |
+        pdflatex -interaction=nonstopmode -halt-on-error main.tex
+        bibtex main
+        pdflatex -interaction=nonstopmode -halt-on-error main.tex
+        pdflatex -interaction=nonstopmode -halt-on-error main.tex
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v2
+      with:
+        name: Compiled-PDF
+        path: main.pdf
+
+    - name: Commit PDF
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add main.pdf
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update main.pdf" && git push)
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git commit -m "Update PDF" -a || echo "No changes to commit"
+        git push
