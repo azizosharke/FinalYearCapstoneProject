@@ -21,9 +21,10 @@ jobs:
 
     - name: Configure Git Credentials
       run: |
-        git config user.name "azizosharke"
-        git config user.email "abdelaza@tcd.ie"
-        
+        git_creds="${{ secrets.GH_GIT_CREDENTIALS }}"
+        git config --global credential.helper store <<< "${git_creds}"
+      shell: bash
+
     - name: Build and Commit PDF
       run: |
         # Compile LaTeX to generate PDF
