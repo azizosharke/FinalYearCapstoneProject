@@ -1,4 +1,4 @@
-name: Build and Commit LaTeX PDF
+name: Sync and Commit PDF
 
 on:
   push:
@@ -13,19 +13,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up LaTeX
-      uses: xu-cheng/latex-action@v2
-      with:
-        root_file: main.tex # Change to your LaTeX main file name
-        args: -shell-escape -interaction=nonstopmode
-
-    - name: Build LaTeX
-      run: pdflatex -interaction=nonstopmode main.tex
-
-    - name: Commit and Push PDF
+    - name: Build and Commit PDF
       run: |
+        # Compile LaTeX to generate PDF
+        pdflatex -interaction=nonstopmode main.tex
+
+        # Configure Git
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add *.pdf
-        git commit -m "Auto-generated PDF"
+
+        # Add, commit, and push the PDF
+        git add main.pdf
+        git commit -m "Update PDF"
         git push
