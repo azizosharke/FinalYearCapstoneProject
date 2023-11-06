@@ -13,6 +13,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Install LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-full
+      shell: bash
+
     - name: Build and Commit PDF
       run: |
         # Compile LaTeX to generate PDF
@@ -26,3 +32,4 @@ jobs:
         git add main.pdf
         git commit -m "Update PDF"
         git push
+      shell: bash
