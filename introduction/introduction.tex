@@ -1,23 +1,115 @@
 \chapter{Introduction}
-This document provides a template for the preparation of final year project reports. The objective is to provide clear guidance to you, the students, and also to provide uniformity to the project reports, to facilitate equitable grading.
-This LaTeX template uses a sans-serif font to aid accessibility..
 
-The font colour for Chapter headings is “Pantone Blue”, which is the colour used in TCD documents. The page number appears at the bottom of each page starting at 1 on the first page of the Introduction chapter.
-If you are not familiar with concepts like styles, captioning, cross-referencing, and how to generate tables of contents, figures etc. in LaTeX, the Overleaf guides are a useful start at: \url{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes}
 
-\section{Headings, sections and subsections}
-Chapters should be divided into appropriate subsections. LaTeX makes the numbering much easier and it is all built in. Headings should incorporate the Chapter number into them as is done here.
+\section{Brief Context for the Problem}
 
-\subsection{Subsection name style}
-The subsections, if used, should be numbered sequentially within each section.  You should really try to avoid using sub‐ subsections, but if you do they should not be numbered.
+The Domain Name System (DNS), which turns domain names into IP addresses, is a crucial element in the large and complex network of digital communications. This system has an impact on each user's everyday digital interactions in addition to ensuring the internet runs smoothly. This important system is not resistant to abuse unfortunately. Malicious actors use DNS domains for a range of illegal activities, such as sending malware, phishing websites, and controlling botnets \cite{so2022}. These actions compromise the reliability and security of the internet by posing serious risks to cybersecurity and user trust \cite{bayer2022}.
 
-\section{Length of the report}
-The page margins is set to 2.54 cm top, bottom, left and right. There may be a table or figure for which it is sensible to deviate from these margins, but in general the main text should be formatted within the specified margins.
-The body of the report should be organised into several chapters. There are a number of chapters that you must have: an introduction; a background or literature review chapter; and a conclusion chapter. The focus of the other chapters will depend on your specific project. Refer to the issued guidelines for the page limit. This limit does not usually include the front matter, references list and any appendices. In other words, from the first page of the Introduction to the last page of the Conclusions chapters must be less than the given limit for MAI.
-If you exceed these page limits or deviate significantly from this format, you will lose marks.
-\section{Contents of the Introduction} 
-The introduction presents the nature of the problem under consideration, the context of the problem to the wider field and the scope of the project. The objectives of the project should be clearly stated.
-\section{Contents of the background chapter}	
-The second chapter is typically a literature review, or survey of the state of the art, or a detailed assessment of the context and background for the project. The exact nature of this chapter depends on the topic and/or methods of the project. It is essential that the work of other people is properly cited. This will be discussed in detail in Chapter \ref{Chapt2} below. Note that you should use references wherever is appropriate through the report, not just in the literature review chapter.
-\section{The Conclusions chapter} 
-The final chapter should give a short summary of the key methods, results and findings in your project. You should also briefly identify what, if any, future work might be executed to resolve unanswered questions or to advance the study beyond the scope that you identified in Chapter 1. 
+The abuse of DNS extends beyond mere inconvenience; It is a serious flaw in the internet's architecture that might have a big impact on people's privacy, business security, and national security. Abuse techniques are numerous and constantly changing; they include typosquatting, which is the practice of creating malicious domains that imitate real ones, and domain hijacking \cite{tatang2021}. These strategies can all have disastrous outcomes, ranging from the theft of private information to the shutdown of important internet services.
+
+DNS security and resilience are critical because of its central role in internet operations. To counter these dangers, constant monitoring and proactive steps are needed. This includes communication between numerous parties, such as hosting companies, domain registrars, security researchers, and law enforcement, in addition to technology solutions \cite{holdmann2019}.
+
+\section{Motivation}
+
+The Domain Name System (DNS) is a vital element of web activity in the age of technology, but malicious actors are growing more interested in the system. The misuse of DNS for illegal activities like typosquatting and phishing has raised questions regarding the integrity and security of the internet. The severity and frequency of these concerns are highlighted in recent studies, such as the "Study on Domain Name System (DNS) Abuse: Technical Report" by Bayer et al. \cite{bayer2022}, highlighting the importance of greater monitoring and mitigation tactics.
+
+Not only have significant cases of DNS abuse endangered the security of users, but they have also damaged the general trust in the digital economy. Users' trust in online services declines as they become more aware of these hazards, necessitating the implementation of crucial measures to regain confidence and guarantee a secure online experience. According to Hesselman et al. \cite{hesselman2020}, the idea of a "Responsible Internet" aims to boost confidence and sovereignty by enhancing network-level transparency, accountability, and controllability. Furthermore, Mathew and Cheshire's \cite{mathew2016} study "Trust and Community in the Practice of Network Security" dives into the significance of trust connections and communities in cybersecurity, demonstrating the negative effects of DNS abuse on user trust.
+
+Organizations are leading the way in this issue, especially DNS infrastructure providers like registrars and registries. Nevertheless, their policies and activities tend not to be sufficiently clear. The continuous lack of confidence is exacerbated by the unclear way in which DNS abuse allegations are handled and the actions that follow. The importance of protecting the internet and its reliability is recognized in relation to this issue \cite{cerf2022}. These difficulties are exacerbated by the average user's short attention span and diminished ability to comprehend information, as demonstrated by cognitive psychology studies like Medvedskaya's \cite{medvedskaya2022} investigation of adult Internet users' attention spans. According to this research, consuming digital media may have a detrimental effect on one's capacity for sustained concentration, which would make grasping complicated topics even more difficult.
+
+Furthermore, there are ethical and legal consequences to DNS abuse and how to mitigate it in addition to the technical ones. The goal of this project is to close this gap by investigating ways to improve DNS abuse mitigation transparency. This study aims to shine light on the present efforts and highlight the obstacles to greater transparency by assessing the current landscape of transparency reports and practices among DNS infrastructure providers. The ultimate objective is to provide a contribution to a system that promotes and enables more efficient and approachable transparency in DNS abuse mitigation.
+
+
+
+
+\section{Research Question/Project and Personal objective} 
+\subsection{Research Question}
+
+The primary research question for this project is: "How are DNS infrastructure providers handling abuse complaints, and what level of transparency is being maintained in their actions?". This question seeks to uncover the mechanisms, policies, and practices in place for DNS abuse mitigation and the extent to which these efforts are transparent to the public and stakeholders.
+
+\subsection{Project Objectives}
+
+Assess Handling of Abuse Complaints :
+
+\begin{itemize}
+  \item Investigate the procedures and policies DNS infrastructure providers have in place for handling abuse complaints.
+  \item Document the types of abuses most commonly reported and the response strategies employed.
+\end{itemize}
+
+Evaluate Transparency Levels :
+
+\begin{itemize}
+  \item Analyze the current state of transparency in the actions taken by providers against DNS abuse.
+  \item Identify what information is made public, how it's communicated, and the frequency of disclosure.
+\end{itemize}
+
+Benchmark Against Best Practices :
+
+\begin{itemize}
+  \item Compare the findings with best practices in the industry to identify areas of strength and opportunities for improvement.
+  \item Highlight exemplary cases of transparency and effective abuse mitigation.
+\end{itemize}
+
+Develop Recommendations :
+
+\begin{itemize}
+  \item Propose actionable recommendations for DNS infrastructure providers to enhance their abuse handling and transparency.
+  \item Suggest policy changes or initiatives that could standardize and improve practices across the industry.
+\end{itemize}
+
+Contribute to Stakeholder Understanding : 
+
+\begin{itemize}
+  \item Provide insights that help stakeholders, including users, policymakers, and other providers, understand the landscape of DNS abuse handling and transparency.
+  \item Offer a foundation for further research and discussion on improving DNS security and trust.
+\end{itemize}
+
+\subsection {Personal Objectives}
+
+Deepen Technical and Policy Understanding :
+
+\begin{itemize}
+  \item Enhance my knowledge of DNS infrastructure, abuse types, and mitigation strategies.
+  \item Gain a deeper understanding of the policy and regulatory environment surrounding DNS abuse.
+\end{itemize}
+
+Develop Research Skills :
+
+\begin{itemize}
+  \item Refine my ability to conduct comprehensive research, from data collection to analysis and reporting.
+  \item Improve my skills in communicating complex technical and policy issues clearly and effectively.
+\end{itemize}
+
+Build Professional Network : 
+
+\begin{itemize}
+  \item Establish connections with industry experts, policymakers, and academic researchers.
+  \item Engage with the community to share findings and gain feedback.
+\end{itemize}
+
+Influence the Field : 
+
+\begin{itemize}
+  \item Contribute valuable insights that influence the practices of DNS providers and the policies of regulatory bodies.
+  \item Establish a foundation for ongoing advocacy and action in enhancing DNS security and transparency.
+\end{itemize}
+
+By addressing these goals, the project hopes to contribute to the overall goal of boosting confidence and safety in the world of technology, provide an in-depth understanding of how DNS infrastructure providers handle abuse complaints and maintain transparency, and identify areas for improvement and best practices. These goals are in line with my personal objectives, which are to promote professional development, make a positive impact on the industry, and push for a more open and safe internet.
+
+
+\section{Scope}	
+The Scope of this project is to perform a thorough examination of the transparency measures taken by registrars and registries to mitigate DNS abuse. Examining the different types of data released, the quantity, and quality are all part of this process, as does examining current transparency reports. In order to obtain opinions and insights on present procedures and difficulties, the project will interact with a range of DNS ecosystem players, such as registries, domain registrars, cybersecurity specialists, and policymakers. As part of the research, a set of criteria to assess how transparency affects internet users' views of trust and safety will also be developed. It will, however, not include the development of brand-new transparency tools or systems; rather, it will concentrate on examining current procedures and making recommendations for improvements. While the main goal of the research is to comprehend and enhance transparency and its impacts. 
+
+\section{ Outline of the Project Work} 
+The goal of this project, "DNS Abuse Transparency," is to better understand and increase the transparency of registrars' and registries' efforts to mitigate DNS abuse. The research will first examine the different aspects of DNS abuse, such as popular forms like phishing and typosquatting, and their broader consequences. The project's later phases will be initiated by this fundamental comprehension.
+
+The data gathering will be based on a carefully planned questionnaire that will be distributed to a wide range of DNS infrastructure providers across the world. The questionnaire attempts to provide light on current practices, the scope and efficacy of transparency measures, and the difficulties encountered in minimising DNS abuse. It is supported by in-depth interviews and case studies. Simultaneously, an examination of the transparency reports that are currently available from different sources will provide information about the transparency landscape, including the frequency, scope, and accessibility of these reports for users.
+
+The critical evaluation of the handling of DNS abuse reports forms the core of the project. This involves looking into any proactive security measures that may be in place as well as the procedures for dealing with and preventing abusive domain registrations. After that, the research will change its focus to assessing how transparency affects user trust, provider reputation, and the general effectiveness of abuse mitigation techniques.
+
+The project will discover and clarify best practices for transparency in DNS abuse mitigation, based on the rich data and insights obtained. The careful balancing act between security, privacy, and transparency will be taken into account by these best practices. The project will produce a series of practical suggestions for DNS infrastructure providers based on these findings, with the goal of enhancing transparency and, consequently, security and confidence in the digital ecosystem.
+
+The project is designed to take place in a sequence of phases, each characterised by distinct deliverables . A comprehensive timeline will steer the advancement, guaranteeing an organised and exhaustive study of the subject. Upon completion, this project will have contributed an important collection of recommendations and considerations for future study and policy creation in this crucial area of internet governance, in addition to offering a comprehensive understanding of the current state of DNS abuse transparency.
+
+\section{Outline of the report}
+not finished yet but will include background , state of art , research , implementation , evaluation and discussion and conclusions. 
