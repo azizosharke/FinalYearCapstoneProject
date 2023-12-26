@@ -40,8 +40,7 @@
 %% Language and font encodings
 \usepackage[T1]{fontenc} 
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-
+\usepackage[english]{babel} 
 %% Bibliographical stuff
 \usepackage[]{cite}
 %% Document size
@@ -109,7 +108,7 @@
    }
 }
 
-
+\usepackage{natbib} %harvard style 
 \frontmatter
 \begin{document}
 \input{title/title.tex}
@@ -193,6 +192,7 @@ Note that Roman mathematical symbols are typically in a serif font in italics.
 \bibliographystyle{IEEEtran} %Changed to IEEETran by HS
 %\bibliographystyle{unsrt}
 \nocite{*}
+\bibliographystyle{plainnat}
 \bibliography{bibs/sample}
 \appendix
 \renewcommand{\thechapter}{A\arabic{chapter}}
