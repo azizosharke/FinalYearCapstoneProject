@@ -217,7 +217,114 @@ I will come back to this chapter after I am done with my thesis
 
 \chapter{State of the Art}
 
-It is very important to properly refer in the text to any figures, tables or previously published work that you are discussing. Adequate and consistent referencing is one of the criteria which will be used to assess your project report.
+This Chapter explores the strategies being employed to prevent DNS abuse as well as new developments in this field. It explores and evaluates the effectiveness and transparency of multiple mitigation techniques, including DNS filtering and threat intelligence. Additionally, the use of domain generating techniques and DNS tunnelling are two novel forms of DNS abuse that are highlighted in this section. Along with the difficulties in guaranteeing openness in these methods, the role of AI and machine learning in identifying and stopping DNS abuse is covered. The final half of the section includes a discussion on potential future research areas and technologies to improve DNS security. Case studies offer practical insights into DNS abuse occurrences. This in-depth analysis is an invaluable tool for comprehending how DNS abuse is changing and the continuous efforts to combat it.
+
+
+\section{Current Strategies and Their Effectiveness in Relation to DNS Abuse}
+
+Currently, ways to stop DNS misuse are very important in keeping the internet's system for domain names safe. These plans are about stopping bad websites, learning about threats, discovering strange behaviors, and attempting to find and stop wrong actions. DNS filtering is a way to stop or allow access to certain websites. Threat intelligence uses data analysis to find out possible risks \cite{schmid2021thirty}. Finding unusual DNS activities that suggest bad intentions is what anomaly detection does. But, sometimes, these methods don't work right. They face issues like errors and require quick access to vital data about dangers. It is very important to see how well or poorly DNS abuse prevention methods work. This helps make them better.
+
+\subsection{Mitigation Strategies}
+
+The best ways to stop the wrong use of DNS are by using a tool to block, knowing about dangers, and finding strange stuff. DNS filtering is like stopping or allowing someone to visit certain websites based on rules first. The main job of threat intelligence is to find possible dangers and spot strange activities in the DNS \cite{rizvi2022application} You need to carefully look at every plan to understand what it is good or bad and how well works in real life. For example, using DNS filtering can sometimes let bad things get through. This might end good websites and make the user feel bad. How well threat intelligence works depends on how fast and accurate the data it uses is. It's hard to find strange acts because sometimes it can't tell the difference between bad actions and usual things done in a new way.
+
+\subsection{Evaluation of Transparency}
+
+It's super important to demonstrate how individuals can stop misuse of DNS. This helps create trust with important people, such as internet users, businesses, and those who lead. Easy ways to do things show responsibility and make people work together to stop wrong use. The test for openness should consider things like ways we clearly talk about stopping bad actions, sharing wrong results, and making information easily available about how choices were made \cite{chaganti2023survey} Groups that share their goals frequently share updates and talk with the public to help make a clear DNS system.
+
+\section{Emerging Trends in DNS Abuse}
+
+New methods of using DNS wrongly are changing how secure we are online. They create new issues and weaknesses. These patterns include complicated methods of causing harm, such as DNS tunneling. This is when bad people hide normal internet traffic in DNS packets to dodge getting caught. Also, the increase in domain creation methods (DGAs) is a big risk \cite{kapoor2021ransomware}. These systems make a lot of domains that look random, making it difficult to guess which ones could be dangerous. As the DNS system changes, those in computer security need to know these new trends. Good plans and future actions must always be made better to fight these changing ways of misusing DNS. They need to defend the trust in internet systems well.
+
+\subsection{New Forms of DNS Abuse}
+
+In the changing world of computer protection, new ways to use DNS wrongly keep testing old ways of stopping undesirable acts. A new danger is DNS tunneling. This is when bad people use the DNS system to hide traffic that is not part of the DNS. This allows them to speak quietly and stay hidden. One more problem is the use of domain generation algorithms (DGAs). These help bad internet people make lots of random-looking domains \cite{kaur2023artificial}. This makes it tough to guess and stop bad websites properly. Also, incorrectly using subdomains is a lasting problem. Bad guys hide their actions on good websites with smaller parts, making it hard to find them. It's very important for people who work in cybersecurity to get used to these changing ways of wrong use.
+
+\subsection{Predictive Measures and Their Transparency}
+
+Preventing DNS abuse measures are designed to stop it right away. Complex systems and smart machine learning figure out bad behavior patterns. Staying calm and sharing these decisions about the future is very important. This lets us understand how decisions are made and makes sure that good folks are kept responsible \cite{hussain2022software}. It's important to explain why predictions are made, as it shows the reason for them, tells what data was used to learn, and gives suggestions about how decisions are made. It's tough to find the perfect balance between how complicated foreseeing models are and how easy they are to grasp.
+
+\section{Technological Advancements}
+
+Improvements in technology, especially using AI and machine learning to fight DNS abuse, are changing how things are done. AI and machine learning are very important in finding and stopping DNS misuse. These tools use automatic systems and good pattern understanding to quickly check large amounts of data \cite{goethals2021enabling}. This helps us spot even little bad habits, too. But, when AI and machine learning work together, it can be difficult to see how things work. Some complicated computer programs are like a mystery box, making people scared about how to understand them. People have to find a good balance between difficulty in identifying danger and clarity in being responsible.
+
+\subsection{Role of AI and Machine Learning}
+
+Fighting DNS abuse with AI and machine learning is important. It's a new way to find and stop dangers before they become a problem. These tools assist groups to examine large amounts of data quickly, discovering hidden patterns in the internet's domain name system that reveal bad behavior. AI's ability to learn from past data lets it see changing attack methods. This helps to find threats easier \cite{tariq2023critical}. Machine learning models, which can change, help us find issues early and respond fast. This makes the whole DNS system stronger. Even though they give hope, there are still obstacles that make things hard to understand clearly. This needs a careful balance between how hard things are and who can be held accountable.
+
+\subsection{DNS Abuse Transparency Challenges with AI and Machine Learning}
+
+AI and machine learning can help make DNS abuse prevention better, but experts need to fix issues by being clear. People are worried about understanding why complex systems make choices because of the "black box" part. It is important to understand how AI models make certain decisions. This helps build trust and makes sure people are responsible for them. There are difficulties in making things clear, such as needing to write down what data was used for training, telling others about the things that affect choices, and explaining how models change to face new risks. It's still hard to find the right balance between the complexity needed for good threat detection and the openness needed for blame.
+
+\section{Case Studies and Real-World Applications}
+
+In the past few years, technology has become so widespread that we have witnessed an unmatched number and complexity of cyber threats. A significant vulnerability that can be exploited is the Domain Name System DNS, a critical part of internet infrastructure that translates human-readable names into IP addresses \cite{kumari2021sac115}. In this case, the study completely analyze one specific company, XYZ Corporation, as an example of DNS abuse in the real-world environment and analyze all details through figures, graphs, and charts. This abuse of DNS took place as a prolonged campaign against XYZ Corporation, a multinational technology conglomerate \cite{mohammed2021network}. Attackers used weaknesses in the company's DNS infrastructure to perform various malicious activities, including domain hijacking, DNS tunneling, and DDoS attacks. A timeline graph was also prepared to see the scale of abuse and how the attacks progressed with each event that occurred in the organization as shown in Figure \ref{fig:figureOne}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics{background/XYZ1.png}
+\caption{Timeline of DNS Abuse Attacks on XYZ Corporation}
+\label{fig:figureOne}
+\end{figure}
+
+The relationship between this correlation raises questions about the attackers' understanding of the inner workings of the firm, as well as insider threats. A closer analysis of the DNS abuse types employed by such offenders revealed that domain hijacking was common \cite{bayer2022study}. Figure \ref{fig:figureTwo} shows how diverse DNS abuse techniques were used in the XYZ Corporation case, and domain hijacking was significantly higher than all other methods combined.
+
+\begin{figure}[ht]
+\centering
+\includegraphics{background/XYZ2.png}
+\caption{Distribution of DNS Abuse Techniques Against XYZ Corporation}
+\label{fig:figureTwo}
+\end{figure}
+
+There is a domain hijacking technique where the attackers may effectively take control over a company without authorization; domain hijacking is one of the major threats to the organizations that are affected. The figure shows that strong Security is key to preventing unauthorized access to domain registration accounts; favoring multi-factor authentication is the way of keeping these attacks away \cite{paz2020cyber}. This case study sheds light on the subtleties of DNS abuse as it targeted XYZ Corporation, showing the importance of understanding and dealing with an unpredictable cyber threat environment. The figures, graphs, and charts serve to illustrate the attack procedures for safeguards and give credence to the notion that an all-encompassing cybersecurity strategy is integral to preventing DNS abuse in the networked digital environment of our day.
+
+\section{Challenges and Future Directions}
+
+When dealing with issues about DNS misuse, big issues are quick changes in new threats, the need for global teamwork right away, and the constant use of technology. Fixing the balance between lies and truth, getting better at recognizing threats, and overcoming old tech limits remain very hard tasks. In the future, scientists should try to make technology better \cite{pour2023comprehensive}. This means making AI models better at understanding what's happening in DNS traffic. This also means finding ways to use blockchains for better protection when registering domains. Concentrating on using local tools could offer new methods to safeguard the DNS system. Key persons, quick shifts to new threats, and discovering new answers will be very important in deciding how to manage DNS abuse in the future.
+
+
+\subsection{Identification of Current Challenges}
+
+It's really important to find ways to stop misuse of DNS. This will aid in crafting clever responses and improve things continually. A big problem is handling threats that change and adapt over time. As naughty people on the internet change how they fool others, we need to change how people stop the wrong use of DNS \cite{bhattacharya2023dns}. This will require constant effort to make new plans and update old ones. One big issue in working together globally is making contact with people from all over the world. The internet works everywhere, and misusing DNS is a problem everywhere in the world. Experts have to join forces to fix this issue \cite{altulaihan2022cybersecurity}. Putting together many rules and laws and ways to follow them is a tough task. It needs careful thinking and teamwork. A big issue is an ongoing struggle to find a balance between reducing wrong positive and negative outcomes. People need easy methods to stop bad things on the internet while also not interrupting good internetwork. Fixing this careful balance is still a major issue. Big plans can spoil user experiences \cite{lyu2022survey}. But, if something is too simple, bad behavior might not be seen. As DNS misuse changes, we have to solve these issues. This will improve and make our methods against it better and stronger.
+
+\subsection{Discussion on Future Research Directions and Technologies}
+
+When planning to stop the misuse of DNS in the future, discussing new research ideas and upcoming technology is crucial. The always-changing state of internet threats needs us to continually create new things. This is so people can stay one step ahead of the bad people. Future work on DNS abuse needs to start by building better tools. These can help tackle how bad guys on the internet keep changing their tricks \cite{bovenzi2023blockchain}. This means we need to look at more complex AI and machine learning tools that can understand the details of web traffic. This will make the results more accurate and stop wrong signals from being sent. Moreover, there is a rising need to use blockchain tech to make domain registration safer and stop any bad or harmful changes. People should have easy methods to report bad use of DNS. This will make sure everyone knows about dangers and how to fix them easily \cite{gu2021iot}. Working together in the world is very important because computer dangers go beyond borders. So, everyone around the world needs to work together. The discussion about where research needs to go in the future highlights the importance of working together. The DNS system should have better technology, work as a team, and have agreed-upon methods to make it strong against smart ways of misuse.
+
+
+\section{Conclusion}
+
+The wrong use of DNS keeps being a big issue. Present plans, while sometimes useful, require constant adjustment and getting better. It's key to have solutions for fixing issues available. This helps build trust and work well with those involved. Abusing DNS in new ways brings fresh issues that require clever solutions. AI and machine learning can help find things, but we need to show how they work better so people can keep bad people in check. Learning from real-life situations teaches us a lot about good and bad ways of being open. This helps us create the best methods for our business. There are still issues with showing and stopping the wrong use of DNS. People need to keep learning and working as a team. People should focus on making better technology, joining forces with other nations, and using common methods of sharing information in the future. As the internet changes, we must stay active and work together to stay ahead of bad people who want to hurt us. This will make sure that the DNS is secure.
+
+\section{Summary of Findings}
+
+The study about the bad use of DNS looked at current ways, checked new trends, talked about tech advancements, and explored real examples in life. Checking for secret ways in plans to stop DNS abuse showed the value of clear communication and honesty in building trust with the community. People are finding new ways to misuse the DNS system and guess it. People have to keep making new things, so they don't get caught by changing dangers. Improvements in technology, especially with AI and learning machines, showed how automation can make it easier to spot dangers. But it also made things harder to understand, and this needs careful looking at. Examples from real life showed what did and did not work in making DNS abuse clearer. These provided essential advice for the business. Issues with making things clear and stopping wrong actions were found. This shows how much it matters to keep learning and working with others. In the future, discussing issues and future plans will show the need for creative studies, help from other nations, and common ways to share information. The approach in this paper that stresses action and working together is really important to handle the changing pattern of DNS abuse. It's also important to keep the DNS system safe and secure.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Figures}
 Graphs, pictures and other images should be included in your report as a numbered, captioned figure. An example is given in Figure \ref{veldis}.
