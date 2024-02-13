@@ -285,7 +285,7 @@ courtesy of Verisign and originally published in SSAC 115)}
 
 \section{Technological Advancements}
 
-The mitigation of DNS abuse is increasingly influenced by the integration of artificial intelligence (AI) and machine learning technologies \cite{goethals2021enabling}. At the helm of this evolution are innovative tools like the iQ Domain Risk Score, which employs machine learning and string analytics to proactively detect potential domain abuses now of registration \cite{dnsabuseAI2023}. This tool aims to act as a preventive measure by analysing domains against criteria indicative of malicious intent, thereby attempting to stop abuse before it even starts. Additionally, the field is witnessing a transformative shift in analysing abuse report evidence through the adoption of Large Language Models (LLMs), such as generative pre-trained transformers (GPTs). These models are highly adept at parsing and understanding complex data patterns that might be missed by human investigators, enhancing the efficiency and automation of DNS abuse mitigation efforts, and forming a more dynamic defence against cyber threats. However, this progress also highlights an emerging challenge: the potential for malicious entities to exploit AI technologies themselves \cite{halvorsenAI2023}.  Consequently, the intersection of AI and machine learning with DNS abuse mitigation not only heralds significant advancements in cybersecurity strategies but also emphasizes the need for vigilance to prevent these technologies from being used for harmful purposes. This pivotal moment in the fight against DNS abuse underscores the need for ongoing innovation and adaptation to effectively secure digital ecosystems.
+The mitigation of DNS abuse is increasingly influenced by the integration of artificial intelligence (AI) and machine learning technologies \cite{goethals2021enabling}. At the helm of this evolution are innovative tools like the iQ Domain Risk Score, which employs machine learning and string analytics to proactively detect potential domain abuses now of registration \cite{dnsabuseAI2023}. This tool aims to act as a mitigation measure by analysing domains against criteria indicative of malicious intent, thereby attempting to stop abuse before it even starts. Additionally, the field is witnessing a transformative shift in analysing abuse report evidence through the adoption of Large Language Models (LLMs), such as generative pre-trained transformers (GPTs). These models are highly adept at parsing and understanding complex data patterns that might be missed by human investigators, enhancing the efficiency and automation of DNS abuse mitigation efforts, and forming a more dynamic defence against cyber threats. However, this progress also highlights an emerging challenge: the potential for malicious entities to exploit AI technologies themselves \cite{halvorsenAI2023}.  Consequently, the intersection of AI and machine learning with DNS abuse mitigation not only heralds significant advancements in cybersecurity strategies but also emphasizes the need for vigilance to prevent these technologies from being used for harmful purposes. This pivotal moment in the fight against DNS abuse underscores the need for ongoing innovation and adaptation to effectively secure digital ecosystems.
 
 \subsection{Role of AI and Machine Learning}
 
@@ -295,7 +295,7 @@ In summary, leveraging AI and machine learning for DNS abuse mitigation signifie
 
 \subsection{DNS Abuse Transparency Challenges with AI and Machine Learning}
 
-AI and machine learning can help make DNS abuse prevention better, but experts need to fix issues by being clear. People are worried about understanding why complex systems make choices because of the "black-box" part. It is important to understand how AI models make certain decisions. This helps to build trust and makes sure people are responsible for them. There are difficulties in making things clear, such as needing to write down what data was used for training, telling others about the things that affect choices, and explaining how models change to face new risks. It is still hard to find the right balance between the complexity needed for good threat detection and the openness needed for blame.
+AI and machine learning can help improve DNS abuse mitigation, but experts need to fix problems by being clear. People are worried about understanding why complex systems make choices because of the "black-box" part. It is important to understand how AI models make certain decisions. This helps to build trust and ensures that people are responsible for them. There are difficulties in making things clear, such as needing to write down what data was used for training, telling others about the things that affect choices, and explaining how models change to face new risks. It is still hard to find the right balance between the complexity needed for good threat detection and the openness needed for blame.
 
 \section{Case Studies and Real-World Applications}
 
@@ -351,7 +351,7 @@ The "sodu.org" domain was a target of one of the most serious DNS-based Denial o
 
 \item\textbf{ Case Study 3: DNS Amplification Attacks Utilizing DNSSEC }
 
-The DNS amplification attack is one form of DNS abuse that has been prominent more prominently seen in October 2012. This uses the DNSSEC protocol and uses the very nature of the DNSSEC protocol whereby it can store large EDNS0 buffer sizes that it is able to produce huge quantities of traffic heading towards IP addresses totally swamping the links and dramatically reducing the amount of legitimate traffic exchanges possible \cite{ Middleton2024}.  The second big incidence of observation by Cisco SIO was millions of ANY response queries, which were sent to specific IPs, and the quantity clearly passed the normal DNS traffic. These are quite interesting attacks as they leverage the DNS query type 'ANY' and abuse of open recursive resolvers to have more effects. DNSSEC and EDNS0 are additional mechanisms given for the sake of increasing the security of DNS; however, the use of these mechanisms enables attackers to increase the severity of their attack.
+The DNS amplification attack is one form of DNS abuse that has been prominently seen in October 2012. This uses the DNSSEC protocol and uses the very nature of the DNSSEC protocol whereby it can store large EDNS0 buffer sizes that it is able to produce huge quantities of traffic heading towards IP addresses totally swamping the links and dramatically reducing the amount of legitimate traffic exchanges possible \cite{ Middleton2024}.  The second big incidence of observation by Cisco SIO was millions of ANY response queries, which were sent to specific IPs, and the quantity clearly passed the normal DNS traffic. These are quite interesting attacks, as they leverage the DNS query type 'ANY' and abuse of open recursive resolvers to have more effects. DNSSEC and EDNS0 are additional mechanisms given for the sake of increasing the security of DNS; however, the use of these mechanisms enables attackers to increase the severity of their attack.
 
 \captionsetup{font= footnotesize}
 \begin{figure}[ht!]
@@ -363,7 +363,7 @@ The DNS amplification attack is one form of DNS abuse that has been prominent mo
 
 \item\textbf{ Case Study 4: OilRig DNS Tunneling Attack }
 
-The case of OilRig reflects the use of custom DNS Tunneling protocols for command and control (C2) operations, thus making it dual use in nature, both in normal operation and on a fallback communication channel \cite{paloaltonetworks2021dnsattacks}.The xHunt campaign followed a similar trend of including Snugy backdoor implants in Middle Eastern government organization targets and keeping track of them using DNS tunneling for communication with its C2.  Which are examples that underscore the strategic use by adversaries of DNS tunneling techniques for stealthiness and resilience within the context of their operations. 
+The case of OilRig reflects the use of custom DNS Tunneling protocols for command and control (C2) operations, thus making it dual use in nature, both in normal operation and on a fallback communication channel \cite{paloaltonetworks2021dnsattacks}.The xHunt campaign \cite{unit42_xhunt_2021} followed a similar trend of including Snugy backdoor implants in Middle Eastern government organization targets and keeping track of them using DNS tunneling for communication with its C2.  Which are examples that underscore the strategic use by adversaries of DNS tunneling techniques for stealthiness and resilience within the context of their operations. \cite{unit42_2021}
 
 \captionsetup{font= footnotesize}
 \begin{figure}[ht!]
@@ -375,9 +375,9 @@ The case of OilRig reflects the use of custom DNS Tunneling protocols for comman
 \vspace{100pt}
 
 
-\item\textbf{ Case Study 5:  SUNBURST Utilization of DGAs}
+\item\textbf{ Case Study 5: SUNBURST Utilization of DGAs}
 
-SUNBURST backdoor associated with the breach of the SolarWinds supply chain represents a case in which the use of DGAs is critical, if not only, to conceal communications and system details \cite{paloaltonetworks2021dnsattacks}. "The SUNBURST backdoor applies deep use of DNS manipulation for evasion purposes and subsequent attack stages through encoding basic system identifiers and usage of DGAs for C2 check-ins.
+SUNBURST backdoor associated with the breach of the SolarWinds supply chain represents a case in which the use of DGAs is critical, if not only, to conceal communications and system details \cite{paloaltonetworks2021dnsattacks}. The SUNBURST backdoor applies the deep use of DNS manipulation for evasion purposes and subsequent attack stages by encoding basic system identifiers and the usage of DGAs for C2 check-ins.\cite{unit42_solarstorm_2021}
 
 \captionsetup{font= footnotesize}
 \begin{figure}[ht!] 
@@ -392,7 +392,7 @@ SUNBURST backdoor associated with the breach of the SolarWinds supply chain repr
 
 
 \item\textbf{ Case Study 6: Fast Flux Techniques}
-The presence of several C2 domains related to the Smoke Loader malware family using Fast Flux techniques only further underscores the difficulties associated with the tracking and eradication of DNS-enabled threats. \cite{paloaltonetworks2021dnsattacks}.The major takeaway in the rapid rotation of IP addresses of this method points to the dynamism of strategies used in communications by malware, thus improving the means of defence by cybersecurity.
+The presence of several C2 domains related to the Smoke Loader malware family using Fast Flux techniques only further underscores the difficulties associated with the tracking and eradication of DNS-enabled threats. \cite{paloaltonetworks2021dnsattacks}.The major takeaway in the rapid rotation of IP addresses of this method points to the dynamism of strategies used in communications by malware, thus improving the means of defence by cybersecurity. \cite{unit42_fastflux_2021}
 
 \captionsetup{font= footnotesize}
 \begin{figure}[ht!]
@@ -405,7 +405,7 @@ The presence of several C2 domains related to the Smoke Loader malware family us
 
 \item\textbf{Case Study 7:  Malicious Newly Registered Domains (NRDs)}
 
-The malicious NRDs opportunistically crafted in the milieu of the pandemic expose how threat actors leverage current events for engineering targeted attacks. From domains that mirror COVID-19 information resources to those faking government relief programmes, the evolution of such attacks reflects a calculated approach to exploiting public interest and vulnerabilities. \cite{paloaltonetworks2021dnsattacks}
+The malicious NRDs opportunistically crafted in the milieu of the pandemic expose how threat actors leverage current events for engineering targeted attacks. \cite{paloaltonetworks2021dnsattacks} From domains that mirror COVID-19 information resources to those faking government relief programmes, the evolution of such attacks reflects a calculated approach to exploiting public interest and vulnerabilities. \cite{unit42_covid19_phishing_2021} 
 
 \captionsetup{font= footnotesize}
 \begin{figure}[ht!]
