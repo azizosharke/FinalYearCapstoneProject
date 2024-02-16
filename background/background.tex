@@ -322,60 +322,24 @@ The relationship between this correlation raises questions about the attackers' 
 \label{fig:figureTwo}
 \end{figure}
 
-
-
 There is a domain hijacking technique where attackers may effectively take control over a company without authorisation; domain hijacking is one of the major threats to the organisations that are affected. The figure shows that strong security is key to preventing unauthorised access to domain registration accounts; favouring multifactor authentication is the way to keep these attacks away \cite{paz2020cyber}. This case study sheds light on the subtleties of DNS abuse as it targeted XYZ Corporation, showing the importance of understanding and dealing with an unpredictable cyber threat environment. Figures, graphs, and graphs serve to illustrate safeguard attack procedures and give credence to the notion that an all-encompassing cybersecurity strategy is integral to mitigating DNS abuse in the digital landscape of the networked world of our day.
 
-\item\textbf{ Case Study 2: The Sodu.org DDoS Attack }
 
-The "sodu.org" domain was a target of one of the most serious DNS-based Denial of Service (DoS) attacks of September 2012 that affected the DNS infrastructure around the globe Cisco's Security Intelligence Operations (SIO) indicated that the attack was discovered through anomalies of traffic spikes seen across sensors in the Eastern United States, Western United States, and Central Europe \cite{ Middleton2024}. It received over 10 billion query requests in total, nearly 695 gigabytes of traffic. These requests are the A record queries sent to org Generic Top-Level Domain (gTLD) nameservers. The attack, which went on to be repeated over two days of the conference, in a first incidence lasting about 5.5 hours and about 5 hours in a subsequent occurrence, exploited vulnerabilities in DNS infrastructure to drown servers in spoofed requests, causing huge gTLD traffic spikes and showcasing the potential that DNS-based DoS attacks have to derail Internet functionality.
-
-\captionsetup{font= footnotesize}
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{background/DNSTRaffic.png}
-    \caption{DNS A Record Traffic of the Sodu.org DDoS Attack }
-    \label{fig:figureSeven}
-\end{figure}
-
-\captionsetup{font= footnotesize}
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{background/DNSRef.png}
-    \caption{ DNS Referral Response Traffic Sodu.org DDoS Attack}
-    \label{fig:FigureEight}
-\end{figure}
-
-\vspace{200pt}
-
-
-\item\textbf{ Case Study 3: DNS Amplification Attacks Utilizing DNSSEC }
-
-The DNS amplification attack is one form of DNS abuse that has been prominently seen in October 2012. This uses the DNSSEC protocol and uses the very nature of the DNSSEC protocol whereby it can store large EDNS0 buffer sizes that it is able to produce huge quantities of traffic heading towards IP addresses totally swamping the links and dramatically reducing the amount of legitimate traffic exchanges possible \cite{ Middleton2024}.  The second big incidence of observation by Cisco SIO was millions of ANY response queries, which were sent to specific IPs, and the quantity clearly passed the normal DNS traffic. These are quite interesting attacks, as they leverage the DNS query type 'ANY' and abuse of open recursive resolvers to have more effects. DNSSEC and EDNS0 are additional mechanisms given for the sake of increasing the security of DNS; however, the use of these mechanisms enables attackers to increase the severity of their attack.
-
-\captionsetup{font= footnotesize}
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[width=0.9\textwidth]{background/UDP.png}
-    \caption{UDP "ANY" Packet Counts and EDNS 9000 Payload Size Counts}
-    \label{fig:figNine}
-\end{figure}
-
-\item\textbf{ Case Study 4: OilRig DNS Tunneling Attack }
+\item\textbf{ Case Study 2: OilRig DNS Tunneling Attack }
 
 The case of OilRig reflects the use of custom DNS Tunneling protocols for command and control (C2) operations, thus making it dual use in nature, both in normal operation and on a fallback communication channel \cite{paloaltonetworks2021dnsattacks}.The xHunt campaign \cite{unit42_xhunt_2021} followed a similar trend of including Snugy backdoor implants in Middle Eastern government organization targets and keeping track of them using DNS tunneling for communication with its C2.  Which are examples that underscore the strategic use by adversaries of DNS tunneling techniques for stealthiness and resilience within the context of their operations. \cite{unit42_2021}
 
 \captionsetup{font= footnotesize}
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.9\linewidth]{background/DNSTuu.png}
+    \includegraphics[width=0.7\linewidth]{background/DNSTuu.png}
     \caption{DNS tunneling communication between the attacker's command and control (C2) infrastructure and the victim's network}
     \label{fig:figTen}
 \end{figure}
-\vspace{100pt}
+\vspace{5pt}
 
 
-\item\textbf{ Case Study 5: SUNBURST Utilization of DGAs}
+\item\textbf{ Case Study 3: SUNBURST Use of DGAs}
 
 SUNBURST backdoor associated with the breach of the SolarWinds supply chain represents a case in which the use of DGAs is critical, if not only, to conceal communications and system details \cite{paloaltonetworks2021dnsattacks}. The SUNBURST backdoor applies the deep use of DNS manipulation for evasion purposes and subsequent attack stages by encoding basic system identifiers and the usage of DGAs for C2 check-ins.\cite{unit42_solarstorm_2021}
 
@@ -389,28 +353,26 @@ SUNBURST backdoor associated with the breach of the SolarWinds supply chain repr
 
 \vspace{40pt}
 
-
-
-\item\textbf{ Case Study 6: Fast Flux Techniques}
+\item\textbf{ Case Study 4: Fast Flux Techniques}
 The presence of several C2 domains related to the Smoke Loader malware family using Fast Flux techniques only further underscores the difficulties associated with the tracking and eradication of DNS-enabled threats. \cite{paloaltonetworks2021dnsattacks}.The major takeaway in the rapid rotation of IP addresses of this method points to the dynamism of strategies used in communications by malware, thus improving the means of defence by cybersecurity. \cite{unit42_fastflux_2021}
 
 \captionsetup{font= footnotesize}
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.7\linewidth]{background/FastFluDNS.png}
+    \includegraphics[width=0.5\linewidth]{background/FastFluDNS.png}
     \caption{The usage of Fast Flux techniques by the Smoke Loader malware family for dynamic C2 domain communications}
     \label{fig:figTweleve}
 \end{figure}
-\vspace{120pt}
+\vspace{10pt}
 
-\item\textbf{Case Study 7:  Malicious Newly Registered Domains (NRDs)}
+\item\textbf{Case Study 5:  Malicious Newly Registered Domains (NRDs)}
 
 The malicious NRDs opportunistically crafted in the milieu of the pandemic expose how threat actors leverage current events for engineering targeted attacks. \cite{paloaltonetworks2021dnsattacks} From domains that mirror COVID-19 information resources to those faking government relief programmes, the evolution of such attacks reflects a calculated approach to exploiting public interest and vulnerabilities. \cite{unit42_covid19_phishing_2021} 
 
 \captionsetup{font= footnotesize}
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.9\linewidth]{background/PandemicTime.png}
+    \includegraphics[width=0.7\linewidth]{background/PandemicTime.png}
     \caption{The usage of Fast Flux techniques by the Smoke Loader malware family for dynamic C2 domain communications.}
     \label{fig:figThirteen}
 \end{figure}
