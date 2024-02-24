@@ -1,6 +1,128 @@
-\chapter{\LaTeX}
+\chapter{Draft}
+
+\section{Confusable Domains}
+\subsection{Identification and Examples of Targeted Domains}
+
+The choice of such domains to target and outsource depends on many factors, each with its implications on the business strategy, marketing, and observance by law. The selection of these domains hence matters a lot in creating potential conflict especially those related to existing trademarks. Understanding these selection criteria is very important to try to negotiate the hurdles of the digital market and to protect rights through intellectual property. 
+
+To navigate these complexities effectively, it is essential to consider several key factors. 
+
+\begin{itemize}
+  \item \textbf{Commercial Appeal:} High commercial appeal domains are lucrative targets due to the extremely high possibility of attracting a large traffic flow, with potential revenue generation. Such names are easy to remember, short in length, and directly linked to products or services under some category that is searched most frequently.\cite{Li2002ConflictDomainTrademark}
+  
+  \item \textbf{Keyword Relevance:} Targeted domains have a certain relevance that holds the keyword itself. These domains are ranked higher in search engine outputs and attract organic traffic, making them a useful tool for businesses aiming to align with the primary keywords used by their target customers.
+  
+  \item \textbf{Similarity to Well-known Trademarks:} This refers to the practice of registering domains that are similar or confusingly like existing trademarks—known as cybersquatting. This can lead to confrontations with the rightful trademark holders. Trademark law aims to prevent consumer confusion and protect the goodwill associated with the trademark, particularly in disputes over domain infringement.
+\end{itemize}
+
+\subsection{Real-life examples}
+
+\begin{itemize}
+    \item \textbf{Cybersquatting :} is securing domain names that are the same as or in the likeness of trademarks or brand names, with the intent to sell them at grossly marked-up prices back to the true owner. Among the most notorious examples are several court battles based on the purchase of "nissan.com" and "nissan.net" by a person named Nissan, who owned Nissan Computer Corp many years before Nissan Motors tried to acquire it. This case highlighted tension between the protection of trademarks and individual's interests in using their names for domain name purposes as well as it underscores the challenges of domain name registration and trademark protection in the digital age where domain names closely resemble established trademarks, potentially leading to consumer confusion and dilution of trademark’s value. \cite{Rosznyai2005}
+    
+    \item \textbf{Typosquatting- URL hijacking :} it deals with the registration of misspelled variants of well-known domain names for the mere purpose of capturing traffic from users who tend to make mistakes in typing a URL. They could register "goggle.com" instead of "google.com" which was used to direct users to a site that bombarded their browsers with pop-ups and ads , leading to malware infections as that site was designed to capitalize on accidental misspellings or phishing  attempts that tricked users into visiting. \cite{SplunkTyposquatting}
+
+     \item \textbf{Reverse Domain Name Hijacking  :} is the act of trademark owners trying to take a domain away from its rightful holder based on the claim of trademark rights, considering that he holds a bona fide registration over the said domain. It may otherwise be described as using legal or dispute resolution mechanisms to try to force people from their domains. \cite{Sun2006DomainTrademarkConflict}
+
+    An RDNH was claimed in a UDRP action against "groovle.com," in which the domain was purported to be too close to Google's trademark. However, since the domain was used for another search engine, it was deemed legitimately used and not to have infringed on Google's trademark or registered in bad faith. \cite{Singh2011ReverseDomainHijacking}
+
+    \item \textbf{Homograph attacks:} are those cases in which people have registered domains using characters that kind of look similar to those used on legitimate sites for instance, using a homographic character to make 'Google.news' appear as 'google.news'. This technique has been followed by fraudsters who are now imitating various Google domains for phishing purposes. The group said it reported similar flaws with applications such as Signal and Telegram, where homograph attacks deceived the user to visit harmful sites by using Unicode in domain names to look like famous brands, including phishing attempts on MyEtherWallet and GitHub users. \cite{Leyden2021}
+\end{itemize}
+
+\subsection{ Real-life Mitigations}
+
+The following scenarios are examples of real-life confusable domain mitigations :
+
+\begin{itemize}
+    \item \textbf{Cloudflare's Zero Trust Services Approach :} Protection from this problem of newly created phishing websites is given by Cloudflare itself with its protection in the form of Zero Trust services, finding these websites, and blocking confusable domains. Cloudfare zero-trust rules can be enforced using Cloudfare Gateway in a way that they deny access to these illegitimate domains. In such a way, corporate networks are supposed to be secured from phishing attempts that take advantage of human trust in well-known brands. \cite{Cloudflare2023}
+
+     \item \textbf{Swift-URL-SpoofCheck Initiative: } On this open source initiative hosted on GitHub, a domain renderer has been released for the WebURL format defined according to the algorithmic rules established by IDN spoof checking in Chromium has been released. This tool intends to provide the user with an additional form of safety from domains that look confusingly like known-good domains by integrating most but not all the rules that Chromium uses in the label verification process. It includes functionality to identify potential spoofs and visualise how what appear to be valid domains could be deceptive. \cite{KarwaSwiftURLSpoofCheck}
+     
+     \item \textbf{IDN Handling of Google Chrome: } Google Chrome enforces an IDN (Internationalized Domain Names) policy to determine which form the Unicode or punycode form a domain label should be displayed in. The domain label is tested whether it has mixed script, invisible characters, or visually confusable characters, and whether it is actually validly converted into Unicode. For instance, domains containing characters of different scripts, or those that are clearly identified as mixed script confusables, will be displayed in punycode, warning the users of potential deceptions. Chrome further offers comprehensive warnings to secure URLs that appear to be an imitation of already known web pages. \cite{ChromiumIDN}
+     
+\end{itemize}
+
+In addition to what I mentioned above, let us look at the most popular mitigations used world-wide :
+
+\begin{enumerate}
+  \item Deployment of DNS Security Extensions (DNSSEC): DNSSEC introduces an additional security layer to the DNS query and response mechanism, helping protect against DNS spoofing attacks that often accompany confusable domain strategies. 
+  \item Typo-squatting Detection Tool: Tools such as DNStwist and URLCrazy are used to offer organizations similar domain names so that they can either secure these domain names in advance or file litigation for the same.
+  \item Anti-Phishing Working Group (APWG): It is a pool for stakeholders to share intelligence, trends and best practices regarding phishing and similar threats associated with confusable domains in which mitigation is carried out in collaboration action between cybersecurity entities and domain registrars, as it allows sharing of threat intelligence with respect or cancelling out the holding of malicious domains.
+\end{enumerate}
+
+\subsection{Collaboration Among Registrars, Registries, and DNS Collaborators}
+
+This collaboration should be achieved with DNS registry, registry and collaborators. In that way, they can boost common resources and intelligence that can guide in making the internet more secure and resilient. This strictly falls within the remit of registries and registrars acting in collaboration to put in place such stringent registration policy with procedures for verification, checking against mimicking existing trademarks or even popular domain names.
+
+In this way, the collaboration can even manifest itself via the sharing of sensitive data with regards to domain abuse threats and trends. Databases and threat intelligence platforms are shared amongst stakeholders, allowing them to anticipate and avert most such perils well before they impact netizens. This collective effort will enable the formulation of standards by which to coordinate responses to confusable domain incident reports. Mitigating confusable domains demands that registrars, registries, and DNS collaborators work in a common effort. This is due to the increasing level of threats and the shared responsibility of all the actors involved in the DNS ecosystem. \cite{Catania2022} To put this into perspective, here are some examples: 
+
+
+\begin{enumerate}
+  \item Recent changes in the contract from ICANN's contracted parties have imposed on registrars and registries new specifications to define DNS abuse, together with clear requirements for the actions to be taken by such parties immediately actionable evidence of abuse is received. This is a major step towards establishing more clarity about the roles that may be played by these different stakeholders in addressing the matter of DNS abuse and ensuring there is a common approach to redress. \cite{Weinstein2023}
+  \item Approved new obligations of ICANN's contracted parties have been by the community itself further to mitigate DNS abuse, thereby demonstrating the will of the community to come together to address the issues of DNS abuse. \cite{ICANN2023}
+  \item Efforts like NetBeacon, with the support of the DNS Abuse Institute, are being rolled out to reduce friction in reporting and mitigating DNS abuse. This service solves the current complexities and quality standards associated with the reporting of DNS abuse as it makes the work easier for the registrars, ultimately narrowing down their scope to the relevant and evidenced report as well as it underlines the need for cooperation among registrars, registries, and other DNS stakeholders. This is what is capable of saving the Internet and safeguarding at the same time the credibility and confidence of DNS. \cite{NetBeacon}
+  
+\end{enumerate}
+
+\subsection{Techniques for Mitigating Confusable Domains}
+
+Mitigating confusable domains requires sophisticated techniques tailored to address the unique challenges presented by both non-Internationalized Domain Names (non-IDNs) and Internationalized Domain Names (IDNs). This differentiation is crucial due to the distinct nature of threats they pose and the technical feasibility of the mitigation strategies applicable to each. Below is a detailed examination of mitigation techniques, along with discussions on the operational feasibility and potential collaboration frameworks involved.
+
+Non-IDNs Mitigation Techniques : For non-IDNs, strategies focus on identifying and preventing domain squatting and typo-squatting, where attackers register domains that are typographical errors or close variants of legitimate domains to deceive users.
+
+\begin{enumerate}
+  \item Registry-Level Measures: Domain registries can implement checks to prevent the registration of domains that are too like existing trademarks or brand names, using algorithms to detect variations and misspellings closely resembling protected names. \cite{WTR2020} 
+  \item Trademark Protection Programs: Services like the Trademark Clearinghouse (TMCH) offer mechanisms for trademark holders to protect their rights by receiving notifications when someone attempts to register a domain matching their trademark. \cite{ICANNTMCH}
+  \item Automated Monitoring and Reporting: Automated systems can continuously monitor domain registrations for names that closely resemble known trademarks or brand names, enabling rapid detection and legal action against infringers. \cite{TMCH2023}
+\end{enumerate}
+
+IDNs Mitigation Techniques : The challenge with IDNs lies in the potential for homograph attacks, where attackers use characters from different scripts that appear visually like characters in the Latin script to create deceptive domains.
+
+\begin{enumerate}
+  \item Punycode Awareness and Monitoring: Web browsers and security tools convert IDNs to punycode, a representation that encodes the Unicode characters into ASCII. Awareness of punycode and monitoring for suspicious registrations can help identify potential homograph domains. \cite{SOCRadar2023}
+  \item Browser-Level Defenses: Modern web browsers have implemented defenses against IDN homograph attacks by displaying the punycode version of the domain or alerting users when a domain name contains characters from multiple scripts. \cite{Malwarebytes2017}
+  \item Collaborative Blacklisting and Sharing of Threat Intelligence: Organizations can collaborate to share intelligence about known malicious IDNs, contributing to comprehensive blacklists that can be used by registrars, DNS providers, and end-users to block access to malicious sites. \cite{CyberThreatAlliance2023}
+  
+\end{enumerate}
+
+\subsection{Technical and Operational Feasibility}
+The technical feasibility of these techniques varies. Registry-level measures and trademark protection programs are highly effective but require cooperation and standardization across different legal jurisdictions. Automated monitoring is technically feasible and can be implemented at scale but requires resources for continuous operation and legal follow-up. Browser-level defences are among the most directly impactful, protecting users at the point of access, yet they depend on browser vendors' willingness to implement and maintain these features as well as collaboration frameworks play a crucial role in mitigating confusable domains. Initiatives like the Trademark Clearinghouse (TMCH) facilitate cooperation between trademark holders and domain registries. Meanwhile, organizations such as the Anti-Phishing Working Group (APWG) and the Internet Corporation for Assigned Names and Numbers (ICANN) work towards broader solutions that encompass both non-IDNs and IDNs.
+
+\subsection{ Transparency in Mitigation Efforts}
+
+Transparency in the mitigation of confusable domains plays a pivotal role in the broader strategy to secure the internet against phishing attacks, trademark infringement, and other malicious activities. This concept entails the practices adopted by domain registries and registrars in identifying potentially malicious domains that mimic or closely resemble legitimate ones, and the extent to which these entities disclose identified confusable domains to the public. One of the primary methods for enhancing transparency involves the publication of lists of confusable names by registries and registrars. These lists typically include domains flagged for their similarity to existing domain names, potentially infringing trademarks, or those that could be used for malicious purposes. The publication aims to alert the internet community, including businesses and end-users, about possible threats, thereby fostering a proactive approach to domain name security. Here's how transparency can be applied to each of the mitigation techniques described:
+
+\begin{itemize}
+  \item \textbf{Cloudflare's Zero Trust Services Approach: } Cloudflare's process for identifying and blocking confusable domains should be transparent to its users. This includes detailing the criteria for flagging domains as phishing sites and the mechanisms in place for users to appeal or request a review of blocked domains. By openly sharing the methodology behind their zero-trust rules and how they are applied through the Cloudflare Gateway, trust in Cloudflare's protective measures is bolstered among corporate networks.
+  
+  \item \textbf{Swift-URL-SpoofCheck Initiative:} Transparency in this open-source project is inherent through its availability on GitHub, allowing users and developers to scrutinize, contribute to, and understand the tool's underlying logic. The initiative should continue to provide comprehensive documentation on how it integrates Chromium's IDN spoof-checking rules and the rationale behind excluding certain steps. This openness encourages community engagement and continuous improvement of the tool.
+  
+  \item \textbf{IDN Handling of Google Chrome:}Google's approach to displaying domain names in either Unicode or punycode based on their potential for deception benefits from transparency about its IDN policy. Detailed explanations of the checks performed (e.g., mixed script detection, invisible characters) and how decisions are made enhance user understanding and awareness of potential threats. Moreover, publishing information on how users can report misclassified domains or suggest improvements to the IDN policy can further empower users and foster a safer internet environment.
+  
+  \item \textbf{Deployment of DNS Security Extensions (DNSSEC): }For DNSSEC to effectively enhance trust in the DNS, the processes for securing DNS records and verifying DNS responses should be transparent to DNS administrators and end-users. Providing educational resources and clear guidelines on how to implement DNSSEC can help demystify this complex security layer and encourage its widespread adoption.
+  
+  \item \textbf{Typo-squatting Detection Tools: }The effectiveness of tools like DNStwist and URLCrazy in helping organizations identify potential confusable domains relies on transparency about how these tools generate similar domain names and the criteria used for detection. Openly sharing updates, methodologies, and case studies can help organizations better understand how to utilize these tools proactively.
+  
+  \item \textbf{Collaborative Efforts and Intelligence Sharing: }The partnership between cybersecurity entities and domain registrars, as well as initiatives like the Anti-Phishing Working Group (APWG), should prioritize transparency in their operations. This includes sharing methodologies for threat detection, criteria for taking action against malicious domains, and the processes for stakeholders to contribute or access shared intelligence. Transparency in these collaborative efforts ensures that actions taken against confusable domains are fair, understood by all parties involved, and supported by a broad community of internet security stakeholders.
+  
+\end{itemize}
+
+In summary, transparency across all these mitigation techniques not only builds trust among users, developers, and organizations but also enhances the collective ability to respond to and prevent the threats posed by confusable domains.
+
+\subsection{Benefits of Transparency }
+
+The benefits of transparency in the context of confusable domains are multifaceted. Firstly, it promotes accountability among domain registrars and registries, encouraging them to actively participate in the detection and mitigation of confusable domains. Secondly, transparency acts as a deterrent to malicious actors who might otherwise exploit the anonymity afforded by a lack of public scrutiny. Thirdly, by making such lists public, registries and registrars can empower businesses and trademark owners to take timely action to protect their brands, such as through legal mechanisms or domain purchases. Furthermore, transparency supports community-based mitigation efforts, where cybersecurity researchers and the wider community contribute to identifying and neutralizing threats. This collaborative approach leverages the collective expertise of the cybersecurity community, enhancing the overall effectiveness of mitigation strategies.
+
+\subsection{Drawbacks and Security Concerns} 
+
+However, the publication of confusable domain lists is not without its drawbacks and security concerns. One major concern is that making such lists public could inadvertently provide a roadmap for malicious actors, highlighting potential targets for exploitation. This could lead to a situation where attackers use the information to refine their strategies, for instance, by registering domains not yet identified or listed, thereby staying one step ahead of mitigation efforts. Another concern revolves around the risk of false positives, where legitimate domains are mistakenly flagged as confusable. This could harm businesses and individuals whose domain names are wrongfully listed, potentially leading to unwarranted scrutiny, legal challenges, and reputational damage. Moreover, the debate between transparency and security also touches on the effectiveness of disclosure in preventing attacks. While transparency aims to preemptively combat threats, there is an argument that the sheer volume of domain registrations and the dynamic nature of domain abuse may limit the practical utility of such lists to end-users and businesses.
+
+\subsection{ Analysis : Feasibility and Practical Challenges}
+
+
+
 \label{latexchapter}
-\LaTeX{}, or more properly ``\LaTeXe{}'', is a very useful document processing program. It is very widely used, widely available, stable and free. Famously, \TeX, upon which \LaTeX{} is built, was originally developed by the eminent American mathematician Donald Knuth because he was tired of ugly mathematics books \cite{shustek2008interview}. Although it has a learning curve (made much less forbidding by online tools and resources -- see below), it allows the writer to concentrate more fully on the content, and takes care of most everything else.
+\LaTeX{}, or more properly ``\LaTeXe{}'', is a very useful document processing programme. It is very widely used, widely available, stable, and free. Famously, \TeX, upon which \LaTeX{} is built, was originally developed by the eminent American mathematician Donald Knuth because he was tired of ugly mathematics books \cite{shustek2008interview}. Although it has a learning curve (made much less forbidding by online tools and resources -- see below), it allows the writer to concentrate more fully on the content and takes care of most everything else.
 
 While it can be used as a word processor, it is a \emph{typesetting} system, and Knuth's idea was that it could be used to produce beautiful looking books:
 \begin{quote}
