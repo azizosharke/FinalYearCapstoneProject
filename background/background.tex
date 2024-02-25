@@ -2,7 +2,7 @@
 \label{Chapt2}
 \section{Introduction}
 
-This chapter will explore the fundamental information relevant to this project, with an emphasis on the world of DNS abuse and transparency. It will include a thorough investigation of the domain name system (DNS), its crucial function in the online community, and the variety of abuses it faces. The history of widely used policies and organisations aimed at stopping DNS abuse, including a thorough examination of the DNS Abuse Institute and its achievements, is essential to our investigation. A 'competition landscape' providing a critical examination of current market choices, from automated solutions to human tactics, will be provided as we navigate through the current methodology and technology deployed to detect and combat DNS abuse.  This analysis will also cover new developments that aim to improve DNS security and privacy, providing information on the use and consequences of technologies such as DNS over TLS (DoT) and DNS over HTTPS (DoH). The reader will obtain an in-depth understanding of the current situation of DNS abuse and the need for a more open, strong, and proactive strategy by analysing these various techniques and appreciating their strengths and weaknesses. This chapter emphasises the importance of the suggested solution in an era where digital authenticity is crucial, not only by providing information but also by laying the groundwork for its presentation as a better and essential progression in the battle against DNS abuse.
+This chapter will explore the fundamental information relevant to this project, with an emphasis on the world of DNS abuse and transparency. It will include a thorough investigation of the domain name system (DNS), its crucial function in the online community, and the variety of abuses it faces. The history of widely used policies and organisations aimed at stopping DNS abuse, including a thorough examination of the DNS Abuse Institute and its achievements, is essential to our investigation. A 'competition landscape' providing a critical examination of current market choices, from automated solutions to human tactics, will be provided as we navigate through the current methodology and technology deployed to mitigate DNS abuse.  This analysis will also cover new developments that aim to improve DNS security and privacy, providing information on the use and consequences of technologies such as DNS over TLS (DoT) and DNS over HTTPS (DoH). The reader will obtain an in-depth understanding of the current situation of DNS abuse and the need for a more open, strong, and proactive strategy by analysing these various techniques and appreciating their strengths and weaknesses. This chapter emphasises the importance of the suggested solution in an era where digital authenticity is crucial, not only by providing information but also by laying the groundwork for its presentation as a better and essential progression in the battle against DNS abuse.
 
 \section{Understanding DNS and Its Vulnerabilities}
 
@@ -14,14 +14,14 @@ The environment of DNS threats and defences is always changing in sync with the 
 
 \section{Current efforts and organisations combatting DNS Abuse}
 
-The DNS Abuse Institute, which will focus on DNS abuse to help in increasing safety and security through the domain name system, is going to be cantered on these efforts to address DNS abuse with a comprehensive approach throughout the infrastructure of the internet. It helps the internet community in the identification, reporting, and mitigation of DNS abuse in its quest to make the online environment more secure. Efforts by the institute, such as Compass Dashboards, provide vital data to registries and registrars that will enable proper decisions on combating misuse. They prove the commitment towards transparency and education by issuing publications like "DNSAI 2022 Annual Report" or "DNSAI Bulletin 2023 04; Account Takeovers," which provide insights regarding DNS abuse and how they are mitigated.  \cite{dnsabuseinstitute2023} Another such global strategy against DNS abuse has been contributed by the Internet Corporation for Assigned Names and Numbers (ICANN). \cite{icann2022dnsabuse} In collaboration with the entire DNS community, ICANN supports a synchronized method in the development of policies and standards on how to reduce abuses in the DNS while ensuring openness and operability of the internet. These participatory pillars hint at concerted efforts via policy development, technological developments, and stakeholder engagement as core in this collective approach towards combating DNS abuse \cite{dnsai2022report}. 
+The DNS Abuse Institute, which will focus on DNS abuse to help in increasing safety and security through the domain name system, is going to be cantered on these efforts to address DNS abuse with a comprehensive approach throughout the infrastructure of the internet. It helps the internet community in the identification, reporting, and mitigation of DNS abuse in its quest to make the online environment more secure. Efforts by the institute, such as Compass Dashboards, provide vital data to registries and registrars that will enable proper decisions on combating misuse. They prove the commitment towards transparency and education by issuing publications like the "DNSAI 2022 Annual Report" or "DNSAI Bulletin 2023 04; Account Takeovers," which provide insights regarding DNS abuse and how they are mitigated.  \cite{dnsabuseinstitute2023} Another such global strategy against DNS abuse has been contributed by the Internet Corporation for Assigned Names and Numbers (ICANN). \cite{icann2022dnsabuse} In collaboration with the entire DNS community, ICANN supports a synchronised method in the development of policies and standards on how to mitigate DNS abuse while ensuring the openness and operability of the Internet. These participatory pillars hint at concerted efforts via policy development, technological developments, and stakeholder engagement as core in this collective approach towards combating DNS abuse \cite{dnsai2022report}. 
 
 
 \section{DNS Privacy and Security Enhancements}
 
 The digital world is changing, and so too is the need for enhanced privacy and security measures within the Domain Name System (DNS). Significant advancements have been made to protect users and their data, particularly through the implementation of DNS over TLS (DoT) and DNS over HTTPS (DoH). These technologies represent a paradigm shift in DNS query encryption, aiming to address privacy concerns and secure communication between clients and servers. DNS over TLS (DoT) offers a way to encrypt DNS requests and answers, making it harder for bad actors to simply intercept or change the data. This technology is essential to protect user privacy and stop man-in-the-middle and eavesdropping attacks. In the same way, DNS over HTTPS (DoH) leverages the security features and broad acceptance of HTTPS to protect DNS requests within the HTTPS protocol, adding an extra degree of protection.
 
-The paper "DNS Privacy in Practice and Preparation," which focusses on how these technologies are being accepted and put into effect, provides an in-depth review of these developments. It emphasises how important DoT and DoH are to protecting DNS privacy and how key public DNS service providers are supporting these more and more. The implementation of DoT and DoH is not without difficulties, regardless of their advantages. Their effectiveness depends on factors like performance concerns and the requirement for extensive implementation across multiple platforms. The study also highlights how critical TCP Fast Open (TFO) is to reducing TCP-based DNS query latency, which is essential to balance privacy and speed  \cite{acm2023dnsprivacy}  .
+The paper "DNS Privacy in Practice and Preparation," which focuses on how these technologies are being accepted and put into effect, provides an in-depth review of these developments. It emphasises how important DoT and DoH are to protecting DNS privacy and how key public DNS service providers are supporting these more and more. The implementation of DoT and DoH is not without difficulties, regardless of their advantages. Their effectiveness depends on factors like performance concerns and the requirement for extensive implementation across multiple platforms. The study also highlights how critical TCP Fast Open (TFO) is to reducing TCP-based DNS query latency, which is essential to balance privacy and speed  \cite{acm2023dnsprivacy}  .
 
 \section{Different Forms of DNS Abuse}
 
@@ -176,7 +176,7 @@ By understanding these future dangers and emerging trends, stakeholders can bett
 \end{figure}
 
 
-\section{Mitigation Strategies and Best Practices }
+\section{Foundational Mitigation Strategies and Best Practices }
 
 To address the broad nature of the threats, combating DNS abuse requires an integrated strategy that integrates multiple strategies and best practices. Setting up procedures for reporting and monitoring is one fundamental tactic. Automated systems have the ability to track domain name registration patterns that may indicate DNS abuse, and protocols for reporting questionable actions can help ensure prompt intervention \cite{icannndnssec}. To confirm security and ensure that systems have not been compromised, regular audits of DNS setups and domain registrations are also necessary \cite{lucas2021tls} .
 
@@ -306,25 +306,27 @@ By understanding the connections between different aspects of DNS abuse and rein
 
 This chapter explores the strategies being employed to mitigate DNS abuse as well as new developments in this field. Explores and evaluates the effectiveness and transparency of multiple mitigation techniques, including DNS filtering and threat intelligence in which information about cyber attacks that experts organise and analyse. Additionally, the use of domain-generating techniques and DoT and DoH are two novel forms of DNS abuse that are highlighted in this section. Along with the role of AI and machine learning in identifying and mitigating DNS abuse is covered. The final half of the section includes a discussion on potential future research areas and technologies to improve DNS abuse mitigation. Case studies offer practical insights into DNS abuse occurrences. 
 
+
 \section{Current Strategies and Their Effectiveness in Relation to DNS Abuse}
+
 
 DNS abuse presents a significant challenge for internet entities involved in domain name management. Various approaches are employed to mitigate such abuse, including DNS filtering, which regulates access to specific websites and prevents you from accessing malicious sites that can administer phishing and ransomware. Additionally, threat intelligence methodologies leverage data analysis to identify potential risks, as exemplified by \cite{schmid2021thirty}. Anomaly detection plays a role in identifying suspicious DNS activities indicative of malicious intent using Packet Analysis to analyse individual packets for DNS allowing for real-time detection and statistical analysis, which involves performing statistical analysis on a large dataset of DNS traffic. However, these methods can encounter operational challenges, such as errors and the need for fast access to critical threat data. 
 
-\subsection{Mitigation Strategies}
+\subsection{Advanced Mitigation Strategies}
 
 Different methods are employed to mitigate DNS abuse, including the implementation of tools for blocking, awareness of potential threats, and identification of anomalous behaviour. DNS filtering entails the regulation of website access based on predetermined rules, which can have varied outcomes depending on the context in which can happen in different environments such as register and registry in which it implements mechanisms to compare DNS names to the block list and given set of rules then take the necessary action such as homographs attacks in which DNS filtering mechanism play a role in mitigating them by comparing domain names against blocklists and predefined tule to identify potentially malicious homographs as stated earlier. Threat intelligence plays a role in identifying potential dangers and detecting unusual activities within the DNS, as noted \cite{rizvi2022application}, such as allowing the proactive identification and assessment of potential threats and malicious activities which includes detecting patterns indicative of phishing, domain hijacking, malware distribution, and other forms of DNS abuse. Evaluating the effectiveness of these methods requires careful consideration of their performance in real-world scenarios. For instance, while DNS filtering can effectively block malicious content, it may inadvertently permit harmful elements to bypass the filtering process, potentially impacting user experience. Similarly, the efficacy of threat intelligence relies on the timeliness and accuracy of the data utilized. However, identifying anomalous behaviour poses challenges, as distinguishing between malicious actions and legitimate activities performed in innovative ways can be challenging.
 
 \subsection{Evaluation of Transparency}
 
-Demonstrating the mechanisms through which DNS abuse can be mitigated is great step in fostering trust among stakeholders, including internet users, businesses, and policymakers. Simplified and transparent approaches to DNS abuse mitigation underscore a commitment to accountability and collaborative efforts in addressing abuse. Transparency in the context of the mitigation of DNS abuse includes clear communication of mitigation measures, disclosure of incidents, and access to information regarding decision-making processes. According to \cite{chaganti2023survey}, organisations that are forthcoming about their objectives tend to engage in regular updates and dialogue with the community, contributing to the clarity and integrity of the DNS.
+The trends in DNS abuse had declines among some categories, such as botnets, malware, phishing, and spam. Much of this decline could be attributed to the multi-pronged approaches that ICANN itself launched around data analysis, community tools, and enforcement of registry and registrar obligations. While continuing to be slow, adopting organisations did so under the compulsion of situations that left them no choice but to use the technology or by those for whom TLS adoption was a matter of technological innovation, choice, or desire for the embrace of technologies simpler and more robust from misdirection. In addition, there is privacy because DNS queries are able to inadvertently expose user behaviours, thus the basis for initiatives such as Query Name Minimisation to protect user privacy. The challenge always remains for these algorithms and technologies: how to maintain vigilance on the abuse of a domain name system, adding privacy without any loss in efficiency.
 
 \section{Emerging Trends in DNS Abuse}
 
-Advancements in DNS abuse are altering the landscape of online security, introducing novel challenges and vulnerabilities. Among these emerging threats, sophisticated techniques such as the utilisation of DNS over TLS (DoT) and DNS over HTTPS (DoH) mechanisms have gained prominence. These protocols aim to enhance privacy and security by encrypting DNS queries, but simultaneously, they offer adversaries new avenues to obfuscate malicious traffic, complicating detection efforts. Furthermore, the proliferation of Domain Generation Algorithms (DGA) poses significant risks, as highlighted by \cite{kapoor2021ransomware}.  DGAs generate numerous seemingly random domain names, complicating the identification of potential threats. As the dynamics of the DNS infrastructure evolve, it is imperative for cybersecurity professionals to remain abreast of these developments. Continuous refinement of strategies and proactive measures is essential to counteract adaptive strategies employed in DNS abuse, thus safeguarding the integrity and trustworthiness of internet systems.
+The trends in DNS abuse had declined among some categories, such as botnets, malware, phishing, and spam. Much of this decline could be attributed to the multi-pronged approaches that ICANN itself launched around data analysis, community tools, and enforcement of registry and registrar obligations. \cite{icann_dns_security_threat} While continuing to be slow, adopting organisations did so under the compulsion of situations that left them no choice but to use the technology or by those for whom TLS adoption was a matter of technological innovation, choice, or desire for the embrace of technologies simpler and more robust from misdirection. \cite{circleid_dns_trends_future} One of the major issues has continued to be privacy, due to the fact that DNS queries have been accidentally found to give away user behaviors. One such move to enhance user privacy is the Query Name Minimization. The main concern has been how to remain vigilant against DNS abuses while improving privacy without impairing service efficiency.
 
-\subsection{New Forms of DNS Abuse}
+\subsection{Evolving New Forms of DNS Abuse}
 
-The field of cybersecurity is rapidly advancing, bringing forth new challenges as it evolves, and constantly moving the goalposts for defence mechanisms. The introduction of DNS over TLS (DoT) and DNS over HTTPS (DoH) is like a double-edged sword. Although these encryption protocols were designed to enhance privacy and security by encrypting DNS queries, they unintentionally provide attackers with means to disguise malicious traffic. This expands the attack surface, affecting everything from individual devices to  corporate networks. For instance, attackers could leverage DoT and DoH in enterprise settings to avoid outdated security controls and establish hidden communication channels. Furthermore, Domain Generation Algorithms (DGAs) play an important role in cyber threats by automatically generating a large number of random domain names, making it extremely difficult to identify and shut down malicious sites. \cite{kaur2023artificial}. This tactic, integral to botnet command and control (C2) operations, significantly complicates cybersecurity defence efforts to predict and mitigate threats.
+The field of cybersecurity is rapidly advancing, bringing forth new challenges as it evolves, and constantly moving the goalposts for defence mechanisms. The introduction of DNS over TLS (DoT) and DNS over HTTPS (DoH) is like a double-edged sword. Although these encryption protocols were designed to enhance privacy and security by encrypting DNS queries, they unintentionally provide attackers with means to disguise malicious traffic. This expands the attack surface, affecting everything from individual devices to corporate networks. For instance, attackers could leverage DoT and DoH in enterprise settings to avoid outdated security controls and establish hidden communication channels. Furthermore, Domain Generation Algorithms (DGAs) play an important role in cyber threats by automatically generating a large number of random domain names, making it extremely difficult to identify and shut down malicious sites. \cite{kaur2023artificial}. This tactic, integral to botnet command and control (C2) operations, significantly complicates cybersecurity defence efforts to predict and mitigate threats.
 
 The adoption of DoT and DoH offers several benefits, such as enhanced privacy by preventing the surveillance of DNS queries and improved security through the encryption of DNS traffic, which weaken hackers' attempts to intercept or manipulate data. However, these protocols also allow attackers to hide their malicious activities, which poses challenges for traditional DNS security systems in detecting and filtering harmful content. Furthermore, these protocols might accidentally bypass content filtering policies, leading to potential security breaches within organisations.
 Conversely, DGAs provide attackers with a method to evade detection and maintain C2 communications, as the dynamically generated domains are difficult to predict and pre-emptively block. This results in an overwhelming number of domain names for security mechanisms to monitor, complicating the threat intelligence process and necessitating continuous vigilance and blacklist updates. The widespread adoption of these technologies underscores the need for cybersecurity professionals to adopt a proactive and informed stance, understanding their potential for exploitation and developing comprehensive strategies. These strategies must strike a balance between the benefits of encryption and domain generation and the imperative to prevent DNS abuse, ensuring the integrity and security of the online environment.
@@ -451,7 +453,7 @@ Since January 2020, a total of 69,950 COVID-19 related phishing URLs, of which 3
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\linewidth]{background/CovidPhising.png}
-    \caption{Trends in COVID-themed phishing attacks from January 2020-February 2021}
+    \caption{Development trends in the majority of COVID-19-related phishing content hosting sites during the period from January 2020 to February 2021.}
     \label{fig:figFourteen}
 \end{figure}
 
@@ -462,7 +464,7 @@ It is evident to state that a major chunk of COVID-19-themed phishing pages targ
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\linewidth]{background/TOPCOVIDURLS.png}
-    \caption{Top phishing targets in COVID-related URLs (global). Each bar represents the percentage of phishing URLs attempting to steal users’ login credentials for that particular website. }
+    \caption{Top spoofed websites in COVID-themed phishing attacks (global), where the percentage in each column is the percentage of phishing volume per site and category. }
     \label{fig:figFiveteen}
 \end{figure}
 
@@ -472,7 +474,7 @@ This thus clearly indicates a situation whereby the attackers set up websites fr
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\linewidth]{background/AgeCovid.png}
-    \caption{Age of websites that host COVID-related phishing pages at time of detection (global).}
+    \caption{Statistic of lifespan distribution of COVID-19-related phishing content hosting sites when the sites are reported .}
     \label{fig:figSixteen}
 \end{figure}
 
@@ -501,96 +503,21 @@ The study on DNS abuse looked at current ways, checked new trends, talked about 
 
 
 
-\section{Figures}
-Graphs, pictures and other images should be included in your report as a numbered, captioned figure. An example is given in Figure \ref{veldis}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]
-      \centering
-      \includegraphics{background/5e1-1.pdf}
-      \caption{Velocity distribution on the mid-plane for an inlet velocity for case 1.}
-      \label{veldis}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The figure and caption should be centred. The figure numbering starts at 1 at the beginning of each chapter. The caption should provide a brief description of what is being shown. The figure should appear in the document after it is referred to in the text. No figure should be included which is not referred to in the text. Ensure that the size and resolution of images imported from software are sufficient to read any text.
 
-\section{Tables}
-Tables are an important way of displaying your results. Table \ref{tab:treatments} is a sample table, adapted from the Master/Doctoral Thesis template at \url{http://www.latextemplates.com/cat/theses}, which was generated with this code:
 
-{\footnotesize
-\begin{verbatim}
-\begin{table}[b]
-\caption{The effects of treatments X and Y on the four groups studied.}
-\label{tab:treatments}
-\centering
-\begin{tabular}{l l l}
-\toprule
-\textbf{Groups} & \textbf{Treatment X} & \textbf{Treatment Y} \\\midrule
-1 & 0.2 & 0.8\\
-2 & 0.17 & 0.7\\
-3 & 0.24 & 0.75\\
-4 & 0.68 & 0.3\\
-\bottomrule\\
-\end{tabular}
-\end{table}
-\end{verbatim}
-}
 
-\begin{table}[b]
-\caption{The effects of treatments X and Y on the four groups studied.}
-\label{tab:treatments}
-\centering
-\begin{tabular}{l l l}
-\toprule
-\textbf{Groups} & \textbf{Treatment X} & \textbf{Treatment Y} \\
-\midrule
-1 & 0.2 & 0.8\\
-2 & 0.17 & 0.7\\
-3 & 0.24 & 0.75\\
-4 & 0.68 & 0.3\\
-\bottomrule\\
-\end{tabular}
-\end{table}
 
-Tables are numbered in the same way as figures. Typically tables also have a short caption, but this is not universally true. The number and caption appear above the table, not below as with figures. Again, no table should appear in the report which has not been referred to in the text. Tables should come after they are discussed in the text. The exact formatting of the table depends somewhat on the content of the table, but in general, the text in the table should be the same font and size as the main text. 
 
-\section{Equations}
-All equations should be numbered sequentially. The numbering restarts automatically at the beginning of each chapter, and contains the number of the chapter alongside the equation number. Unlike figures and tables, you may not need to refer to every equation in the text. You should take care to format equations properly. Do no simply try to use plain text. Use the equation layout facilities. An example of how equations should appear is shown in \eqref{sampleequation}. Here is the code for it:
 
-{\footnotesize
-\begin{verbatim}
-\begin{equation}
-\textrm{div}(\underline{u}) = \frac{\delta u}{\delta x} + \frac{\delta v}{\delta y} +
-        \frac{\delta w}{\delta z} = 0
-\label{sampleequation}
-\end{equation} 
-\end{verbatim}
-}
 
-\begin{equation}
-\textrm{div}(\underline{u}) = \frac{\delta u}{\delta x} + \frac{\delta v}{\delta y} + \frac{\delta w}{\delta z} = 0
-\label{sampleequation}
-\end{equation} 
 
-\section{Referencing published work}
-It is important to give appropriate credit to other people for the work that they have shared through publications. In fact, you must sign a declaration in your report stating that you understand the nature of plagiarism. As well as avoiding plagiarism, citing results or data from the literature can strengthen your argument, provide a favourable comparison for your results, or even demonstrate how superior your work is.
 
-There are many styles to reference published work. For example, the parenthetical style (which is also called the \emph{Harvard style}) uses the author and date of publication (e.g. ``Smith and Jones, 2001''). There is also the Vancouver style (or the \emph{citation sequence style}). In the IEEE style, which is used in this document in the default setup, the publications are cited using bracketed numbers which refer to the list in the References section at the end of the report. The references are listed in the order that they are cited in the report. A variant is \emph{name sequence style}, in which the publications are referenced by number, but the list is arranged alphabetically. The following paragraph shows the use of the IEEE style: 
 
-\begin{quote}
-Several studies have examined the sound field around tandem cylinders generated by flow\cite{fitzpatrick2003flow,finnegan2010experimental}, while other investigations have focused on the effect of an applied sound field on the flow\cite{hall2003vortex}. Papers from conference proceedings\cite{jordan2001array}, books\cite{paidoussis2010fluid} and technical reports\cite{reyes2007power} can be dealt with in the same style.
-\end{quote}
 
-The IEEE style has the advantage that it is a little more compact in the text and does not distract from the flow of the sentence if there are a lot of citations. However, it has the disadvantage that it is not immediately clear to the reader what particular work has been referenced. You can use author names directly and discuss the work of Finnegan et al. \cite{finnegan2010experimental} similar to this sentence to make it more readable. 
 
-It actually does not matter which particular referencing style is used as long as three important considerations are observed:
-\begin{itemize}
-\item the referencing style used throughout the document is consistent;
-\item all material used or discussed in the text is properly cited;
-\item nothing is included in the reference list that has not been cited.
-\end{itemize}
 
-Check with your supervisor as they may have a strong opinion on what you should use
 
-This template has a suitable referencing style already set up -- you should use it and use the built-in BibTeX system to manage your references. See above for examples of how to cite a reference and look in the \texttt{sample.bib} file to see BibTeX references. It is strongly recommended that you use a bibliographic tool, such as EndNote (check out https://www.tcd.ie/library/support/endnote/), as this will facilitate compliance with these three requirements. Endnote can help you build you .bib file. Remember \href{http://scholar.google.com}{Google Scholar} and other search engines will give you BibTeX references for lots of academic publications. Be aware that Web of Science is more reliable for giving the full record for the BibTeX entry. Otherwise, you can easily make up your own based on the examples in that file.
+
+
