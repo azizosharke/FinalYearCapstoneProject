@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(51, 93, 175);
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+    position: fixed;
+
+}
+
+/* Navigation Bar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.bg-light {
+    background-color: #ffffff !important; /* Override Bootstrap's bg-light color */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #212529;
+    color: #ffffff;
+    
+}
+
+/* Custom Button */
+.btn-primary {
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.375rem;
+    font-weight: bold;
+}
+
+/* Input group */
+.input-group {
+    max-width: 500px;
+    margin: auto;
+}
+.display-4{
+    text-align: center;
+
+}
+.lead{
+    text-align: center;
+}
+.para{
+    text-align: center;
+}
+.navbar-brand{
+    text-align: center;
+}
+
+
+
+/* Responsive typography */
+@media (min-width: 992px) {
+    h1.display-4 {
+        font-size: 3rem;
+    }
+}

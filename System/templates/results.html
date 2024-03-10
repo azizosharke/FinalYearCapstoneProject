@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Abuse Inspector - Analysis Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- You might want to include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+</head>
+<body>
+    <div class='container my-5'>
+        <h2 class="text-center mb-4">DNS Abuse Inspector</h2>
+        <h3>Analysis Results for: {{ domain }}</h3>
+        {% for domain, info in analysis_results.items() %}
+        <div class='card mb-4 shadow-sm {{ "border-success" if not info.is_malicious else "border-danger" }}'>
+            <div class='card-header {{ "bg-success text-white" if not info.is_malicious else "bg-danger text-white" }}'>
+                <h5 class='card-title mb-0'>{{ domain }}</h5>
+            </div>
+            <div class='card-body bg-light'>
+                <p class='card-text'>
+                    <i class="fas {{ 'fa-check-circle' if not info.is_malicious else 'fa-times-circle' }}"></i>
+                    Malicious: {{ 'No' if not info.is_malicious else 'Yes' }}
+                </p>
+                {% if info.is_malicious and info.details %}
+                    <ul class="list-group list-group-flush">
+                        {% for scanner, result in info.details.items() %}
+                            {% if result.category == "malicious" %}
+                                <li class="list-group-item list-group-item-danger">
+                                    Detected by {{ scanner }}: {{ result.result }}
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-primary btn-lg">Check Another Domain</a>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
