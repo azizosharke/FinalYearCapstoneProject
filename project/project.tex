@@ -20,9 +20,9 @@ Domain Legitimacy Checker is such a robust web-based platform tasked with the id
 \section{Integration} 
 \subsection{Backend Implementation}
 
-The server side :   Python on the Flask framework was used for implementing this side. The server works better with a solid web server in case you are time pressed because the learning curve on Flask to make it implement is not that steep. The Flask application is set to work through a series of endpoints, each of which corresponds to a set of functionalities with respect to the system, among which is an endpoint for submitting domains to ascertain the results of their analysis. A request comes into the Flask server, and for any incoming given request, it simply calls the indicated function to handle the process relevant to the request: a process to parse the input data, to start domain checks, or to respond with the check results.
+The server side :  Python on the Flask framework was used for implementing this side. The server works better with a solid web server in case you are time pressed because the learning curve on Flask to make it implement is not that steep. The Flask application is set to work through a series of endpoints, each of which corresponds to a set of functionalities with respect to the system, among which is an endpoint for submitting domains to ascertain the results of their analysis. A request comes into the Flask server, and for any incoming given request, it simply calls the indicated function to handle the process relevant to the request: a process to parse the input data, to start domain checks, or to respond with the check results.
 
- API and library : The Domain Analysis Engine forms the main core within the backend, responsible for DNS abuse detection. This is realised by creating some of the changes that the submitted forms of domain names have so that possibly malicious or confusable counterparts are recognised with the assistance of pattern recognition algorithms. In addition, the development leverages libraries and packages such as "dnspython" and requests to conduct the queries to DNS and "request" APIs with respective libraries. This system communicates with external APIs such as "VirusTotal" in order to perform legitimacy checks, whereby the fact is made up for carrying out thorough analysis and reliable detection of malicious domains.
+ API \& library : The Domain Analysis Engine forms the main core within the backend, responsible for DNS abuse detection. This is realised by creating some of the changes that the submitted forms of domain names have so that possibly malicious or confusable counterparts are recognised with the assistance of pattern recognition algorithms. In addition, the development leverages libraries and packages such as "dnspython" and requests to conduct the queries to DNS and "request" APIs with respective libraries. This system communicates with external APIs such as "VirusTotal" in order to perform legitimacy checks, whereby the fact is made up for carrying out thorough analysis and reliable detection of malicious domains.
 
  \begin{figure}[H]
      \centering
@@ -47,7 +47,7 @@ Interactive Elements: JavaScript is used to bring in interactivity to most of th
 \newpage
 
 
-\section{Tools and Technologies}
+\section{Tools \& Technologies}
 
 The Domain Legitimacy Checker was constructed using a carefully selected stack of tools, languages, and platforms. The primary language chosen was Python, valued for its readability, comprehensive standard library, and wide range of third-party modules that facilitate rapid development and integration with other systems. As a result, the decision was made to stick with Flask as an interactive back-end web framework, since in connection with its extremely light character, it is easily scalable in nature. Though designed very simple, it's versatile enough to really cover all major issues regarding painful threads of HTTP-requests processing.
 
@@ -72,7 +72,7 @@ Once a domain is submitted, the backend systems spring into action, processing t
     \label{fig:implem22}
 \end{figure}
 
-\subsection{Input and Interaction}
+\subsection{Input \& Interaction}
 
  The Domain Legitimacy Checker Tool provides an intuitive and streamlined place for interaction with users to ensure a seamless experience.The domain input method, a single-field form intended for simplicity of use and quick analysis, is at the centre of this interaction.
  
@@ -83,7 +83,7 @@ Once a domain is submitted, the backend systems spring into action, processing t
     \label{fig:impl2}
 \end{figure}
 
-First, the user is asked to enter a domain of their choice and to put it in a text box, minimally styled to not distract but to point the user's focus in performing the task. Right next to the text box is an 'analyze' button, contrasting with blue so as to stand out visually and identified for the user as the next step to take in the process. This design invites immediate action upon domain entry, providing a clear path from user input to results.
+First, the user is asked to enter a domain of their choice and to put it in a text box, minimally styled to not distract but to point the user's focus in performing the task. Right next to the text box is 'Analyze' button, contrasting with blue so as to stand out visually and identified for the user as the next step to take in the process. This design invites immediate action upon domain entry, providing a clear path from user input to results.
 
 \begin{figure}[H]
     \centering
@@ -146,7 +146,7 @@ This iterative process is another valuable characteristic of the user journey, s
 
 
 
-\section{Challenges and Solutions}
+\section{Challenges \& Solutions}
 
 During the development of the Domain Legitimacy Checker, I faced several challenges, each requiring a tailored solution to ensure the project's success.
 
@@ -163,7 +163,7 @@ Challenge 3: Handling Malicious Domain Variations
 Identification and generation of a full set of confusing domain variations represented a key computational challenge.
 Solution: Using a combination of common substitution algorithms and a heuristic approach that prioritised variations based on their likelihood of being used in phishing attacks. That way, it helped us match the balance of well-performed search against the practical need for it and against timely results.
 
-Challenge 4: Data Storage and Retrieval Efficiency
+Challenge 4: Data Storage \& Retrieval Efficiency
 Storing analysis results for quick retrieval while managing database performance was a concern, especially with the growth of the data set.
 Solution: Putting in place a real-time domain analysis system that uses algorithmic domain variation creation to evaluate possible security threats and external APIs for thorough domain validity checks. Without requiring a conventional relational database management system, this method guarantees instantaneous and up-to-date results because it is based on dynamic data retrieval and processing rather than static storage. 
 
@@ -173,7 +173,7 @@ Solution: The system was designed with scalability in mind, using Flask's built-
 
 By addressing these challenges with careful planning and adaptive solutions, we improve the reliability, performance, and user satisfaction of the system.
 
-\section{Testing and Validation}
+\section{Testing \& Validation}
 
 The domain legitimacy checker follows rigorous measures in testing the system, which ensures both dependability and accuracy. In the implementation, the back-end logic had a number of things implemented with unit tests; we have used the Python unittest framework. We used mock objects to simulate the acts of external APIs.Manual and automated tests were performed in front-end technologies. Automated UI testings, such as those with Selenium, were relied upon to ensure that all interactive elements are operable. The interface has been tested both automatically and manually, with the help of loading a page on a few browsers and mobile devices to ensure that the interface is responsive and behaves similarly. I have practised the methodologies of test-driven development (TDD) within overall projects to simulate many real-time scenarios. It will thus ensure the detection of the problem automatically in the early stage, which is necessary for further appropriate rectification. We also set up Continuous Integration (CI) pipelines that would fire every time a new code commit passes to run tests, ensuring that newly made changes do not break existing functionalities automatically.This was done by the system validation against known patterns of DNS abuse, and explanatory notes on the results are attached. Regular peer reviews were also held at regular intervals for the same purpose of reassessment of performance and reliability of the system.
 
