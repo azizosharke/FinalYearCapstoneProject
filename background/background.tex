@@ -73,7 +73,7 @@ DNS abuse takes many forms, each with its procedures and effects on users and th
 
 \section{How DNS Abuse Harms Users}
 
-DNS abuse has serious and detrimental effects for both users and organisations, going beyond basic technological disruptions. Identity theft is among the most direct and direct effects. Phishing attacks, a frequent type of DNS abuse, use realistic websites to trick visitors into revealing sensitive data. Such attacks can produce information that results in financial theft, unauthorised access to accounts, and long-term damage to a person's reputation and credit \cite{godaddy2023dnsabuse}.
+DNS abuse has serious and detrimental effects for both users and organisations, going beyond basic technological disruptions. Identity theft is among the most direct and direct effects. Phishing attacks, a common type of DNS abuse, use realistic websites to trick visitors into revealing sensitive data. Such attacks can produce information that results in financial theft, unauthorised access to accounts, and long-term damage to a person's reputation and credit \cite{godaddy2023dnsabuse}.
 
 \subsection{Identity Theft}
 \begin{itemize}
@@ -185,7 +185,7 @@ To address the broad nature of the threats, mitigating DNS abuse requires an int
     \end{itemize}
     \item \textbf{DNS Security Extensions (DNSSEC)}
     \begin{itemize}
-        \item Implementation: Deploy DNSSEC to ensure the integrity of DNS data. This involves signing DNS records to protect against modifications and DNS spoofing.
+        \item Implementation: Deploy DNSSEC to ensure the integrity of the DNS data. This involves signing DNS records to protect against modification and DNS spoofing.
     \end{itemize}
     \item \textbf{Multi-Factor Authentication (MFA)}
     \begin{itemize}
@@ -240,12 +240,20 @@ After exploring the different forms of DNS abuse , How DNS abuse harms user , Fu
 \begin{longtable}{|p{2.5cm}|p{2.5cm}|p{4cm}|p{3cm}|p{4cm}|} 
 
 \hline
-\textbf{DNS Abuse } & \textbf{User Harm} & \textbf{Mitigation Strategy} & \textbf{Reasoning} & \textbf{Transparency Aspect} \\ \hline
+\cellcolor{gray!50}\textbf{DNS Abuse } & 
+\cellcolor{gray!50}\textbf{User Harm} & 
+\cellcolor{gray!50}\textbf{Mitigation Strategy} & 
+\cellcolor{gray!50}\textbf{Reasoning} & 
+\cellcolor{gray!50}\textbf{Transparency Aspect} \\ \hline
 \endfirsthead
 
 \multicolumn{5}{c}%
 {
-\hline \textbf{DNS Abuse} & \textbf{User Harm} & \textbf{Mitigation Strategy} & \textbf{Reasoning} & \textbf{Transparency Aspect} \\ \hline
+\hline \cellcolor{gray!50}\textbf{DNS Abuse} & 
+\cellcolor{gray!50}\textbf{User Harm} & 
+\cellcolor{gray!50}\textbf{Mitigation Strategy} & 
+\cellcolor{gray!50}\textbf{Reasoning} & \cellcolor{gray!50}
+\textbf{Transparency Aspect} \\ \hline
 \endhead
 
 \hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
@@ -283,7 +291,7 @@ Deepfakes and AI & \mbox{Identity Theft}, \mbox{Misinformation} & \mbox{Security
 
 \mbox{Supply Chain} \mbox{Attacks} & \mbox{System} \mbox{Compromise,} Data Breach & Regular Audits, Blacklisting & \mbox{Audits for DNS} \mbox{integrity. Rapid} \mbox{response to threats.} & \mbox{Transparency in supply} \mbox{chain security.} \\ \hline
 
-\caption{Mitigation Strategies Against DNS Abuse and Their Impact on Users} 
+\caption{Mitigation Strategies Against DNS Abuse and Their Impact on Users.} 
 
 \end{longtable}
 
@@ -313,7 +321,7 @@ DNS abuse presents a significant challenge for internet entities involved in dom
     \item A Case Study of Cloudflare's Transparency Approach
 
 
-Cloudflare is firmly committed to transparency \cite{cloudflare_transparency_2022}, the cornerstone of its relationship with customers, which guides its approach to DNS abuse reports and requests that may come from law enforcement. This shaves their actions and policies to mould a trustworthy environment while addressing internet safety and privacy concerns. Their approach to handling DNS abuse reports and law enforcement requests is grounded in three core principles:
+Cloudflare is firmly committed to transparency \cite{cloudflare_transparency_2022}, the cornerstone of its relationship with customers, which guides its approach to DNS abuse reports and requests that may come from law enforcement. This reduces their actions and policies to mould a trustworthy environment while addressing internet safety and privacy concerns. Their approach to handling DNS abuse reports and law enforcement requests is grounded in three core principles:
 
 \begin{enumerate}
     \item Require Due Process:  Whatever shall be lawfully requiring due process of law enforcement and Cloudflare shall adhere in letter and spirit. They are neutral in behaviour and do not intend to hinder or facilitate law enforcement efforts more than is required by law.
@@ -437,7 +445,7 @@ This Report is a reflection of how the company treats the requests of the govern
 
 \end{enumerate}
 
-\subsection{Advanced Mitigation Strategies}
+\subsection{Effectiveness of Current DNS Abuse Mitigation Strategies}
 
 Different methods are used to mitigate DNS abuse, including the implementation of blocking tools, awareness of potential threats, and identification of anomalous behaviour. DNS filtering entails the regulation of website access based on predetermined rules, which can have varied outcomes depending on the context in which can happen in different environments such as register and registry in which it implements mechanisms to compare DNS names to the block list and given set of rules then take the necessary action such as homographs attacks in which DNS filtering mechanism play a role in mitigating them by comparing domain names against block-lists and predefined rule to identify potentially malicious homographs as stated earlier. Threat intelligence plays a role in identifying potential dangers and detecting unusual activities within the DNS, as noted \cite{rizvi2022application}, such as allowing the proactive identification and assessment of potential threats and malicious activities, including detecting patterns indicative of phishing, domain hijacking, malware distribution, and other forms of DNS abuse. Evaluating the effectiveness of these methods requires careful consideration of their performance in real-world scenarios. For instance, while DNS filtering can effectively block malicious content, it may inadvertently permit harmful elements to bypass the filtering process, potentially impacting user experience. Similarly, the efficacy of threat intelligence relies on the timeliness and accuracy of the data utilised. However, identifying anomalous behaviour poses challenges, as distinguishing between malicious actions and legitimate activities performed in innovative ways can be challenging.
 
@@ -460,57 +468,35 @@ Efforts to mitigate DNS abuse are set toward immediately slowing such activities
 
 The evident evaluation of real-time black hole lists (RBLs), in addition to the responsible role of trusted notifiers, further increases the effectiveness and accuracy of mitigating actions, to filter and validate reports on abuse, so that proper responses may be made. This multi-pronged approach on the part of the registrars and the registries towards the mitigation of DNS abuse does not only emphasise the proactive and reactive measures but also the possibilities of increased transparency as far as reporting and publicising the actions in place against DNS abuse are concerned. Such transparency is key to building trust, open for accountability, and creating an environment conducive to stakeholders' collaboration for the more effective fight against abuse in the DNS ecosystem. This transparency helps to understand the rationale behind the predictions, map the data used for model training, and clarify the methods that guide decision making, as highlighted in \cite{hussain2022software}. Striking a balance between the complexity of predictive models and their interpret-ability is a significant challenge. Therefore, it is essential to approach this challenge with caution, ensuring that the models are not only effective in identifying DNS abuse, but also accessible for thorough examination and accountability.
 
-\clearpage
+
 \captionsetup{font= footnotesize}
 \begin{figure}[H]
 \centering
     \includegraphics[width=1.0\linewidth]{background/DNSECO.png}
     \caption{DNS Ecosystem Contractually Related to ICANN (image
-courtesy of Verisign and originally published in SSAC 115)}
+courtesy of Verisign and originally published in SSAC 115 adapted from \cite{SSAC2023SAC115})}
     \label{fig:fig14}
 \end{figure}
 \clearpage
 
 \section{Technological Advancements}
 
-The mitigation of DNS abuse is increasingly influenced by the integration of artificial intelligence (AI) and machine learning technologies \cite{goethals2021enabling}. At the helm of this evolution are innovative tools like the iQ Domain Risk Score, which employs machine learning and string analytics to proactively detect potential domain abuses now of registration \cite{dnsabuseAI2023}. This tool aims to act as a mitigation measure by analysing domains against criteria indicative of malicious intent, thereby attempting to stop abuse before it even starts. Additionally, the field is witnessing a transformative shift in analysing abuse report evidence through the adoption of Large Language Models (LLMs), such as generative pre-trained transformers (GPTs). These models are highly adept at parsing and understanding complex data patterns that might be missed by human investigators, enhancing the efficiency and automation of DNS abuse mitigation efforts, and forming a more dynamic defence against cyber threats. However, this progress also highlights an emerging challenge: the potential for malicious entities to exploit AI technologies themselves \cite{halvorsenAI2023}.  Consequently, the intersection of AI and machine learning with DNS abuse mitigation not only heralds significant advancements in cybersecurity strategies but also emphasizes the need for vigilance to prevent these technologies from being used for harmful purposes. This pivotal moment in the fight against DNS abuse underscores the need for ongoing innovation and adaptation to effectively secure digital ecosystems.
+The mitigation of DNS abuse is increasingly influenced by the integration of artificial intelligence (AI) and machine learning technologies \cite{goethals2021enabling}. At the helm of this evolution are innovative tools such as the iQ Domain Risk Score, which employs machine learning and string analytics to proactively detect potential domain abuses now of registration \cite{dnsabuseAI2023}. This tool aims to act as a mitigation measure by analysing domains against criteria indicative of malicious intent, thereby attempting to stop abuse before it even starts. Additionally, the field is witnessing a transformative shift in analysing abuse report evidence through the adoption of Large Language Models (LLMs), such as generative pre-trained transformers (GPTs). These models are highly adept at parsing and understanding complex data patterns that might be missed by human investigators, enhancing the efficiency and automation of DNS abuse mitigation efforts, and forming a more dynamic defence against cyber threats. However, this progress also highlights an emerging challenge: the potential for malicious entities to exploit AI technologies themselves \cite{halvorsenAI2023}.  Consequently, the intersection of AI and machine learning with DNS abuse mitigation not only heralds significant advancements in cybersecurity strategies but also emphasizes the need for vigilance to prevent these technologies from being used for harmful purposes. This pivotal moment in the fight against DNS abuse underscores the need for ongoing innovation and adaptation to effectively secure digital ecosystems.
 
-\subsection{Role of AI \& Machine Learning}
+\subsection{Role of AI \& ML}
 
-The introduction of AI and machine learning technologies into DNS abuse mitigation marks the beginning of an innovative era focused on the proactive detection and neutralisation of cyber threats \cite{tariq2023critical}.  This approach facilitates the rapid analysis of large datasets to uncover patterns indicative of malicious intent in DNS queries. For example, machine learning techniques have been highly effective in analysing DNS queries to classify domain names, significantly improving the detection of domains linked to malware \cite{LiMaliciousDomainDetection2020}. Furthermore, the application of neural network models, such as the Extreme Learning Machine (ELM), has achieved accuracy rates above 95\% in identifying malicious domains, demonstrating the transformative and predictive power of AI in combating cyber threats \cite{ZouDNSGraphMining2015}. Additionally, the technique of DNS graph mining has illuminated AI's potential within cybersecurity frameworks, with methodologies like belief propagation algorithms achieving high precision in identifying infected hosts and malicious domains. These examples underscore the vital role of AI and machine learning in bolstering DNS abuse, paving new avenues for early detection and swift mitigation of potential abuses. However, the complexity of AI models and the demand for transparency in their decision-making processes present ongoing challenges. Integrating AI into DNS abuse mitigation strategies improves security measures, but also requires careful attention to ethical considerations and the establishment of governance frameworks \cite{AntonakakisMalwareDomainsUpperDNS2011}. AI and machine learning can help improve DNS abuse mitigation, but experts need to fix problems by being clear. People are worried about understanding why complex systems make choices because of the "black-box" part. It is important to understand how AI models make certain decisions. This helps to build trust and ensures that people are responsible for them. There are difficulties in making things clear, such as needing to write down what data was used for training, telling others about the things that affect choices, and explaining how models change to face new risks. It is still hard to find the right balance between the complexity needed for good threat detection and the openness needed for blame.
+The introduction of AI and machine learning technologies into DNS abuse mitigation marks the beginning of an innovative era focused on the proactive detection and neutralisation of cyber threats \cite{tariq2023critical}.  This approach facilitates the rapid analysis of large datasets to uncover patterns indicative of malicious intent in DNS queries. For example, machine learning techniques have been highly effective in analysing DNS queries to classify domain names, significantly improving the detection of domains linked to malware \cite{LiMaliciousDomainDetection2020}. Furthermore, the application of neural network models, such as the Extreme Learning Machine (ELM), has achieved accuracy rates above 95\% in identifying malicious domains, demonstrating the  predictive power of AI in combating cyber threats \cite{ZouDNSGraphMining2015}. Additionally, the technique of DNS graph mining has illuminated AI's potential within cybersecurity frameworks, with methodologies like belief propagation algorithms achieving high precision in identifying infected hosts and malicious domains. These examples underscore the vital role of AI and machine learning in bolstering DNS abuse, paving new avenues for early detection and swift mitigation of potential abuses. However, the complexity of AI models and the demand for transparency in their decision-making processes present ongoing challenges. Integrating AI into DNS abuse mitigation strategies improves security measures, but also requires careful attention to ethical considerations and the establishment of governance frameworks \cite{AntonakakisMalwareDomainsUpperDNS2011}. AI and machine learning can help improve DNS abuse mitigation, but experts must be clear about the problem.  It is important to understand how AI models make certain decisions. This helps to build trust and ensures that people are responsible for them. There are difficulties in making things clear, such as needing to write down what data was used for training, telling others about the things that affect choices, and explaining how models change to face new risks. It is still hard to find the right balance between the complexity needed for good threat detection and the openness needed for blame.
 
-In summary, leveraging AI and machine learning for DNS abuse mitigation signifies a transformative shift in cybersecurity practices. The strategic application of these technologies substantially strengthens the DNS system's defence against a wide array of cyber threats, marking a significant advancement in the ongoing battle against digital abuse.
+In summary,AI and ML are valuable in protecting against rapidly evolving cyber threats and a wide range of devices, including those in the IoT. However, their predictive accuracy can be limited by the quality and quantity of data used for training. Sophisticated attacks designed to evade detection algorithms present a notable challenge, underscoring the importance of continuous learning and adaptation in AI/ML models to maintain their effectiveness.
+
 
 \section{Case Studies and Real-World Applications}
 
 In recent years, technology has become so widespread that we have witnessed an unmatched number and complexity of cyber threats. A significant vulnerability that can be exploited is the DNS domain name system, a critical part of the internet infrastructure that translates human-readable names into IP addresses \cite{kumari2021sac115}. 
 
 \begin{enumerate} 
-\item\textbf{ Case Study 1: XYZ Corporation }
 
-In this case, the study completely analyses one specific company, XYZ Corporation, as an example of DNS abuse in the real-world environment and analyze all details through figures, graphs, and charts. This abuse of DNS took place as a prolonged campaign against XYZ Corporation, a multinational technology conglomerate \cite{mohammed2021network}. Attackers used weaknesses in the company's DNS infrastructure to perform various malicious activities, including domain hijacking, DNS tunneling, and DDoS attacks. A timeline graph was also prepared to see the scale of abuse and how attacks progressed with each event that occurred in the organisation, as shown in Figure \ref{fig:figureOne}.
-
-\captionsetup{font= footnotesize}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{background/XYZ1.png}
-\caption{Timeline of DNS Abuse Attacks on XYZ Corporation}
-\label{fig:figureOne}
-\end{figure}
-
-The relationship between this correlation raises questions about the attackers' understanding of the inner workings of the firm, as well as insider threats. A closer analysis of the DNS abuse types employed by such offenders revealed that domain hijacking was common \cite{bayer2022study}. Figure \ref{fig:figureTwo} shows how various DNS abuse techniques were used in the case of XYZ Corporation, and domain hijacking was significantly higher than all other combined methods.
-\captionsetup{font= footnotesize}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{background/XYZ2.png}
-\caption{Distribution of DNS Abuse Techniques Against XYZ Corporation}
-\label{fig:figureTwo}
-\end{figure}
-
-There is a domain hijacking technique where attackers may effectively take control over a company without authorisation; domain hijacking is one of the major threats to the organisations that are affected. The figure shows that strong security is key to preventing unauthorised access to domain registration accounts; favouring multi-factor authentication is the way to keep these attacks away \cite{paz2020cyber}. This case study sheds light on the subtleties of DNS abuse as it targeted XYZ Corporation, showing the importance of understanding and dealing with an unpredictable cyber threat environment. Figures, graphs, and graphs serve to illustrate safeguard attack procedures and give credence to the notion that an all-encompassing cybersecurity strategy is integral to mitigating DNS abuse in the digital landscape of the networked world of our day.
-
-
-\item\textbf{ Case Study 2: OilRig DNS Tunneling Attack }
+\item\textbf{ Case Study 1: OilRig DNS Tunneling Attack }
 
 The case of OilRig reflects the use of custom DNS Tunneling protocols for command and control (C2) operations, thus making it dual use in nature, both in normal operation and on a fallback communication channel \cite{paloaltonetworks2021dnsattacks}.The xHunt campaign \cite{unit42_xhunt_2021} followed a similar trend of including Snugy backdoor implants in Middle Eastern government organization targets and keeping track of them using DNS tunneling for communication with its C2.  Which are examples that underscore the strategic use by adversaries of DNS tunneling techniques for stealthiness and resilience within the context of their operations  \cite{unit42_2021}.
 
@@ -518,13 +504,13 @@ The case of OilRig reflects the use of custom DNS Tunneling protocols for comman
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{background/DNSTuu.png}
-    \caption{DNS tunneling communication between the attacker's command and control (C2) infrastructure and the victim's network}
+    \caption{DNS tunneling communication between the attacker's command and control (C2) infrastructure and the victim's network.}
     \label{fig:figTen}
 \end{figure}
 
 
 
-\item\textbf{ Case Study 3: SUNBURST Use of DGAs}
+\item\textbf{ Case Study 2: SUNBURST Use of DGAs}
 
 SUNBURST backdoor associated with the breach of the SolarWinds supply chain represents a case in which the use of DGAs is critical, if not only, to conceal communications and system details \cite{paloaltonetworks2021dnsattacks}. The SUNBURST backdoor applies the deep use of DNS manipulation for evasion purposes and subsequent attack stages by encoding basic system identifiers and the usage of DGAs for C2 check-ins \cite{unit42_solarstorm_2021}.
 
@@ -532,23 +518,23 @@ SUNBURST backdoor associated with the breach of the SolarWinds supply chain repr
 \begin{figure}[H] 
     \centering
     \includegraphics[width=0.8\linewidth]{background/SUNDNS.png}
-    \caption{SUNBURST backdoor's utilization of DGAs and its associated components}
+    \caption{SUNBURST backdoor's utilization of DGAs and its associated components.}
     \label{fig:figEleven}
 \end{figure}
 
-\item\textbf{ Case Study 4: Fast Flux Techniques}
+\item\textbf{ Case Study 3: Fast Flux Techniques}
 The presence of several C2 domains related to the Smoke Loader malware family using Fast Flux techniques only further underscores the difficulties associated with the tracking and eradication of DNS-enabled threats. \cite{paloaltonetworks2021dnsattacks}.The major takeaway in the rapid rotation of IP addresses of this method points to the dynamism of strategies used in communications by malware, thus improving the means of defence by cybersecurity \cite{unit42_fastflux_2021}.
 
 \captionsetup{font= footnotesize}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{background/FastFluDNS.png}
-    \caption{The usage of Fast Flux techniques by the Smoke Loader malware family for dynamic C2 domain communications}
+    \caption{The usage of Fast Flux techniques by the Smoke Loader malware family for dynamic C2 domain communications.}
     \label{fig:figTweleve}
 \end{figure}
 
 
-\item\textbf{Case Study 5:  Malicious Newly Registered Domains (NRDs)}
+\item\textbf{Case Study 4:  Malicious Newly Registered Domains (NRDs)}
 
 The malicious NRDs opportunistically crafted in the milieu of the pandemic expose how threat actors leverage current events for engineering targeted attacks. \cite{paloaltonetworks2021dnsattacks} From domains that mirror COVID-19 information resources to those faking government relief programmes, the evolution of such attacks reflects a calculated approach to exploiting public interest and vulnerabilities  \cite{unit42_covid19_phishing_2021} .
 
@@ -562,7 +548,7 @@ The malicious NRDs opportunistically crafted in the milieu of the pandemic expos
 
 \end{enumerate}
 
-In the coronavirus pandemic, too, phishing attacks changed to initially targeting PPE and testing kits, then turning to government stimulus programs, and subsequently enlisting vaccine distribution. Several of them, in fact, employed sophisticated tools like MFA pretending as US Federal Trade Commission and brands such as Pfizer and BioNTech, to steal credentials. where it emphasized that there was a 530\% surge in vaccine-related phishing attempts and a 189\% hike in attacks on pharmacies and hospitals from December last year to February this year. Advice was given for individuals and organisations that include being cautious in email and website dealings, stepping up security awareness training, as well as adopting multi-factor authentication.
+In the coronavirus pandemic, too, phishing attacks changed to initially targeting PPE and testing kits, then turning to government stimulus programs, and subsequently enlisting vaccine distribution. Several of them, in fact, employed sophisticated tools such as MFA pretending as US Federal Trade Commission and brands such as Pfizer and BioNTech, to steal credentials. where it emphasized that there was a 530\% surge in vaccine-related phishing attempts and a 189\% hike in attacks on pharmacies and hospitals from December last year to February this year. Advice was given to individuals and organisations that include being cautious in email and website dealings, advancing security awareness training, as well as adopting multifactor authentication.
 
 Since January 2020, a total of 69,950 COVID-19 related phishing URLs have been received, of which 33,447 are specifically dedicated to COVID-19. The data has been normalised in such a way that the peak of each topic is at 100\%. The results showed much steadier phishing when it came to topics such as pharmaceuticals and virtual meeting platforms (e.g., Zoom) with vaccines and testing showing sharper rises and falls in the attention of scammers.
 
@@ -598,25 +584,22 @@ This thus clearly indicates a situation whereby the attackers set up websites fr
 
 \section{Challenges \& Future Directions}
 
-Mitigating DNS abuse demands an immediate stop to the escalation and rapid evolution of cyber threats, underscoring the critical need for swift global cooperation and the implementation of advanced technology. The key challenge is to achieve a fine balance between reducing false positives and accurately identifying genuine threats, while simultaneously advancing beyond the limitations of outdated technologies \cite{pour2023comprehensive}. The future of this domain largely depends on researchers' ability to enhance technological solutions, particularly focusing on the improvement of AI algorithms for deeper analysis of DNS traffic patterns. This opens a promising pathway for the creation and application of locally developed tools, providing innovative strategies to strengthen DNS defences. The ability to navigate the complex landscape of DNS abuse will require stakeholders to be agile in responding to emerging threats and developing novel solutions. The collective push towards the evolution of technology and methodologies will play a pivotal role in shaping effective DNS abuse management strategies in the years ahead.
+Mitigating DNS abuse demands an immediate stop to the rapid evolution of cyber threats, underscoring the critical need for swift global cooperation and the implementation of advanced technology. The key challenge is to achieve a fine balance between reducing false positives and accurately identifying genuine threats, while simultaneously advancing beyond the limitations of outdated technologies \cite{pour2023comprehensive}. The future of this domain largely depends on researchers' ability to enhance technological solutions, particularly focusing on the improvement of AI algorithms for deeper analysis of DNS traffic patterns. This opens a promising pathway for the creation and application of locally developed tools, providing innovative strategies to strengthen DNS defences. The ability to navigate the complex landscape of DNS abuse will require stakeholders to be agile in responding to emerging threats and developing novel solutions. The collective push towards the evolution of technology and methodologies will play a pivotal role in shaping effective DNS abuse management strategies in the years ahead.
 
 
 \subsection{Identification of Current Challenges}
 
-Mitigating DNS abuse involves developing strategies that should be not only proactive but kept constantly up to date to handle the changing environment of cyber threats. The fluid nature of these threats means updating current protocols as well as developing new defence methods. With cybercriminals constantly revising their methods of capitalising on the vulnerability of DNS, it has become imperative for the cybersecurity industry to continuously update its defence mechanisms \cite{bhattacharya2023dns}. Being a global phenomenon, the internet, and hence DNS abuse being transnational in character, there is no other alternative than international cooperation. The effectiveness of the DNS abuse management would be based on collaborative work across national borders, where experts in different geographical areas come together to share their knowledge and resources \cite{altulaihan2022cybersecurity}. Legal and regulatory framework varies in the several jurisdictions, thereby making it difficult to reach a consensus on the regulations, standards, and enforcement action. Another big challenge is that, to mitigate DNS abuse, the requirement for driving down both false positives and negatives is necessary. Balance must be established in such a way that rather strict measures may reduce user experience, while, at the same time, being liberal might bring less detection of malicious activities . The cybersecurity community must continue to advance its detection and response capabilities, due to the increasing levels of sophistication used by DNS abusers. This will keep the security and integrity of the DNS system in good shape, hence protecting this vital part of internet infrastructure.
+Mitigating DNS abuse involves developing strategies that should be not only proactive but kept constantly up to date to handle the changing environment of cyber threats. The fluid nature of these threats means updating current protocols as well as developing new defence methods. With bad actors constantly reviewing their methods to capitalise on DNS vulnerability, it has become imperative that the cybersecurity industry continuously updates its defence mechanisms \cite{bhattacharya2023dns}. Being a global phenomenon, the internet and hence DNS abuse being transnational in character, there is no other alternative than international cooperation. The effectiveness of the DNS abuse management would be based on collaborative work across national borders, where experts in different geographical areas come together to share their knowledge and resources \cite{altulaihan2022cybersecurity}. Legal and regulatory framework varies in the several jurisdictions, thereby making it difficult to reach a consensus on the regulations, standards, and enforcement action. Another big challenge is that, to mitigate DNS abuse, the requirement for driving down both false positives and negatives is necessary. Balance must be established in such a way that rather strict measures may reduce user experience, while, at the same time, being liberal might bring less detection of malicious activities. The cybersecurity community must continue to advance its detection and response capabilities, due to the increasing levels of sophistication used by DNS abusers. This will keep the security and integrity of the DNS system in good shape, thus protecting this vital part of the internet infrastructure.
 
 \subsection{Discussion on Future Research Directions and Technologies}
 
-When planning to mitigate the DNS abuse in the future, discussing new research ideas and upcoming technology is important. The constantly changing state of Internet threats requires us to continually create new things. This is so people can stay one step ahead of the bad people. Future work on DNS abuse needs to start by building better tools. These can help to address how bad guys on the Internet keep changing their tricks \cite{bovenzi2023blockchain}. This means that we need to look at more complex AI and machine learning tools that can understand the details of web traffic, which will make the results more accurate and stop wrong signals from being sent. Moreover, there is a rising need to use blockchain tech to make domain registration safer and stop any bad or harmful changes, as it provides decentralised domain name resolution unlike traditional DNS systems, which rely on a central authority to resolve domain names in which DNS operates on a network of distributed nodes in which each node has a copy of the entire ledger, so it can independently verify and resolve domain name requests, which not only makes the system more resilient to attacks, but also prevents censorship and control by a single entity. \cite{FinanceStrategists2023BlockchainDNS}.  People should have easy methods to report DNS abuse. This will make sure everyone knows about dangers \cite{gu2021iot}. Working together in the world is very important because computer dangers go beyond borders. 
-
+At the ICANN77 meeting, developments on mitigating DNS abuse were presented. These included the drafting of changes mandating that registrars and registries respond to abuse notifications, which contributed to a decline in global abuse levels after Freenom's legal response. While the ccNSO's Domain Abuse Steering Committee argued for a proactive mitigation strategy, the gNSO's analysis found minimal abuse rates in EU ccTLDs, which it attributed to market maturity and non-profit models \cite{VanRoste2023}. In order to improve domain security and enable international cooperation against changing cyberthreats, future initiatives will focus on creating cutting-edge tools and using technology like artificial intelligence and machine learning. This means that we need to look at more complex AI and machine learning tools that can understand the details of web traffic, which will make the results more accurate and stop wrong signals from being sent \cite{ISG2023}.
 
 \section{Summary of Findings}
 
-The study on DNS abuse looked at current ways, checked new trends, talked about tech advancements, and explored real examples in life. The search for ways in the plans to mitigate DNS abuse showed the value of clear communication and honesty in building trust with the community. People are finding new ways to abuse the DNS system. Researchers have to keep making new things, so they don't get caught by changing dangers. Improvements in technology, especially with artificial intelligence and learning machines, showed how automation can make it easier to spot dangers. But it also made things harder to understand, and this needs careful attention. Examples from real life showed what did and did not work in making DNS abuse clearer. These provided essential advice for the business. Issues were found with making things clear and stopping wrong actions. This shows how important it is to continue learning and working with others. In the future, discussing issues and future plans will show the need for creative studies, help from other nations, and common ways to share information. 
+Research on the transparency of DNS abuse mitigation emphasises how threats are always changing and how mitigation techniques must evolve as well. It highlights how important community involvement and transparency are to fostering trust. While technological advancements especially in AI and machine learning are essential for threat detection, their implementation must be carefully considered. Practical examples provide  insights into the efficacy of various strategies. Maintaining a balance between new mitigation measures and effective teamwork and communication is a constant issue. In order to effectively address DNS abuse, future efforts should concentrate on utilising technology, international cooperation, and standardised information exchange.
 
-\section{Conclusion}
 
-DNS abuse continues to be a big issue. Present plans, while sometimes useful, require constant adjustment and getting better. It's key to have solutions for fixing issues available. This helps to build trust and work well with those involved. Abusing DNS in new ways brings new issues that require clever solutions. AI and machine learning can help find things, but we need to show how they work better so that people can keep bad people under control. Learning from real-life situations teaches us a lot about good and bad ways of being open. This helps us create the best methods for our business. There are still issues with showing and stopping DNS abuse while trying to find new ways to mitigate this DNS abuse. People need to continue learning and working as a team. People should focus on better technology, joining forces with other nations, and using common methods of sharing information in the future. As the internet changes, we must stay active and work together to stay ahead of bad people who want to hurt us. 
 
 
 
