@@ -6,7 +6,7 @@ In this chapter, I will focus on evaluating and discussing two forms of DNS abus
 \section{Confusable Domains}
 \subsection{Identification \& Examples of Targeted Domains}
 
-The choice of such domains to target and outsource depends on many factors, each with its implications on business strategy, marketing, and law enforcement. The selection of these domains hence matters a lot in creating potential conflict, especially those related to existing trademarks. Understanding these selection criteria is very important in trying to negotiate the hurdles of the digital market and in protecting rights through intellectual property. To navigate these complexities effectively, it is essential to consider several key factors. 
+The choice of such domains to target and outsource depends on many factors, each with its implications on business strategy, marketing, and law enforcement. The selection of these domains hence matters a lot in creating potential conflict, especially those related to existing trademarks. Understanding these selection criteria is very important in trying to negotiate the hurdles of the digital market and in protecting rights through intellectual property.
 
 \begin{itemize}
   \item \textbf{Commercial Appeal:} The domains with commercial appeal attract traffic and can generate income. They are short and memorable and relate to popular products or services, sometimes leading to ownership arguments \cite{Li2002ConflictDomainTrademark}.
@@ -64,7 +64,7 @@ Non-IDNs Mitigation Techniques : Strategies focus on identifying and mitigating 
 
 \begin{enumerate}
   \item Registry-Level Measures: Domain registries can implement checks to prevent the registration of domains similar to existing trademarks or brand names, using algorithms to detect variations and misspellings closely similar to protected names \cite{WTR2020}.
-  \item Trademark Protection Programmes: Services such as the Trademark Clearinghouse (TMCH) offer mechanisms for trademark owners to protect their rights by receiving notifications when someone attempts to register a domain that matches their trademark \cite{ICANNTMCH}.
+  \item Trademark Protection Programmes: Trademark Clearinghouse (TMCH) offers mechanisms for trademark owners to protect their rights by receiving notifications when someone attempts to register a domain that matches their trademark \cite{ICANNTMCH}.
   \item Automated Monitoring and Reporting: Automated systems can continuously monitor domain registrations for names that closely resemble known trademarks or brand names, allowing rapid detection and legal action against infringers \cite{TMCH2023}.
 \end{enumerate}
 
@@ -121,13 +121,14 @@ In summary, transparency in all these mitigation techniques not only builds trus
 
  \begin{enumerate}
   \item Automated Monitoring and Reporting: Feasible; Technology exists to automate monitoring, even though the refinement of algorithms to decrease false positives and negatives from human review can probably not be undertaken with existing resources.
-  \item  Punycode Registration Monitoring: Feasible; This option is feasible and will mainly require the use of existing technology and cooperation that could be initiated with little difficulty between relevant stakeholders.
+  \item  Punycode Registration Monitoring: Feasible; It will mainly require the use of existing technology and cooperation that could be initiated with little difficulty between stakeholders.
+   \item Cloudflare's Zero Trust Services Approach: Feasible; since well-architected infrastructure and broad adoption have made Cloudflare zero-trust rules simple and effective to deploy, with a balance of security and operational efficiency without seismic root and branch changes.
+  \item IDN Handling of Google Chrome and Browser-Level Defences: Feasible; Given that Chrome today has an enormous user base and that the groundwork for stopping homograph attacks already exists, it stands to reason that a solution is reasonably possible, meaning not too difficult, within a set timeline, and within the lifespan of any other typical software product.
   \item Blacklisting and Threat Intelligence Sharing: Moderately Feasible; Since agreement could be reached on shared platforms and protocols, but they imply strong cooperation and trust among such diverse entities, which is unlikely to be developed fast.
-  \item Registry-Level Measures: Not Feasible; this would require very heavy coordination and agreement on standards across diverse jurisdictions and registries, very complex in nature and long drawn.
   \item Trademark Protection Programmes: Moderately Feasible; They are well-functioning processes under such adequate structures like TMCH and can be learnt while proceeding with experience, but likely to face legal and operational issues.
   \item  Browser-Level Defences: Not Feasible; While this is technically feasible, it seems rather infeasible soon that user practices will become uniform across all web browsers and that all users will be well trained in various security practices.
-  \item Cloudflare's Zero Trust Services Approach: Feasible; since well-architected infrastructure and broad adoption have made Cloudflare zero-trust rules simple and effective to deploy, with a balance of security and operational efficiency without seismic root and branch changes.
-  \item IDN Handling of Google Chrome and Browser-Level Defences: Feasible; Given that Chrome today has an enormous user base and that the groundwork for stopping homograph attacks already exists, it stands to reason that a solution is reasonably possible, meaning not too difficult, within a set timeline, and within the lifespan of any other typical software product.
+  \item Registry-Level Measures: Not Feasible; this would require very heavy coordination and agreement on standards across diverse jurisdictions and registries.
+ 
 
   
 \end{enumerate}
@@ -139,14 +140,14 @@ In summary, transparency in all these mitigation techniques not only builds trus
 Phishing, a cybercrime in which targets are contacted by email, telephone, or text message by someone posing as a legitimate institution to lure individuals into providing sensitive data, has become increasingly sophisticated. Two notable examples include:
 
 \begin{enumerate}
-    \item InterMed and Spectrum Healthcare Partners fell for a major phishing attack on 44,000 patient data. The InterMed breach involved clinical information for 33,000 patients, specifically names, birthdates, insurance and some social security numbers, from 4 to 10 September. In another case, Central Maine Orthopaedics is reported to have breached 11,308 of their patient record files by unauthorised access to emails that contain personal and clinical details. It is such an incident that really makes it very paramount to strengthen email security and at the same time to provide professional training on data protection \cite{HIPAAJournal2020Phishing} .
-    \item Google and Facebook were almost fooled by a group of phishers into a \$100 million sophisticated scam in which they were imitating legitimate invoices from the suppliers. The case is one among many that have caused the vulnerability of technology firms to social engineering and the need for reinforced security, employee training, and verification processes to combat ever evolving cyber threats \cite{CNBC2019Phishing}.
+    \item InterMed and Spectrum Healthcare Partners fell for a major phishing attack on 44,000 patient data. The InterMed breach involved clinical information for 33,000 patients, specifically names, birthdates, insurance, and some social security numbers, from 4 to 10 September. In another case, Central Maine Orthopaedics is reported to have breached 11,308 of their patient record files by unauthorised access to emails that contain personal and clinical details. It is such an incident that really makes it very paramount to strengthen email security and at the same time to provide professional training on data protection \cite{HIPAAJournal2020Phishing} .
+    \item Google and Facebook were almost fooled by a group of phishers into a \$100 million sophisticated scam in which they were imitating legitimate invoices from the suppliers. The case is one among many that have caused the vulnerability of technology firms to social engineering and the need for reinforced security, employee training, and verification processes to combat ever-changing cyber threats \cite{CNBC2019Phishing}.
 \end{enumerate}
 
 \subsection{Real-life Mitigations} 
 
 \begin{itemize}
-    \item \textbf{Employee Awareness \& Training :} Chelsea Technologies has pointed out the importance of training employees to look for spoofing and attachments that are partd of phishing methods. Training employees in the way phishers operate is of paramount importance to keeping sensitive information safe \cite{DigitalGuardianPhishingPrevention}.
+    \item \textbf{Employee Awareness \& Training :} Chelsea Technologies has pointed out the importance of training employees to look for spoofing and attachments that are part of phishing methods. Training employees in the way phishers operate is of paramount importance to keeping sensitive information safe \cite{DigitalGuardianPhishingPrevention}.
 
      \item \textbf{Comprehensive Security Measures :} LaptopMD points out that the risk of ignorant searches requires the formulation of policies that make it difficult to land on some sites. In addition to this, the awareness of phisher techniques and browsing issues by employees will greatly save them from being caught in cases of phishing \cite{DigitalGuardianPhishingPrevention}.
      
@@ -194,6 +195,7 @@ In addition, Phishlimiter \cite{Chin2018PhishLimiter} , which is a new phishing 
 \subsection{Transparency in Mitigation Efforts}
 
 Transparency in cybersecurity, including phishing mitigation techniques, refers to how openly and clearly methods, policies, and procedures are communicated, understood, and accessible to all involved stakeholders, particularly employees. Here is how transparency can be applied to each of the mitigation techniques described:
+\vspace{30px}
 
 
 \begin{itemize}
@@ -201,7 +203,7 @@ Transparency in cybersecurity, including phishing mitigation techniques, refers 
     
     Communication: This will consist of clear informing the employees about the kind of threat and how it could mean for the organisation and their role in these defences.
     
-Accessibility: Make people aware that the repository exists, or make the resources easily available for reference. This would include an intranet site or a repository where people could easily access the trends in phishing on the latest and how to respond.
+    Accessibility: Make people aware that the repository exists, or make the resources easily available for reference. This would include an intranet site or a repository where people could easily access the trends in phishing on the latest and how to respond.
 
 
      \item \textbf{Comprehensive Security Measures: }
@@ -209,35 +211,35 @@ Accessibility: Make people aware that the repository exists, or make the resourc
      Policy Publishing: All available policies, especially those related to web browsing, email attachments, and the use of security tools, will be published openly to let employees know about them.
      
 
-Changes and Updates: Introduce the workforce to changes relating to security measures and how such changes are beneficial and serve as a cover against new hazards.
+    Changes and Updates: Introduce the workforce to changes relating to security measures and how such changes are beneficial and serve as a cover against new hazards.
 
      \item \textbf{Technological \& Human Factors: } 
      
      Tool Transparency: Clearly state the tool and the reason for its being in place for security (e.g., spam filters, two-factor authentication), and its work on subduing phishing. 
      
-User Control and Visibility: Attempt to give users some form of control or visibility over the security tools through which their work could be affected. Feedback from a blocked phishing attempt could, for example, help to reinforce the training.
+    User Control and Visibility: Attempt to give users some form of control or visibility over the security tools through which their work could be affected. Feedback from a blocked phishing attempt could, for example, help to reinforce the training.
 
      \item \textbf{Awareness against unsolicited emails:  } 
      
      Open Communication on Threats: Constant updates on new phishing techniques and any other notable attacks are discussed among the industry to be updated.
      
-Best practices: Develop best practices for easy identification and to be visible on how to catch and react to phishing attacks, with graphic examples or checklists.
+    Best practices: Develop best practices for easy identification and to be visible on how to catch and react to phishing attacks, with graphic examples or checklists.
 
-\item \textbf{Email Filters:} 
+    \item \textbf{Email Filters:} 
 
-The effectiveness of email filtering technology in mitigating phishing attempts is greatly enhanced by transparency in its operational parameters. This helps to make the user understand, starting from analysing the reputation of the sender to the various steps related to decision making of phishing keywords. Continuous improvement builds trust, and perhaps some community members might even wish to provide feedback on how to improve the performance of the filters or report inaccuracies to the filter system regarding combat against the threats of phishing.
+    The effectiveness of email filtering technology in mitigating phishing attempts is greatly enhanced by transparency in its operational parameters. This helps to make the user understand, starting from analysing the reputation of the sender to the various steps related to decision making of phishing keywords. Continuous improvement builds trust, and perhaps some community members might even wish to provide feedback on how to improve the performance of the filters or report inaccuracies to the filter system regarding combat against the threats of phishing.
 
-\item \textbf{Domain Blocking:} 
+    \item \textbf{Domain Blocking:} 
 
-Such measures may include transparency in the criteria of the blacklisting and regular updates in relation to the access to the known phishing sites inside the organisation's network. This implies also setting a clear means for reporting unlisted phishing sites and correcting false positives by stakeholders. Education for users and IT professionals about these measures fosters a culture of cybersecurity.
+    Such measures may include transparency in the criteria of the blacklisting and regular updates in relation to the access to the known phishing sites inside the organisation's network. This implies also setting a clear means for reporting unlisted phishing sites and correcting false positives by stakeholders. Education for users and IT professionals about these measures fosters a culture of cybersecurity.
 
-\item \textbf{Situational Crime Prevention Approach (SCP):}
+    \item \textbf{Situational Crime Prevention Approach (SCP):}
 
-The major advantage of the SCP approach is the clear disclosure of both the applied methodology and the results obtained. This is through the explanation of the analysis of the criminal's thought and environmental factors aiding phishing, whereby the stakeholders are enlightened and, therefore, they make efforts to reduce it. The paper discusses how increasing the effort and risk to the attacker, while lowering the rewards, deters crime. Talking with the community helps them continue to improve and adopt ways to make an organisation's security environment dynamic and evolving.
+    The major advantage of the SCP approach is the clear disclosure of both the applied methodology and the results obtained. This is through the explanation of the analysis of the criminal's thought and environmental factors aiding phishing, whereby the stakeholders are enlightened and, therefore, they make efforts to reduce it. The paper discusses how increasing the effort and risk to the attacker, while lowering the rewards, deters crime. Talking with the community helps them continue to improve and adopt ways to make an organisation's security environment dynamic and evolving.
 
-\item \textbf{Phishlimiter:}
+    \item \textbf{Phishlimiter:}
 
- The phishing detection system, such as the DPI integrated with SDN, has the ability to make its operation transparent, may increase user confidence, and preserve system functionality. It could emphasise the reliability and credibility of such a system if the criteria and algorithms by which the system determines a potential phishing attack are clearly spelt out. User feedback, which is positive pushing forward when the system fails in an inaccuracy or missed phishing attempt, to refine. Share those metrics around effectiveness of the system, the number of detected and prevented attacks, to show value. This article looks at some of the challenges, future development, and open directions for work that establishes an effort from the community in the field of cybersecurity.
+    The phishing detection system, such as the DPI integrated with SDN, has the ability to make its operation transparent, may increase user confidence, and preserve system functionality. It could emphasise the reliability and credibility of such a system if the criteria and algorithms by which the system determines a potential phishing attack are clearly spelt out. User feedback, which is positive pushing forward when the system fails in an inaccuracy or missed phishing attempt, to refine. Share those metrics around effectiveness of the system, the number of detected and prevented attacks, to show value. This article looks at some of the challenges, future development, and open directions for work that establishes an effort from the community in the field of cybersecurity.
 
 \end{itemize}
 
@@ -275,7 +277,7 @@ This collaboration should be achieved with the DNS registry, the registry, and t
   
 \end{enumerate}
 
-Real-life examples of entities seeking to block the resolution of DNS names used by bad actors for phishing and other malicious activities, especially in connection with public recursive DNS servers, frequently revolve around matters of control, filtering, or securing internet traffic with various kinds of motivation corresponding to such sectors. Some attempted these efforts at the government, corporate, and individual levels. As typical examples that pinpoint those instances, consider the following:
+Real-life examples of entities seeking to block the resolution of DNS names used by bad actors for phishing and other malicious activities, especially in connection with public recursive DNS servers, frequently revolve around matters of control, filtering, or securing internet traffic with various kinds of motivation corresponding to such sectors. Consider the following:
 
 \begin{enumerate}
     \item Governmental Efforts to Block DNS Resolutions : Governments may interfere directly with DNS operation to enforce some censorship or block access to particular types of content. For instance, China uses the Great Firewall for regulation of access to the World Wide Web within their territory, including doing some DNS mismanagement to block unwanted content \cite{XuAlbert2017MediaCensorship}.
@@ -306,8 +308,8 @@ This section lists a number of significant limitations that were observed during
 \begin{enumerate}
     \item Variability in reporting standards: A significant challenge encountered was the lack of uniform standards across DNS infrastructure providers, including registrars and registries, regarding the definition of abuse, the thresholds of action, and the manner in which these actions are reported. Such inconsistency has made efforts to collect and compare the data of different entities hard to piece together into one coherent picture for sensible enforcement of DNS abuse mitigation.This diversity highlights the need for standardised reporting standards by contributing to a fragmented view of abuse management procedures.
 
-    \item Limited Availability of Data: The general lack of transparency reports that are available to the public. Many providers either don't release these reports at all or do so in a way that leaves out important information that has to be thoroughly examined. Due to the restricted breadth of research due to this data availability issue, there may be gaps in our understanding of the entire range of DNS abuse management strategies. One major obstacle to evaluating the efficacy and transparency of the abuse mitigation techniques used by various parties is the lack of data.
-
+    \item Limited Availability of Data: The general lack of transparency reports that are available to the public. Many providers either don't release these reports at all or do so in a way that leaves out important information that has to be thoroughly examined. Due to the restricted breadth of research due to this data availability issue, there may be gaps in our understanding of the entire range of DNS abuse management strategies.
+\vspace{30px}
     \item Reluctance to Share Sensitive Information: Information provided by respondents about abuses and what they do to mitigate them. In general, concerns about privacy, security, and the potential of revealing vulnerabilities to bad actors contribute to this reluctance, which leads to Limiting the capacity of researchers to perform a comprehensive analysis of DNS abuse mitigation strategies.
     
     \item Dynamic Nature of DNS Abuse: The evolving tactics employed by those who abuse DNS are constantly changing, so results can be out of date very fast. It is more difficult to create best practices that are applicable and efficient over time due to this quick change. Because DNS abuse is dynamic, it requires ongoing research and strategy adaptation to stay ahead of new threats.
