@@ -2,7 +2,7 @@
 
 
 
-This chapter focuses on practical implementation with respect to the Domain Legitimacy Checker. The multiviewed approach, along with programming in Python and the web framework in Flask, HTML, CSS, JavaScript, on the side of external APIs, assisted greatly in making a resilient framework for DNS abuse detection and transparency improvement. With these alternatives, I came up with this simple but effective way not just of finding legitimacy in domain names, but also of showing plainly and clearly the various tactics with which bad actors are using in the adoption of confusable domains for phishing and malware distribution, along with other malicious activities to help me with my research. This endeavour embarked on a journey from the idea to execution, focusing on a user-friendly web interface that allows users to quickly identify potentially malicious domains. 
+This chapter focuses on practical implementation with respect to the Domain Legitimacy Checker. The multiviewed approach, along with programming in Python and the web framework in Flask, HTML, CSS, JavaScript, on the side of external APIs, greatly assisted in making a resilient framework for DNS abuse detection and transparency improvement. With these alternatives, a simple but effective method has been developed for determining the legitimacy of domain names, but also of showing plainly and clearly the various tactics with which bad actors are using in the adoption of confusable domains for phishing and malware distribution, along with other malicious activities to help me with my research. This effort embarked on a journey from idea to execution, focusing on a user-friendly web interface that allows users to quickly identify potentially malicious domains. 
 
 \section{System Overview}
 
@@ -17,25 +17,14 @@ The development of Domain Legitimacy Checker was chosen because the system is su
     \label{fig:figfig}
 \end{figure}
 
-\section{Integration} 
-\subsection{Backend Implementation}
+\section{Tools \& Technologies}
 
-The server side : Python on the Flask framework was used for implementing this side. The server works better with a solid web server in case you are time pressed because the learning curve on Flask to make it implement is not that steep. The Flask application is set to work through a series of endpoints, each of which corresponds to a set of functionalities with respect to the system, among which is an endpoint for submitting domains to ascertain the results of their analysis. A request comes into the Flask server, and for any incoming given request, it simply calls the indicated function to handle the process relevant to the request: a process to parse the input data, to start domain checks, or to respond with the check results.
+Domain Legitimacy Checker was built using Python with the usage of its third-party modules for development and to provide ways for integration with systems. The platform was powered by Flask, which is a framework that serves requests using the HTTP protocol. The front-end is developed using HTML5 in the structuring of web content and empowered by CSS3 for styling, while allowing Bootstrap for responsive design for all devices. JavaScript provides web pages with simple, interactive, and dynamic functionality. It has also used libraries such as dnspython for the support of DNS queries, which are key in the lookup of domain registration. The request libraries also connect to external APIs like VirusTotal for the legitimacy analysis of a domain.
 
- API \& library : The Domain Analysis Engine forms the main core within the backend, responsible for DNS abuse detection. This is realised by creating some of the changes that the submitted forms of domain names have so that possibly malicious or confusable counterparts are recognised with the assistance of pattern recognition algorithms. In addition, the development leverages libraries and packages such as "dnspython" and requests to conduct the queries to DNS and "request" APIs with respective libraries. This system communicates with external APIs such as "VirusTotal" in order to perform legitimacy checks, whereby the fact is made up for carrying out thorough analysis and reliable detection of malicious domains.
 
- \begin{figure}[H]
-     \centering
-     \includegraphics[width=1\linewidth]{project/Domain Legitimacy Check Workflow.png}
-     \caption{Domain Legitimacy Checker System Interaction Workflow}
-     \label{fig:figfigfig}
- \end{figure}
+It takes advantage of the scanning powers of VirusTotal API, which has several security engines and site scanners to indicate how safe a domain is. It derives its value from domain security, in contrast to the domain name, with thousands of sources and other indicators. Importantly, domains that are already blacklisted for hosting phishing sites, distributing malware, or participating in suspicious activity should be filtered. The choice of each of the tools and technology used was based on its individual merit, but by their integration, making sure that all the systems combined to achieve the cohesiveness and effectiveness of detecting DNS abuse and transparency.
 
-\subsection{Frontend Implementation}
 
-Web Interface: HTML was used and then styled with CSS, and fine-tuned with Bootstrap, the user interface has responsiveness built in and is very user-friendly for use, regardless of the device that it is being used on. The interface is user-friendly, from submission of the initial domains easily, to displaying results, intending an automatically flowing process designed simple for the layman.
-
-Interactive elements: JavaScript is used to bring in interactivity to most of the pages bringing the interactivity to the web app domain submission pages. These respect real-time, giving feedback even for the submission of domains, for instance, changing the text of the submission button to "Analysing." and avoiding its swarming with submissions. These dynamic elements in the front-end make the process of domain analysis even more visually responsive, which increases users' engagements and trust in how the system processes.
 
 \begin{figure}[H]
     \centering
@@ -44,15 +33,6 @@ Interactive elements: JavaScript is used to bring in interactivity to most of th
     \label{fig:figfigfig}
 \end{figure}
 \newpage
-
-
-\section{Tools \& Technologies}
-
-Domain Legitimacy Checker was built using Python with the usage of its third-party modules for development and to provide ways for integration with systems. The platform was powered by Flask, which is a framework that serves requests using the HTTP protocol. The front-end is developed using HTML5 in the structuring of web content and empowered by CSS3 for styling, while allowing Bootstrap for responsive design for all devices. JavaScript provides web pages with simple, interactive, and dynamic functionality. It has also used libraries such as dnspython for the support of DNS queries, which are key in the lookup of domain registration. The request libraries also connect to external APIs like VirusTotal for the legitimacy analysis of a domain.
-
-
-It takes advantage of the scanning powers of VirusTotal API, which has several security engines and site scanners to indicate how safe a domain is. It derives its value from domain security, in contrast to the domain name, with thousands of sources and other indicators. Importantly, domains that are already blacklisted for hosting phishing sites, distributing malware, or participating in suspicious activity should be filtered. The choice of each of the tools and technology used was based on its individual merit, but by their integration, making sure that all the systems combined to achieve the cohesiveness and effectiveness of detecting DNS abuse and transparency.
-
 
 \section{Visualisations}
 
@@ -104,7 +84,7 @@ If there is any issue, these logs are highly important, for example, in the case
 
 \subsection{Results Display}
 
-The Domain Legitimacy Checker displays the findings in an easy-to-understand style after the completion of the domain legitimacy research. Every domain has an icon next to it; an exclamation point indicates that the domain is possibly harmful and a checkmark indicates that the domain is not malicious. The initial level of result interpretation is this visual feedback, which enables users to assess domain safety rapidly. "365.com and paypal.com" were tested in \ref{fig:images} and clearly show how the programme works when domain names are inserted. 
+The Domain Legitimacy Checker displays the findings in an easy-to-understand style after the completion of the domain legitimacy research. Every domain has an icon next to it; an exclamation point indicates that the domain is possibly harmful and a checkmark indicates that the domain is not malicious. The initial level of result interpretation is this visual feedback, which enables users to assess domain safety rapidly."365.com and paypal.com" were tested in \ref{fig:images} and clearly show how the programme works when domain names are checked. 
 
 \begin{figure}[H]
   \centering
@@ -134,7 +114,7 @@ After the results from the domain check come back, the Domain Legitimacy Checker
     \label{fig:enter-label}
 \end{figure}
 
-This iterative process is another valuable characteristic of the user journey, so it can be continued non-stop right on the search results page. This squarely builds on the design philosophy of the tool, that of making the user capable of doing as many searches in as lean a manner as possible, fostering an environment of proactive web security.
+This iterative process is another characteristic of the user, so it can be continued non-stop right on the search results page. This squarely builds on the design philosophy of the tool, that of making the user capable of doing as many searches in as lean a manner as possible, fostering an environment of proactive web security.
 
 
 
