@@ -1,6 +1,6 @@
 \chapter{Evaluation \& Discussion}
 
-In this chapter, I will focus on evaluating and discussing two forms of DNS abuse, which are confusable domains and phishing due to their popularity among bad actors by testing and validating them. I will dive into real-life examples to illustrate the severity of these threats and examine existing mitigations and techniques used to mitigate them to test how well my project met the objectives. Additionally, I will propose to improve transparency around these mitigation strategies to foster accountability and trust. Through analysis, I will assess the feasibility of implementing such transparency measures by performing an analysis using data and evidence. Finally, I will address the limitations of my work. This comprehensive approach aims to provide information on how to effectively address DNS abuse while promoting transparency in the process. 
+In this chapter, the focus will be on evaluating and discussing two forms of DNS abuse, which are confusable domains and phishing due to their popularity among bad actors by testing and validating them.  The chapter will dive into real-life examples to illustrate the severity of these threats and examine existing mitigations and techniques used to mitigate them, to test how well the project met the objectives. In addition, a proposal will be made to improve the transparency around these mitigation strategies to foster accountability and trust. Through analysis, the feasibility of implementing such transparency measures will be assessed by performing an analysis using data and evidence. Finally, the limitations of the work will be addressed. 
 
 
 \section{Confusable Domains}
@@ -19,9 +19,9 @@ The choice of such domains to target and outsource depends on many factors, each
 \subsection{Real-life examples}
 
 \begin{itemize}
-    \item \textbf{Cybersquatting :} registering domain names that closely resemble trademarks or brands and selling them at exorbitant prices; this also includes advertising to earn money, collecting email, or even jumping to evil websites. One such renowned case was that of Amul, a major dairy company in India, during 2019-2020. Amul had an impersonation case of similar domain registration for purposes of phishing, which lured people into fraudulent schemes like fake distributorship or job opportunities. In the last three years, from 2018 to 2020, this issue forced Amul to issue public notices and take legal action against such misuse of their brand in domain names, impressing the magnitude of legal recourse and awareness of brand protection in its readers \cite{MehtaCybersquatting}.
+    \item \textbf{Cybersquatting :} One such renowned case was that of Amul, a major dairy company in India, during 2019-2020. Amul had an impersonation case of similar domain registration for purposes of phishing, which lured people into fraudulent schemes like fake distributorship or job opportunities. In the last three years, from 2018 to 2020, this issue forced Amul to issue public notices and take legal action against such misuse of their brand in domain names, impressing the magnitude of legal recourse and the awareness of brand protection in its readers \cite{MehtaCybersquatting}.
     
-    \item \textbf{Typosquatting- URL hijacking :} This involves registering domain typographical errors for well-known domains so that the traffic from users making URL entry mistakes goes to them. For example, "goggle.com" replaces "google.com," which leads to a site with an abundance of pop-ups and ads, most likely leading to malware infections from phishing or other malicious activity emanating from exploiting these errors \cite{SplunkTyposquatting}. One of the US healthcare providers, Elara Caring, gives an illustrative example of a cyberattack it encountered in December 2020: as a result, the following breaches in healthcare cybersecurity were defined: unauthorised access to email accounts of staff members. The breach, which lasted for a week, underscores the need for an improved incident response \cite{PandaSecurityPhishing}.
+    \item \textbf{Typosquatting :} One of the US healthcare providers, Elara Caring, gives an illustrative example of a cyberattack it encountered in December 2020: as a result, the following breaches in healthcare cybersecurity were defined: unauthorised access to email accounts of staff members. The breach, which lasted for a week, underscores the need for an improved incident response \cite{PandaSecurityPhishing}.
     
      \item \textbf{Reverse Domain Name Hijacking  :} is the act of trademark owners trying to take a domain away from its rightful holder based on the claim of trademark rights, considering that he holds a bona fide registration over the said domain. It may also be described as the use of legal or dispute resolution mechanisms to try to force people from their domains \cite{Sun2006DomainTrademarkConflict}.  An RDNH was claimed in a UDRP action against "groovle.com," in which the domain was purported to be too close to Google's trademark. However, since the domain was used for another search engine, it was deemed legitimately used and did not violate Google's trademark or be registered in bad faith \cite{Singh2011ReverseDomainHijacking}.
 \end{itemize}
@@ -30,11 +30,7 @@ The choice of such domains to target and outsource depends on many factors, each
 \subsection {Homograph attacks} 
 
 
-The risk of continued homograph attacks is in using characters that look similar and thus mimic trusted domain names, such as using a lowercase "l" (el) to look like an uppercase "I" (eye) in the name "paypal.com" vs. "paypaI.com". The introduction of International Domain Names has only expanded the scope of such attacks, yet their prevalence is less. Still, the growing trend of more and more phishing attacks and how easy it is to fool users by taking them to fake sites require eternal vigilance. As a result of a new study, "Cutting through the confusion" \cite{holgers2006homograph}, it is going to reveal the scale and potential threat to homograph attacks, such as visual similarity between characters from different scripts, like Cyrillic or Greek, which is displayed in punycode in browsers, when attackers register domains that are visually similar to legitimate ones. This can be summarised in the table below, showing possible and actual registrations of such deceptive domains; hence, bringing out the difference between potential and actual use of the deceptive domain. For example, the domain "yahoo.com" had more than 5000 potential homograph variants, with only two actually registered, and "google.com" had a thousand possibilities, with four actual registrations.This is indicative of the importance of developing early preventive development and raising awareness of the risk from homograph attacks, as it sets into a very necessary chain of understanding mechanics and scope of homographs prevalence.
-
-This table will be added in order to clearly show, by means of a graphic illustration, the scope and scale of homograph attacks, which point to the potential risks that these attacks could pose to online security and the awareness and mitigation strategies that need to be put in place for protecting internet users from such deceptive practices. Its noteworthy contribution will be added to the body of knowledge about how homograph attacks are leveraged and their prevalence across various high profile domains.
-
-
+The risk of continued homograph attacks is in using characters that look similar and thus mimic trusted domain names, such as using a lowercase "l" (el) to look like an uppercase "I" (eye) in the name "paypal.com" vs. "paypaI.com". The introduction of International Domain Names has only expanded the scope of such attacks, yet their prevalence is less. Still, the growing trend of more and more phishing attacks and how easy it is to fool users by taking them to fake sites require eternal vigilance. As a result of a new study, "Cutting through the confusion" \cite{holgers2006homograph}, it is going to reveal the scale and potential threat to homograph attacks, such as visual similarity between characters from different scripts, like Cyrillic or Greek, which is displayed in punycode in browsers, when attackers register domains that are visually similar to legitimate ones. This can be summarised in the table below, showing possible and actual registrations of such deceptive domains; hence, bringing out the difference between potential and actual use of the deceptive domain. For example, the domain "yahoo.com" had more than 5000 potential homograph variants, with only two actually registered, and "google.com" had a thousand possibilities, with four actual registrations.This is indicative of the importance of developing early preventive development and raising awareness of the risk from homograph attacks, as it sets into a very necessary chain of understanding mechanics and scope of homographs prevalence. Figure \ref{fig:figureAlot1} clearly shows, by means of a graphic illustration, the scope and scale of homograph attacks, which point to the potential risks that these attacks could pose to online security and the awareness and mitigation strategies that need to be implemented to protect Internet users from such deceptive practices. 
 
 \captionsetup{font= footnotesize}
 \begin{figure}[H]
@@ -52,7 +48,7 @@ The following scenarios are examples of real-life confusable domain mitigations 
 \begin{itemize}
     \item \textbf{Cloudflare's Zero Trust Services Approach :} The Cloudflare Zero Trust Services stops the domain used to mimic the real domain by equipping businesses with anti-phishing protection through Cloudflare Gateway. This protects corporate networks from phishing, using the trust element of well-known brands \cite{Cloudflare2023}. This is initiated in the system when making the very first query to any domain through a DNS resolver of 1.1.1.1, which in turn initiates a fuzzy matching protocol for analysis and comparison with a database of potential phishing domains. This should issue alerts on domains that are similar to those of legitimate brands, hence easily detecting them promptly and for quick response. Cloudflare enables monitoring 24/7 in real time with historical analysis, offering security teams the alert of domain matching certain patterns, hence being suspected, for fast review and action if the domain has shown up within 30 days. Cloudflare further supports with criteria to specify the corresponding investigation in .json, based on given domains or patterns, and may be subject to security risks.
 
-     \item \textbf{IDN Handling of Google Chrome : }Google Chrome enforces an IDN (Internationalised Domain Names) policy to determine in which Unicode or punycode form a domain label should be displayed. The domain label is tested to determine whether it has mixed script, invisible characters, or visually confusable characters, and whether it is actually validly converted to Unicode. For instance, domains containing characters of different scripts, or those that are clearly identified as mixed script confusables, will be displayed in punycode, warning the users of potential deceptions. Chrome also offers comprehensive warnings for secure URLs that appear to be an imitation of already known Web pages \cite{ChromiumIDN}.
+     \item \textbf{IDN Handling of Google Chrome : }Google Chrome enforces an IDN (Internationalised Domain Names) policy to determine in which unicode or punycode form a domain label should be displayed. The domain label is tested to determine whether it has mixed script, invisible characters, or visually confusable characters, and whether it is actually validly converted to Unicode. For instance, domains containing characters of different scripts, or those that are clearly identified as mixed script confusables, will be displayed in punycode, warning the users of potential deceptions. Chrome also offers comprehensive warnings for secure URLs that appear to be an imitation of already known Web pages \cite{ChromiumIDN}.
      
 \end{itemize}
 
@@ -137,8 +133,6 @@ In summary, transparency in all these mitigation techniques not only builds trus
 
 \subsection{Real-life examples}
 
-Phishing, a cybercrime in which targets are contacted by email, telephone, or text message by someone posing as a legitimate institution to lure individuals into providing sensitive data, has become increasingly sophisticated. Two notable examples include:
-
 \begin{enumerate}
     \item InterMed and Spectrum Healthcare Partners fell for a major phishing attack on 44,000 patient data. The InterMed breach involved clinical information for 33,000 patients, specifically names, birthdates, insurance, and some social security numbers, from 4 to 10 September. In another case, Central Maine Orthopaedics is reported to have breached 11,308 of their patient record files by unauthorised access to emails that contain personal and clinical details. It is such an incident that really makes it very paramount to strengthen email security and at the same time to provide professional training on data protection \cite{HIPAAJournal2020Phishing} .
     \item Google and Facebook were almost fooled by a group of phishers into a \$100 million sophisticated scam in which they were imitating legitimate invoices from the suppliers. The case is one among many that have caused the vulnerability of technology firms to social engineering and the need for reinforced security, employee training, and verification processes to combat ever-changing cyber threats \cite{CNBC2019Phishing}.
@@ -147,8 +141,7 @@ Phishing, a cybercrime in which targets are contacted by email, telephone, or te
 \subsection{Real-life Mitigations} 
 
 \begin{itemize}
-    \item \textbf{Employee Awareness \& Training :} Chelsea Technologies has pointed out the importance of training employees to look for spoofing and attachments that are part of phishing methods. Training employees in the way phishers operate is of paramount importance to keeping sensitive information safe \cite{DigitalGuardianPhishingPrevention}.
-
+    
      \item \textbf{Comprehensive Security Measures :} LaptopMD points out that the risk of ignorant searches requires the formulation of policies that make it difficult to land on some sites. In addition to this, the awareness of phisher techniques and browsing issues by employees will greatly save them from being caught in cases of phishing \cite{DigitalGuardianPhishingPrevention}.
      
      \item \textbf{Technological \& Human Factors :} Combining technology with awareness, SecureHIM advises that both should be combined by any organisation to include spam filters and two-factor authentications with the vigilance of employees to detect and eliminate the risks of phishing \cite{DigitalGuardianPhishingPrevention}.
@@ -194,17 +187,13 @@ In addition, Phishlimiter \cite{Chin2018PhishLimiter} , which is a new phishing 
 
 \subsection{Transparency in Mitigation Efforts}
 
-Transparency in cybersecurity, including phishing mitigation techniques, refers to how openly and clearly methods, policies, and procedures are communicated, understood, and accessible to all involved stakeholders, particularly employees. Here is how transparency can be applied to each of the mitigation techniques described:
-\vspace{30px}
-
-
+Here is how transparency can be applied to each of the mitigation techniques described:
 \begin{itemize}
     \item \textbf{Employee Awareness and Training :} 
     
     Communication: This will consist of clear informing the employees about the kind of threat and how it could mean for the organisation and their role in these defences.
     
-    Accessibility: Make people aware that the repository exists, or make the resources easily available for reference. This would include an intranet site or a repository where people could easily access the trends in phishing on the latest and how to respond.
-
+    Accessibility: Make people aware that the repository exists, or make the resources easily available for reference. 
 
      \item \textbf{Comprehensive Security Measures: }
      
@@ -227,27 +216,27 @@ Transparency in cybersecurity, including phishing mitigation techniques, refers 
 
     \item \textbf{Email Filters:} 
 
-    The effectiveness of email filtering technology in mitigating phishing attempts is greatly enhanced by transparency in its operational parameters. This helps to make the user understand, starting from analysing the reputation of the sender to the various steps related to decision making of phishing keywords. Continuous improvement builds trust, and perhaps some community members might even wish to provide feedback on how to improve the performance of the filters or report inaccuracies to the filter system regarding combat against the threats of phishing.
+    The effectiveness of email filtering technology in mitigating phishing attempts is enhanced by transparency in its operational parameters. This helps to make the user understand, starting from analysing the reputation of the sender to the various steps related to decision making of phishing keywords. Continuous improvement builds trust, and perhaps some community members might even wish to provide feedback on how to improve the performance of the filters or report inaccuracies to the filter system regarding combat against the threats of phishing.
 
     \item \textbf{Domain Blocking:} 
 
-    Such measures may include transparency in the criteria of the blacklisting and regular updates in relation to the access to the known phishing sites inside the organisation's network. This implies also setting a clear means for reporting unlisted phishing sites and correcting false positives by stakeholders. Education for users and IT professionals about these measures fosters a culture of cybersecurity.
+    Such measures may include transparency in the criteria of the blacklisting and regular updates in relation to the access to the known phishing sites inside the organisation's network. This implies also setting a clear means of reporting unlisted phishing sites and correcting false positives by stakeholders. 
 
     \item \textbf{Situational Crime Prevention Approach (SCP):}
 
-    The major advantage of the SCP approach is the clear disclosure of both the applied methodology and the results obtained. This is through the explanation of the analysis of the criminal's thought and environmental factors aiding phishing, whereby the stakeholders are enlightened and, therefore, they make efforts to reduce it. The paper discusses how increasing the effort and risk to the attacker, while lowering the rewards, deters crime. Talking with the community helps them continue to improve and adopt ways to make an organisation's security environment dynamic and evolving.
+    The major advantage of the SCP approach is the clear disclosure of both the applied methodology and the results obtained. This is through the explanation of the analysis of the criminal's thought and environmental factors aiding phishing, whereby the stakeholders are enlightened, therefore, they make efforts to reduce it. 
 
     \item \textbf{Phishlimiter:}
 
-    The phishing detection system, such as the DPI integrated with SDN, has the ability to make its operation transparent, may increase user confidence, and preserve system functionality. It could emphasise the reliability and credibility of such a system if the criteria and algorithms by which the system determines a potential phishing attack are clearly spelt out. User feedback, which is positive pushing forward when the system fails in an inaccuracy or missed phishing attempt, to refine. Share those metrics around effectiveness of the system, the number of detected and prevented attacks, to show value. This article looks at some of the challenges, future development, and open directions for work that establishes an effort from the community in the field of cybersecurity.
+    The phishing detection system, such as the DPI integrated with SDN, has the ability to make its operation transparent, may increase user confidence, and preserve system functionality. It could emphasise the reliability and credibility of such a system if the criteria and algorithms by which the system determines a potential phishing attack are clearly spelt out. 
 
 \end{itemize}
 
 \subsection{ Analysis : Feasibility \& Practical Challenges }
 
 \begin{enumerate}
-    \item Employee Awareness and Training : Feasible; Regular training and simulation exercises can be implemented across organisations of any size with scalable online platforms, requiring minimal resources beyond the initial setup.
-    \item Comprehensive Security Measures :Feasible; The deployment of web filters and secure browsing policies is technically straightforward with existing technology. The main effort lies in continuous update of policies and employee education.
+    
+    \item Comprehensive Security Measures :Feasible; The deployment of web filters and secure browsing policies is technically straightforward with existing technology. The main effort lies in the continuous update of policies and employee education.
     \item Technological and Human Factors: Feasible; The integration of spam filters, two-factor authentication, and secure browsing add-ons is readily achievable with current technology. The human element, continuous employee vigilance, enhances the effectiveness of these tools without significant additional costs.
     \item Awareness against unsolicited emails: Feasible; Establishing and communicating best practices for handling suspicious emails involves minimal costs and leverages existing communication channels within organisations.
 
@@ -259,7 +248,6 @@ Transparency in cybersecurity, including phishing mitigation techniques, refers 
      
     \item Email Filters: Not Feasible;  Describing the general criteria and algorithms for email filtering is possible, but full disclosure risks security by enabling attackers to circumvent these measures. Partial transparency can be achieved without compromising the integrity of the system.
     
-   
     \item Phishlimiter: Not Feasible; The complexity and proprietary nature of technologies like DPI and SDN make full disclosure of Phishlimiter's operations impractical. Detailed investigation of operations could compromise security. Keeping up with evolving phishing tactics requires continuous updates, which may not always be promptly disclosed to avoid aiding adversaries.
     
 \end{enumerate}
@@ -267,7 +255,7 @@ Transparency in cybersecurity, including phishing mitigation techniques, refers 
 
 \section{Collaboration Among Registrars, Registries, and DNS Collaborators}
 
-This collaboration should be achieved with the DNS registry, the registry, and the collaborators. In that way, they can boost common resources and intelligence that can guide in making the Internet more secure and resilient. This strictly falls within the remit of registries and registrars acting in collaboration to put in place such stringent registration policy with procedures for verification, checking against mimicking existing trademarks or even popular domain names. In this way, the collaboration can even manifest itself through the sharing of sensitive data with regard to domain abuse threats and trends. Databases and threat intelligence platforms are shared amongst stakeholders, allowing them to anticipate and avert most such perils well before they impact netizens. This collective effort will enable the formulation of standards by which to coordinate responses to confusable domain incident reports. Mitigating confusable domains and phishing requires that registrars, registries, and DNS collaborators work in a common effort. This is due to the increasing level of threats and the shared responsibility of all actors involved in the DNS ecosystem \cite{Catania2022} To put this into perspective, here are some examples: 
+This collaboration should be achieved with the DNS registry, the registry, and the collaborators. In that way, they can boost common resources and intelligence that can guide making the Internet more secure and resilient. This strictly falls within the remit of registries and registrars acting in collaboration to put in place such stringent registration policy with procedures for verification, checking against mimicking existing trademarks or even popular domain names. In this way, the collaboration can even manifest itself through the sharing of sensitive data with regard to domain abuse threats and trends. Databases and threat intelligence platforms are shared amongst stakeholders, allowing them to anticipate and avert most such perils well before they impact netizens. This collective effort will enable the formulation of standards by which to coordinate responses to confusable domain incident reports. Mitigating confusable domains and phishing requires that registrars, registries, and DNS collaborators work together in a common effort. This is due to the increasing level of threats and the shared responsibility of all actors involved in the DNS ecosystem \cite{Catania2022}. To put this into perspective, here are some examples: 
 
 
 \begin{enumerate}
@@ -303,13 +291,11 @@ The publication of confusable domain lists, while aimed at enhancing cybersecuri
 
 \section{Limitations of Research Conducted on DNS Abuse Transparency }
 
-This section lists a number of significant limitations that were observed during the research. The limitations imposed have had an effect on the extent, complexity, and applicability of the results, indicating potential avenues for future investigation to improve the understanding and efficacy of DNS abuse mitigation measures.
-
 \begin{enumerate}
-    \item Variability in reporting standards: A significant challenge encountered was the lack of uniform standards across DNS infrastructure providers, including registrars and registries, regarding the definition of abuse, the thresholds of action, and the manner in which these actions are reported. Such inconsistency has made efforts to collect and compare the data of different entities hard to piece together into one coherent picture for sensible enforcement of DNS abuse mitigation.This diversity highlights the need for standardised reporting standards by contributing to a fragmented view of abuse management procedures.
+    \item Variability in reporting standards: A significant challenge encountered was the lack of uniform standards across DNS infrastructure providers, including registrars and registries, regarding the definition of abuse, the thresholds of action, and the manner in which these actions are reported. Such inconsistency has made efforts to collect and compare the data of different entities hard to piece together into one coherent picture for sensible enforcement of DNS abuse mitigation.
 
     \item Limited Availability of Data: The general lack of transparency reports that are available to the public. Many providers either don't release these reports at all or do so in a way that leaves out important information that has to be thoroughly examined. Due to the restricted breadth of research due to this data availability issue, there may be gaps in our understanding of the entire range of DNS abuse management strategies.
-\vspace{30px}
+    
     \item Reluctance to Share Sensitive Information: Information provided by respondents about abuses and what they do to mitigate them. In general, concerns about privacy, security, and the potential of revealing vulnerabilities to bad actors contribute to this reluctance, which leads to Limiting the capacity of researchers to perform a comprehensive analysis of DNS abuse mitigation strategies.
     
     \item Dynamic Nature of DNS Abuse: The evolving tactics employed by those who abuse DNS are constantly changing, so results can be out of date very fast. It is more difficult to create best practices that are applicable and efficient over time due to this quick change. Because DNS abuse is dynamic, it requires ongoing research and strategy adaptation to stay ahead of new threats.
