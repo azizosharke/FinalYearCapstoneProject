@@ -1,7 +1,7 @@
 \chapter{Implementation}
 
 
-This chapter focuses on practical implementation with respect to the Domain Legitimacy Checker. The multiviewed approach, along with programming in Python and the web framework in Flask, HTML, CSS, JavaScript, on the side of external APIs, greatly assisted in making a simple framework for DNS abuse detection and transparency improvement. With these alternatives, a simple but effective method has been developed for determining the legitimacy of domain names, but also of showing plainly and clearly the various tactics with which bad actors are using in the adoption of confusable domains for phishing and malware distribution, along with other malicious activities to aid with my research. This effort embarked on a journey from idea to execution, focusing on a user-friendly web interface that allows users to quickly identify potentially malicious domains. 
+This chapter focuses on the practical implementation of the Domain Legitimacy Checker. The multiviewed approach, along with programming in Python and the web framework in Flask, HTML, CSS, and JavaScript, on the side of external APIs, greatly assisted in making a simple framework for DNS abuse detection and transparency improvement. With these alternatives, a simple but effective method has been developed for determining the legitimacy of domain names, but also for showing clearly the various tactics which bad actors are using in the adoption of confusable domains for phishing and malware distribution, along with other malicious activities to aid with my research. This effort embarked on a journey from idea to execution, focusing on a user-friendly web interface that allows users to quickly identify potentially malicious domains. 
 
 \section{System Overview}
 
@@ -18,10 +18,10 @@ The development of Domain Legitimacy Checker was chosen because the system is su
 
 \section{Tools \& Technologies}
 
-Domain Legitimacy Checker shown in Figure \ref{fig:figfigfig} was built using Python with the use of its third-party modules for development and to provide ways for integration with systems. The platform was powered by Flask, which is a framework that serves requests using the HTTP protocol. The front-end is developed using HTML5 in the structuring of web content and empowered by CSS3 for styling, while allowing Bootstrap for responsive design for all devices. JavaScript provides web pages with simple, interactive, and dynamic functionality. It has also used libraries such as dnspython for the support of DNS queries, which are key in the lookup of domain registration. The request libraries also connect to external APIs such as VirusTotal for the legitimacy analysis of a domain.
+The domain legitimacy checker shown in figure \ref{fig:figfigfig} was built using Python with the use of its third-party modules for development and to provide ways of integration with systems. The platform was powered by Flask, which is a framework that serves requests using the HTTP protocol. The front end is developed using HTML5 in the structuring of web content and is empowered by CSS3 for styling while allowing Bootstrap for a responsive design for all devices. JavaScript provides web pages with simple, interactive, and dynamic functionality. It has also used libraries such as dnspython for the support of DNS queries, which are key in the lookup of domain registration. Request libraries also connect to external APIs such as VirusTotal for the legitimacy analysis of a domain.
 
 
-It takes advantage of the scanning powers of VirusTotal API, which has several security engines and site scanners to indicate how safe a domain is. It derives its value from domain security, in contrast to the domain name, with thousands of sources and other indicators. Importantly, domains that are already blacklisted for hosting phishing sites, distributing malware, or participating in suspicious activity should be filtered. The choice of each of the tools and technology used was based on its individual merit, but by their integration, making sure that all the systems combined to achieve the cohesiveness and effectiveness of detecting DNS abuse and transparency.
+It takes advantage of the scanning powers of VirusTotal API, which has several security engines and site scanners to indicate how safe a domain is. It derives its value from domain security, in contrast to the domain name, with thousands of sources and other indicators. Importantly, domains that are already blacklisted for hosting phishing sites, distributing malware, or participating in suspicious activity should be filtered. The choice of each of the tools and technology used was based on its merit, but by their integration, making sure that all the systems combined to achieve the cohesiveness and effectiveness of detecting DNS abuse and transparency.
 
 
 
@@ -46,7 +46,7 @@ The interface and layout of the web page have been designed for ease and smooth 
 
 \subsection{Input \& Interaction}
 
- The Domain Legitimacy Checker Tool provides an intuitive place for interaction with users to ensure a seamless experience.The domain input method, a single-field form intended for simplicity of use and quick analysis, is at the centre of this interaction.
+ The Domain Legitimacy Checker Tool provides a place for interaction with users to ensure a seamless experience. The domain input method, a single-field form intended for simplicity of use and quick analysis, is at the centre of this interaction.
  
 \begin{figure} [H]
     \centering
@@ -55,7 +55,7 @@ The interface and layout of the web page have been designed for ease and smooth 
     \label{fig:impl2}
 \end{figure}
 
-First, the user is asked to enter a domain of their choice and to put it in a text box, minimally styled to not distract but to point the user's focus in performing the task. Right next to the text box is the "Analyze" button, contrasting with blue to stand out visually and identified for the user as the next step to take in the process. This design invites immediate action upon domain entry, providing a clear path from user input to results.
+First, the user is asked to enter a domain of their choice and to put it in a text box. Right next to the text box is the "Analyze" button, contrasting with blue to stand out visually and identified for the user as the next step to take in the process. This design invites immediate action upon domain entry, providing a clear path from user input to results.
 
 \begin{figure}[H]
     \centering
@@ -68,10 +68,11 @@ The user's request to check a domain is initiated as soon as a domain is entered
 
 \subsection{Interactive Features}
 
-The programme comes with an interactive interface; the user is engaged in all the steps from entering a domain for analysis to receiving the results. In fact, starting from the second users have done submitting a domain for analysis, this very step will start a circle of HTTP-requests, which the server logs with great care. These logs are dynamic, real-time visualisations of user-server interaction rather than just recordings.
+The program comes with an interactive interface; the user is engaged in all the steps from entering a domain for analysis to receiving the results. Starting from the second user having submitted a domain for analysis, this very step will start a circle of HTTP-requests, which the server logs with great care. These logs are dynamic, real-time visualisations of user-server interaction rather than just recordings.
 
 
-The moment a 'click' on the 'Analyze' button happens, the server instantly receives a 'POST' request through the endpoint '/check', which notes that the action marks the start of the domain analysis. On a successful request, a '200' status cookie is returned to signify a successful search. Such types of interaction go down as entries into the server log, forming a very critical and highly detailed timeline of activities.
+The moment a 'click' on the 'Analyze' button happens, the server instantly receives a 'POST' request through the endpoint '/check', which notes that the action marks the start of the domain analysis. On a successful request, a '200' status cookie is returned to signify a successful search. Such types of interaction are logged as entries in the server log, forming a very critical and highly detailed timeline of activities.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{project/I.png}
@@ -79,11 +80,11 @@ The moment a 'click' on the 'Analyze' button happens, the server instantly recei
     \label{fig:imple22222}
 \end{figure}
 
-If there is any issue, these logs are highly important, for example, in the case of "404 - Not Found" error in the requested resource. They not only instantly inform system administrators what might have gone wrong, but also act as hints for such troubleshooting. Log analysis allows an administrator to automatically correct problems.
+If there is any issue, these logs are highly important, for example, in the case of a "404 - Not Found" error in the requested resource. They not only instantly inform system administrators what might have gone wrong, but also act as hints for such troubleshooting. Log analysis allows an administrator to automatically correct problems.
 
 \subsection{Results Display}
 
-The Domain Legitimacy Checker displays the findings in an easy-to-understand style after the completion of the domain legitimacy research. Every domain has an icon next to it; an exclamation point indicates that the domain is possibly harmful, and a checkmark indicates that the domain is not malicious. The initial level of result interpretation is this visual feedback, which enables users to assess domain safety rapidly"365.com and paypal.com" were tested in figure \ref{fig:images} and clearly show how the programme works when domain names are checked. 
+The Domain Legitimacy Checker displays the findings in an easy-to-understand style after the completion of the domain legitimacy research. Every domain has an icon next to it; an exclamation point indicates that the domain is possibly harmful, and a check mark indicates that the domain is not malicious. The initial level of result interpretation is this visual feedback, which enables users to assess domain safety rapidly."365.com and paypal.com" were tested in figure \ref{fig:images} and clearly show how the program works when domain names are checked. 
 
 \begin{figure}[H]
   \centering
@@ -100,11 +101,11 @@ The Domain Legitimacy Checker displays the findings in an easy-to-understand sty
   \label{fig:images}
 \end{figure}
 
-For domains identified as malicious as you can see above, the interface unfolds additional information, providing a breakdown of the detected security threats. The findings of each scanner are listed below the domain, revealing the specific categories of malicious activity identified, such as malware, phishing, or other security threats. This level of detail is not only informative, but also actionable, guiding users on potential next steps for mitigation or further investigation.
+For the malicious domains identified above, the interface unfolds more information as an itemisation of the security threats detected. In each domain, the scanner's findings indicate the exact categories of malicious activities the scanners were able to detect, including malware, phishing, or other security issues. These details are not only comprehensive, but also indicate to the user what might be looked for as the next mitigation step or further investigation.
 
 \subsection{Navigating Results}
 
-After the results from the domain check come back, the Domain Legitimacy Checker would allow the user to easily explore more domains that interest them. It normally does this through a button that shows prominently on the interface for this function and that simply says "Check Another Domain." Basically, this reconnects the user with the input interface.
+After the results from the domain check come back, the Domain Legitimacy Checker would allow the user to easily explore more domains that interest them. It normally does this through a button that shows on the interface for this function and that simply says "Check Another Domain." This reconnects the user with the input interface.
 
 \begin{figure}[H]
     \centering
@@ -123,13 +124,13 @@ This iterative process is another characteristic of the user, so it can be conti
 During the development of the Domain Legitimacy Checker, I faced several challenges, each requiring a tailored solution to ensure the project's success.
 
 Challenge 1: API rate limit
-The frequent use of the VirusTotal API presented a challenge due to its rate-limiting constraints. Exceeding the allotted number of requests would lead to temporary blocking of our service.
+The virus total rate limit API is a very common rate. It is now going to be a problem because it has a limited number of requests and if they exceed that set number, then the service will be temporarily blocked.
 
 Solution: Implement a queuing system with a delay mechanism to spread the requests over time, adhering to the API's rate limits. Additionally, we cached the results of previous queries to minimise repeat requests for the same domains.
 
-Challenge 2: Real-time Feedback for Users, therefore, is very important to give very instant feedback in the process of the domain analysis, but was otherwise very hard to prove because of the asynchronous behaviour, in principle for network operations.
+Challenge 2: Real-time Feedback for Users, therefore, is very important to give instant feedback in the process of the domain analysis, but was otherwise very hard to prove because of the asynchronous behaviour in principle for network operations.in principle for network operations.
 
-Solution: Using asynchronous JavaScript to send information to the servers and receive results from them without refreshing the web page. 
+Solution: Pass the data to the servers and receive its result from the servers without refreshing the web page using JavaScript. 
 
 Challenge 3: Handling Malicious Domain Variations
 Identification and generation of a full set of confusing domain variations represented a key computational challenge.
@@ -139,13 +140,8 @@ Solution: Using a combination of common substitution algorithms and a heuristic 
 Challenge 4: Data Storage \& Retrieval Efficiency
 Storing analysis results for quick retrieval while managing database performance was a concern, especially with the growth of the data set.
 
-Solution: implementing a real-time domain analysis system with external APIs for comprehensive domain validity checks and creation of algorithmic domain variations to assess potential security risks. 
+Solution: Implement a real-time domain analysis system with external APIs for comprehensive domain validity checks and the creation of algorithmic domain variations to assess potential security risks. 
  
-Challenge 5: System Scalability
-As the system's user base grows, so does the load on our servers, which initially led to concerns about scalability.
-
-Solution: The system was designed with scalability in mind, using Flask's built-in capabilities to handle an increasing number of simultaneous user requests. 
-
 By addressing these challenges with careful planning and adaptive solutions, we improve the reliability, performance, and user satisfaction of the system.
 
 \section{Testing \& Validation}
