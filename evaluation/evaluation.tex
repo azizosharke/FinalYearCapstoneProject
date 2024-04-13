@@ -1,6 +1,6 @@
 \chapter{Evaluation \& Discussion}
 
-In this chapter, the focus will be on evaluating and discussing two forms of DNS abuse, which are confusable domains and phishing due to their popularity among bad actors by testing and validating them.  The chapter will dive into real-life examples to illustrate the severity of these threats and examine existing mitigations and techniques used to mitigate them, to test how well the project met the objectives. In addition, a proposal will be made to improve the transparency around these mitigation strategies to foster accountability and trust. Through analysis, the feasibility of implementing such transparency measures will be assessed by performing an analysis using data and evidence. Finally, the limitations of the work will be addressed. 
+In this chapter, the focus will be on evaluating and discussing the project and, most importantly, two forms of DNS abuse, which are confusable domains and phishing due to their popularity among bad actors by testing and validating them.  The chapter will dive into real-life examples to illustrate the severity of these threats and examine existing mitigations and techniques used to mitigate them, to test how well the project met the objectives. In addition, a proposal will be made to improve the transparency around these mitigation strategies to foster accountability and trust. Through the analysis, the feasibility of implementing such transparency measures will be assessed by performing an analysis using data and evidence. Finally, the limitations of the work will be addressed. 
 
 
 \section{Confusable Domains}
@@ -19,7 +19,7 @@ The choice of such domains to target and outsource depends on many factors, each
 \subsection{Real-life examples}
 
 \begin{itemize}
-    \item \textbf{Cybersquatting :} One such renowned case was that of Amul, a major dairy company in India, during 2019-2020. Amul had an impersonation case of similar domain registration for purposes of phishing, which lured people into fraudulent schemes like fake distributorship or job opportunities. In the last three years, from 2018 to 2020, this issue forced Amul to issue public notices and take legal action against such misuse of their brand in domain names, impressing the magnitude of legal recourse and the awareness of brand protection in its readers \cite{MehtaCybersquatting}.
+    \item \textbf{Cybersquatting :} A famous case was of Amul in 2019-2020. The renowned dairy giant had an impersonation case of similar domain registration, which was used to lead the public toward phishing, such as for fake distributorship or job opportunities. The Indian dairy brand above had this issue repeated three times in the last three years, namely from 2018 to 2020, and the company had to publish public notice while sending legal bodies, which also exhibited to readers the extent to which one can go for the brand defence issue.\cite{MehtaCybersquatting}.
     
     \item \textbf{Typosquatting :} One of the US healthcare providers, Elara Caring, gives an illustrative example of a cyberattack it encountered in December 2020: as a result, the following breaches in healthcare cybersecurity were defined: unauthorised access to email accounts of staff members. The breach, which lasted for a week, underscores the need for an improved incident response \cite{PandaSecurityPhishing}.
     
@@ -54,9 +54,9 @@ The following scenarios are examples of real-life confusable domain mitigations 
 
 \subsection{Techniques for Mitigating Confusable Domains}
 
-Mitigating confusable domains requires sophisticated techniques tailored to address the unique challenges presented by both non-Internationalised Domain Names (non-IDNs) and Internationalised Domain Names (IDNs). This differentiation is significant due to the distinct nature of the threats they pose and the technical feasibility of the mitigation strategies applicable to each. The following is a detailed examination of mitigation techniques, along with discussions of the operational feasibility and potential collaboration frameworks involved.
+Mitigating confusable domains requires sophisticated techniques tailored to address the unique challenges presented by both non-Internationalised Domain Names (non-IDNs) and Internationalised Domain Names (IDNs). The threat of these two groups is vastly different and the technical possibility of most mitigation strategies also varies greatly. The subsequent section of the paper describes the mitigation methods in detail, addressing their operational feasibility and potential collaboration initiatives.
 
-Non-IDNs Mitigation Techniques : Strategies focus on identifying and mitigating domain squatting and typo-squatting, where attackers register domains that are typographical errors or close variants of legitimate domains to deceive users.
+Non-IDNs Mitigation Techniques: These techniques aim to detect and mitigate domain squatting and typosquatting, where the attacker registers a typographical error or variant of a legitimate domain so that users get confused.
 
 \begin{enumerate}
   \item Registry-Level Measures: Domain registries can implement checks to prevent the registration of domains similar to existing trademarks or brand names, using algorithms to detect variations and misspellings closely similar to protected names \cite{WTR2020}.
@@ -64,7 +64,7 @@ Non-IDNs Mitigation Techniques : Strategies focus on identifying and mitigating 
   \item Automated Monitoring and Reporting: Automated systems can continuously monitor domain registrations for names that closely resemble known trademarks or brand names, allowing rapid detection and legal action against infringers \cite{TMCH2023}.
 \end{enumerate}
 
-IDNs Mitigation Techniques: The challenge with IDNs lies in the potential for homograph attacks, where attackers use characters from different scripts that appear visually like characters in the Latin script to create deceptive domains.
+IDNs Mitigation Techniques: The problem with IDNs is the potential for homograph attacks, where attackers can use characters from different scripts that visually appear to look like characters in Latin script.
 
 \begin{enumerate}
   \item Punycode Awareness and Monitoring: Web browsers and security tools convert IDNs to punycode, a representation that encodes Unicode characters in ASCII. Awareness of punycode and monitoring for suspicious registrations can help identify potential homograph domains \cite{SOCRadar2023}.
@@ -76,13 +76,13 @@ IDNs Mitigation Techniques: The challenge with IDNs lies in the potential for ho
 
 \subsection{ Transparency in Mitigation Efforts}
 
-The element of transparency in dealing with confusable domains will be a great support in protecting the Internet from mischievous activities such as phishing and trademark infringements. This encompasses a set of practices by domain registries and registrars to identify and publicise those domains that could mislead due to their similarity to legitimate ones. It contains means of transparency, such as publishing lists of those domains to alert the community about possible threats and taking secure measures, if possible.
+The element of transparency in dealing with confusable domains will be a great support in protecting the Internet from malicious activities such as phishing and trademark infringements. This encompasses a set of practices by domain registries and registrars to identify and publicise those domains that could mislead due to their similarity to legitimate ones. It contains means of transparency, such as publishing lists of those domains to alert the community about possible threats and taking secure measures, if possible.
 
 \begin{itemize}
   \item \textbf{Cloudflare's Zero Trust Services Approach: }Cloudflare's process for identifying and blocking confusable domains should be transparent to its users. This includes detailing the criteria for flagging domains as phishing sites and the mechanisms in place for users to appeal or request a review of blocked domains. By openly sharing the methodology behind their zero-trust rules and how they are applied through the Cloudflare Gateway, trust in Cloudflare's protective measures is bolstered among corporate networks.
   
   
-  \item \textbf{IDN Handling of Google Chrome:} Transparency from the side of Google Chrome for the display of domain names helps the user understand the risks to his security. How policy could be properly executed, reported, or suggested for changes by the community of users to increase internet safety will also be explained.
+  \item \textbf{IDN Handling of Google Chrome:} Transparency from the side of Google Chrome for the display of domain names helps the user understand the risks to their security. How policy could be properly executed, reported, or suggested for changes by the community of users to increase internet safety will also be explained.
 
   \item \textbf{Typo-squatting Detection Tools: }The similar methodology should be evident in how similar domain names are detected by tools such as DNStwist or URLCrazy and how it could be detected and shared in a proactive security setup, which could also help others in any organisation.
   
@@ -163,26 +163,29 @@ phishing websites \cite{Suzuki2021Phishing}.
     \item User Training: Train users on how to recognise signs from phishing emails and the risk associated with clicking on unknown links or sharing personal and sensitive information.
 \end{enumerate}
 
-The introduction of the Situational Crime Prevention Approach (SCP) \cite{Suzuki2021Phishing}, which is an idea to understand the detailed thinking process of the offender and the attributes in the environment that allow the attack. This approach seeks to deter potential attackers simply by raising the level of effort and risk involved in an attacker conducting a successful phishing attack with a concomitant reduction in the likely rewards. This method underscores the importance of understanding the criminal's perspective and creating a hostile environment for phishing activities through strategic preventive measures. This method involves these steps : 
+
+The idea of a detailed thinking process of the offender, along with the description of the attributes in the environment that allow the attack to occur, is introduced with the Situational Crime Prevention Approach \cite{Suzuki2021Phishing}: This method was developed considering the theory that it is possible to deter potential attackers if the level of effort they make, the risk they take, and the likely rewards they receive are raised, stay the same, and lowered accordingly. It is worth mentioning that the criminal perspective is necessary to understand, and creating a hostile environment for phishing operations by implementing certain strategic preventive measures is crucial. This method includes the following steps:
+
+ 
 
 \begin{enumerate}
-    \item Increasing the Effort for Attackers: Implement strong authentication methods and encryption to make it more challenging for phishers to access or spoof legitimate websites or email accounts.
-    \item Clarifying User Responsibilities: Educating users about their role in maintaining cybersecurity, including recognising phishing attempts, and reporting them.
-    \item Enhancing Detection Probability: Using advanced detection technologies and threat intelligence to identify and neutralise phishing threats promptly.
-    \item Limiting Phishers' Access: Restrict the amount of publicly available information that could be used to create convincing phishing emails or impersonating individuals or organisations.
-    \item Discouraging Future Attacks: Implementing punitive measures against identified attackers and sharing information on phishing campaigns with broader communities to prevent repeat offenders.
+    \item Increasing the Effort for Attackers: Implement strong authentication mechanisms and encryption to increase the difficulty of accessing or spoofing phishing websites or legitimate email accounts.
+    \item Clarifying User Responsibilities: Information about users' role in security, such as awareness of phishing signs and reporting aids.
+    \item Enhancing Detection Probability: Using the latest detection technologies and threat intelligence to recognise and eliminate phishing threats on time.
+    \item Limiting Phishers' Access: Limiting the breadth of information that is accessible to the public, which might be used to construct compelling phishing emails and fake the identity of someone else or an organisation.
+    \item Discouraging Future Attacks: Implement punitive actions such as tracking down familiar attackers and sharing information about the attack with a larger group of people to deter repeat offenders.
 \end{enumerate}
 
-This measure is designed not only to stop a phishing attack, but rather to create an environment that would lead to the cost-benefit ratio for phishing not so appealing to the attackers. In fact, comprehensive perspectives on addressing phish through the three methods above singularly go to dramatically lower the vulnerability of organisations and individual persons to such acts.
+This measure is designed not only to stop a phishing attack, but rather to create an environment that would lead to the cost-benefit ratio for phishing not so appealing to the attackers. Comprehensive perspectives on addressing phish through the three methods above singularly go to dramatically lower the vulnerability of organisations and individual persons to such acts.
 
-In addition, Phishlimiter \cite{Chin2018PhishLimiter} , which is a new phishing detection and mitigation approach using Software-Defined Networking where it first proposes a new technique for deep packet inspection (DPI) and then leverages it with software-defined networking (SDN) to identify phishing activities through email and web-based communication.This is how it works:
+In addition, Phishlimiter \cite{Chin2018PhishLimiter} , which is a new phishing detection and mitigation approach using Software-Defined Networking where it first proposes a new technique for deep packet inspection (DPI) and then leverages it with software-defined networking (SDN) to identify phishing activities through email and web-based communication. This is how it works:
 
 \begin{enumerate}
-    \item Deep Packet Inspection (DPI): Analyses the part of the network packet data beyond basic header information. It inspects the content of the packets for signatures and patterns associated with phishing.
-    \item Store and Forward (SF) and Forward and Inspect (FI) modes: SF mode temporarily stores packets for thorough inspection before forwarding, while FI mode prioritises immediate forwarding with parallel inspection to reduce latency.
-    \item Artificial Neural Network (ANN): A machine learning model that classifies network traffic to identify potential phishing activities by learning from known phishing signatures and behaviours.
-    \item Dynamic adjustment of network flows: Upon detection of a threat, the system dynamically reroutes or restricts traffic to mitigate potential phishing attacks, adapting to new threats in real time.
-    \item Minimal disruption to network services: Designed to ensure that the phishing mitigation process does not significantly impact network performance, ensuring smooth operation of network services even under threat detection and mitigation activities.
+    \item Deep Packet Inspection (DPI): Examines the network packet data more than the basic header information. Used to look at the content of packets looking for known signatures and patterns associated with phishing.
+    \item Store and Forward (SF) and Forward and Inspect (FI) modes: SF mode temporarily stores packets for a thorough inspection before forwarding, while FI mode prioritises immediate forwarding with a parallel inspection to reduce latency.
+    \item Artificial Neural Network (ANN): A machine learning model used to classify network traffic based on characteristics to detect links to potential phishing signatures.
+    \item Dynamic adjustment of network flows: In the case of standard recognition, the system can dynamically change the routing to bypass the link or reduce flow to prevent the phishing process.
+    \item Minimal disruption to network services: Designed to maintain the mitigation process minimised without targeting performance to ensure that final services would run smoothly even during the measure.
 \end{enumerate}
 
 \subsection{Transparency in Mitigation Efforts}
@@ -191,7 +194,7 @@ Here is how transparency can be applied to each of the mitigation techniques des
 \begin{itemize}
     \item \textbf{Employee Awareness and Training :} 
     
-    Communication: This will consist of clear informing the employees about the kind of threat and how it could mean for the organisation and their role in these defences.
+    Communication: This will consist of clearly informing the employees about the kind of threat and what it could mean for the organisation and their role in these defences.
     
     Accessibility: Make people aware that the repository exists, or make the resources easily available for reference. 
 
@@ -259,19 +262,19 @@ This collaboration should be achieved with the DNS registry, the registry, and t
 
 
 \begin{enumerate}
-  \item Recent changes in the contract from ICANN's contracted parties have imposed on registrars and registries new specifications to define DNS abuse, together with clear requirements for the actions to be taken by such parties immediately actionable evidence of abuse is received. This is a major step toward establishing more clarity on the roles that these different stakeholders can play in addressing the problem of DNS abuse and ensuring that there is a common approach to redress \cite{Weinstein2023}.
-  \item The community itself has approved new obligations from ICANN contract parties to further mitigate DNS abuse, demonstrating the will of the community to come together to address DNS abuse issues \cite{ICANN2023}.
-  \item Efforts like NetBeacon, with the support of the DNS Abuse Institute, are being rolled out to reduce friction in reporting and mitigating DNS abuse. This service solves the current complexities and quality standards associated with the reporting of DNS abuse, as it makes the work easier for the registrars, ultimately narrowing down their scope to the relevant and evidenced report, as well as it underlines the need for cooperation among registrars, registries, and other DNS stakeholders. This is what is capable of saving the Internet and, at the same time, protecting the credibility and confidence of DNS \cite{NetBeacon}.
+  \item New specifications on defining DNS abuse have been entered into ICANN’s contracts from ICANN’s contracted parties. Furthermore, there are clear requirements that define the actions to be taken by registry and registry after receiving immediate actionable evidence of abuse. This move clarifies the roles that different stakeholders can play in addressing the DNS abuse issue and establishing a common approach to redress \cite{Weinstein2023}.
+  \item Some of these new duties have been positively approved by the community. The community supported the new obligations of the ICANN contract parties to further mitigate DNS abuse. The message that this example sends to everyone is that the community is willing to join and participate in DNS abuse and other challenges to address \cite{ICANN2023}.
+  \item  Efforts such as NetBeacon, with the support of the DNS Abuse Institute, are being rolled out to reduce friction in reporting and mitigating DNS abuse. This service solves the current complexities and quality standards associated with the reporting of DNS abuse, as it makes the work easier for registrars, ultimately narrowing down their scope to the relevant and evidenced report, and underlines the need for cooperation among registrars, registries, and other DNS stakeholders. This is what is capable of saving the Internet and, at the same time, protecting the credibility and confidence of DNS \cite{NetBeacon}.
   
 \end{enumerate}
 
 Real-life examples of entities seeking to block the resolution of DNS names used by bad actors for phishing and other malicious activities, especially in connection with public recursive DNS servers, frequently revolve around matters of control, filtering, or securing internet traffic with various kinds of motivation corresponding to such sectors. Consider the following:
 
 \begin{enumerate}
-    \item Governmental Efforts to Block DNS Resolutions : Governments may interfere directly with DNS operation to enforce some censorship or block access to particular types of content. For instance, China uses the Great Firewall for regulation of access to the World Wide Web within their territory, including doing some DNS mismanagement to block unwanted content \cite{XuAlbert2017MediaCensorship}.
-    \item Corporate and ISP DNS Filtering : DNS filtering can be deployed by companies and even ISPs in a bid to achieve enhanced online security. For instance, Heimdal Security explicates how DNS filtering works as one of the measures to prevent their access to various harmful or inappropriate websites, since it first checks the requests for domains. If some are actually flagged, access is denied, hence maintaining both security and productivity within one's organisation. This approach is very effective for the prevention of phishing and malware attacks because it stops DNS requests towards malicious sites \cite{
+    \item Governmental Efforts to Block DNS Resolutions: Governments may interfere directly with DNS operations to enforce some censorship or block access to particular types of content. For instance, China uses the Great Firewall for regulation of access to the World Wide Web within their territory, including doing some DNS mismanagement to block unwanted content \cite{XuAlbert2017MediaCensorship}.
+    \item Corporate and ISP DNS Filtering: DNS filtering can be deployed by companies and even ISPs in a bid to achieve enhanced online security. For instance, Heimdal Security explicates how DNS filtering works as one of the measures to prevent their access to various harmful or inappropriate websites since it first checks the requests for domains. If some areflagged, access is denied, hence maintaining both security and productivity within one's organisation. This approach is very effective for the prevention of phishing and malware attacks because it stops DNS requests towards malicious sites \cite{
 HeimdalDNSSecurity2023}.
-    \item Ad Block DNS Services : Cloudflare discusses how DNS filtering can be used to prevent access to malicious sites and also filter what is harmful or unfit for viewing. This is done at the DNS level to prevent these sites from loading on devices. Cloudflare uses its DNS to filter part of a more prominent access control policy, which is an effort to secure company data and govern what employees will see on the network they manage \cite{CloudflareDNSFiltering2023} .   
+    \item Ad Block DNS Services : Cloudflare discusses how DNS filtering can be used to prevent access to malicious sites and also filter what is harmful or unfit for viewing. This is done at the DNS level to prevent these sites from loading on devices. Cloudflare uses its DNS to filter part of a more prominent access control policy, which is an effort to secure company data and govern what employees will see on the network they manage \cite{CloudflareDNSFiltering2023}.   
 \end{enumerate}
 
  On the negative side, attackers are taking advantage of DNS blocking mechanisms to carry out DNS-based attacks. These include using DGAs (Domain Generation Algorithms) for malware communication, using FastFlux techniques for slip-streaming attacks, basically creating malicious newly registered domains (NRDs) that appear benign and legitimate to an outside observer, etc. All this makes it difficult to block bad content at the DNS level, which calls for quite sophisticated countermeasures.
@@ -280,39 +283,38 @@ HeimdalDNSSecurity2023}.
 \section{Benefits of Transparency }
 
 
-Transparency has numerous advantages when it comes to handling confusable domains and mitigating phishing. First, it encourages domain registry owners and registrars to be more accountable to each other by motivating them to take an active role in the identification and removal of confusable domains and phishing websites. Second, openness discourages bad actors who might otherwise take advantage of the anonymity provided by a lack of public monitoring. Third, by making these lists available to the public, registries and registrars enable companies and trademark owners to promptly take precautionary measures to safeguard their brands, including acquiring domain names or pursuing legal action. Transparency also facilitates community-based mitigation initiatives, in which researchers studying cybersecurity and the broader community work together to detect and eliminate dangers.This coordinated effort not only tackles confusable domains, but also considerably impedes phishing attempts by revealing, and thus reducing, the strategies employed by bad actors. The effectiveness of these tactics is significantly increased by using the collective expertise and attention to detail of the cybersecurity community, resulting in a more secure online environment for all parties involved.
+Transparency has numerous advantages when it comes to handling confusable domains and mitigating phishing. First, it encourages domain registry owners and registrars to be more accountable to each other by motivating them to take an active role in the identification and removal of confusable domains and phishing websites. Second, openness discourages bad actors who might otherwise take advantage of the anonymity provided by a lack of public monitoring. Third, by making these lists available to the public, registries and registrars enable companies and trademark owners to promptly take precautionary measures to safeguard their brands, including acquiring domain names or pursuing legal action. Transparency also facilitates community-based mitigation initiatives, in which researchers studying cybersecurity and the broader community work together to detect and eliminate dangers. This coordinated effort not only tackles confusable domains, but also considerably impedes phishing attempts by revealing, and thus reducing, the strategies employed by bad actors. The effectiveness of these tactics is significantly increased by using the collective expertise and attention to detail of the cybersecurity community, resulting in a more secure online environment for all parties involved.
 
 
 \section{Drawbacks and Security Concerns} 
 
-The publication of confusable domain lists, while aimed at enhancing cybersecurity, carries certain drawbacks and security concerns, including implications for phishing attacks. A primary issue is that making such lists public might serve as a guide for bad actors, revealing potential phishing targets. This exposure could allow bad actors to improve their strategies, thus remaining a step ahead of countermeasures. Additionally, the risk of false positives where legitimate domains are marked as confusable poses significant challenges. For legitimate businesses and individuals, being mistakenly associated with phishing can lead to unnecessary scrutiny, legal complications, and damage to their reputation. Furthermore, the tension between transparency and security raises questions about the effectiveness of these disclosures in preventing attacks. While the goal of transparency is to proactively mitigate abuse, including phishing, the vast number of domain registrations and the evolving tactics of domain abuse may diminish the utility of such lists for end users and businesses, potentially limiting their ability to preemptively address phishing risks.
+At the same time, the issue of publishing confusable domain lists, while ultimately beneficial for cybersecurity, also implies several limitations and security issues, such as the problem of phishing. First, the reason for concern is that publishing these lists can serve as a manual for bad actors since it potentially discloses potential domains for phishing. For example, if victims are exposed in such a way, bad actors can quickly adjust their approaches, ensuring that their activities stay one step ahead of countermeasures. Second, false positives, or legitimate domains that are mistakenly identified as confusable, also represent a serious challenge. For real businesses and people, a loophole for that is their potential association with phishing since this can entail unnecessary attention, legal action, and reputation damage. Third, the issue of transparency also raises concern about how relevant releasing such data is in terms of attack prevention. While the logic of making the lists available to the public before they can be misused for abuse, such as phishing, is clear, the sheer volume of domain registration and the continuous changes in domain abuse tactics undermine their actual usefulness for end-users and organisations to proactively identify and tackle phishing risks.
 
 
 
 \section{Limitations of Research Conducted on DNS Abuse Transparency }
 
 \begin{enumerate}
-    \item Variability in reporting standards: A significant challenge encountered was the lack of uniform standards across DNS infrastructure providers, including registrars and registries, regarding the definition of abuse, the thresholds of action, and the manner in which these actions are reported. Such inconsistency has made efforts to collect and compare the data of different entities hard to piece together into one coherent picture for sensible enforcement of DNS abuse mitigation.
+    \item Variability in reporting standards: The majority of challenges faced in actual practice come with a lack of uniformity in standards from DNS infrastructure providers from the definition of abuse to the thresholds of actions and how those actions are being reported. This inconsistency has made efforts to collect and compare the data of different entities difficult to piece together into one coherent picture for sensible enforcement of DNS abuse mitigation. 
 
-    \item Limited Availability of Data: The general lack of transparency reports that are available to the public. Many providers either don't release these reports at all or do so in a way that leaves out important information that has to be thoroughly examined. Due to the restricted breadth of research due to this data availability issue, there may be gaps in our understanding of the entire range of DNS abuse management strategies.
+    \item Limited Availability of Data: The general lack of transparency reports that are available to the public. Providers either do not at all release or do, and in doing so, have an omission of information required to be looked into. This means that there are still gaps in understanding the whole spectrum of strategies deployed by the DNS abuse domain due to data unavailability. 
     
     \item Reluctance to Share Sensitive Information: Information provided by respondents about abuses and what they do to mitigate them. In general, concerns about privacy, security, and the potential of revealing vulnerabilities to bad actors contribute to this reluctance, which leads to Limiting the capacity of researchers to perform a comprehensive analysis of DNS abuse mitigation strategies.
     
     \item Dynamic Nature of DNS Abuse: The evolving tactics employed by those who abuse DNS are constantly changing, so results can be out of date very fast. It is more difficult to create best practices that are applicable and efficient over time due to this quick change. Because DNS abuse is dynamic, it requires ongoing research and strategy adaptation to stay ahead of new threats.
 
-    \item Potential Bias in Self-Reported Data: Self-reporting in transparency reports can still bias the results. Organisations have a tendency to emphasise their achievements while downplaying their shortcomings or difficulties. Due to this biased reporting, opinions about how well DNS abuse is being controlled can be distorted, which could cause mitigation efforts to be overestimated.
+    \item Potential Bias in Self-Reported Data: Self-reporting in transparency reports can still bias the results. Organisations tend to emphasise their achievements while downplaying their shortcomings or difficulties. Due to this biased reporting, opinions about how well DNS abuse is being controlled can be distorted, which could cause mitigation efforts to be overestimated.
     
-    \item Complexity of Measuring Impact: The evaluation of the efficacy of DNS abuse mitigation techniques is hampered by the nature of the Internet ecosystem. The evaluation procedure is further complicated by the indirect relationship that exists between specific actions taken to combat DNS abuse and larger effects, making it challenging to gauge the effectiveness of these efforts.
+    \item Complexity of Measuring Impact: Due to the specific nature of the Internet ecosystem, it is quite challenging to evaluate the efficacy of DNS abuse mitigation techniques. Furthermore, the evaluation process is quite complex due to the indirect impact of specific actions of DNS abuse prevention efforts on the larger effects.
 
     \item International and Jurisdictional Challenges: Due to the international scope of the Internet, different legal and regulatory frameworks in different jurisdictions have an impact on DNS abuse and how it is mitigated. These differences highlight the need for cross-border cooperation and harmonisation by adding complications to the implementation and evaluation of transparent practices on an international scale.
 
     \item Ethical and Privacy Considerations: Ethical issues related to data collection and analysis that may include sensitive or personally identifiable information must be addressed in research in this field. Respecting ethical and privacy standards is very important, but it can also restrict the available research approaches, further limiting the breadth and depth of the study.
-
     
   
 \end{enumerate}
 
-All of these limitations point to the complex difficulties in conducting thorough research on DNS Abuse Mitigation Transparency. Teamwork, creative thinking, and a commitment to improving research techniques and methods in this developing subject will be needed to address these problems.
+As demonstrated, all these limitations show the complex difficulties in conducting a thorough research on DNS abuse mitigation transparency. Only by operating with the principles of team interaction, originality, and a willingness to develop research tools and approaches in the given area, can the misrepresentation difficulties be resolved.
 
 \section{How well did the project meet the objectives?}
 
@@ -321,23 +323,25 @@ In evaluating the success and impact of the research project on DNS Abuse Transp
 
 \subsection{Objective Fulfilment}
 
-The project's goal was to improve stakeholder awareness and transparency about DNS abuse management. Despite encountering obstacles including inconsistent reporting guidelines and restricted data access, the effort succeeded in bringing to light significant flaws in the methods used to mitigate and handle DNS abuse. It revealed the complexity and diversity of processes across various institutions, underscoring the urgent need for standardised reporting requirements.
+The objective of these projects was to increase the understanding and transparency of stakeholders about reporting DNS abuse. Despite many challenges that the project faced, such as working with different reporting standards or limited access to data, this effort managed to uncover light flaws in the approach to mitigating and reporting DNS abuse. This project also demonstrated the high level of complexity and variety of approaches taken by different institutions in reporting, which accentuated the importance of unified and mandatory reporting requirements.
 
 \subsection{Impact on Understanding DNS Abuse}
 
-Given the difficulties, the research project provided insightful information on the state of DNS abuse mitigation. It demonstrated how DNS abuse is dynamic and how quickly changing bad actor tactics require mitigation measures to be updated on a regular basis. The research highlighted gaps in current understanding and management methods by highlighting the lack of transparency reports and providers' reluctance to provide sensitive information. These discoveries can act as a starting point for future studies and the formulation of policies.
+Given the difficulties, the research project yielded valuable information on the state of mitigation of DNS abuse. It showed that DNS abuse is unpredictable and, due to rapidly changing tactics of bad actors, mitigation measures should also be updated regularly. The study revealed several gaps in current knowledge and approaches to address, as shown by the lack of transparency reports and the unwillingness of providers to share critical data on their scopes. These findings could lay the ground for further research and policy-making.
 
 \subsection{Stakeholder Engagement}
 
-It was essential to interact with stakeholders such as registries, policymakers, and DNS registrars. The project encouraged discussion of the need for increased sector and jurisdiction cooperation and transparency. On the other hand, it appears that there is room for improvement in the influence on stakeholder behaviours and policies, particularly in terms of encouraging more proactive engagement and teamwork in the fight against DNS abuse.
+It was important to include interaction with stakeholders, including registry owners, policy makers, and DNS registry. The project encouraged discussion of the need for increased sector and jurisdiction cooperation and transparency. However, it seems that there is more to be desired in the impact on stakeholder behaviours and policies: for example, more proactive efforts and collaboration in the fight against DNS abuse.
 
 \subsection{Practical Implications}
-The project's outcomes have beneficial consequences in improving the transparency of DNS abuse mitigation. If put into practice, suggestions for creating uniform reporting guidelines and improving data exchange procedures may result in more efficient and cohesive methods for mitigating DNS abuse. These recommendations provide practical next steps for stakeholders to better address the issues raised.
+The outcomes of the project lead to positive results in the impact of transparency in reducing DNS abuse. Implementing recommendations for setting up standardised report creation processes and facilitation of data exchange could lead to more coherent and effective DNS abuse mitigation efforts. These recommendations provide practical next steps for stakeholders to better address the issues raised.
 
 \subsection{Suggestions for Improvement}
 
-Deeper insights may be obtained for next projects by focusing study questions on newly developed DNS abuse strategies and investigating more aspects of transparency. Improving the methods for engaging stakeholders, perhaps by creating more inclusive forums or working together on joint research projects, could increase the scope and quality of the information collected. Furthermore, promoting the idea of the project could lead to more noticeable changes in practice and policy.
+
+Future projects, therefore, can discuss study questions on newly developed strategies, which abuse DNS, and research more aspects of transparency, so that they can obtain deeper insights. Further improvements in how to engage stakeholders include more transparency in forums to work with them toward the establishment of joint research projects, thereby increasing the scope and quality of information. Furthermore, promoting the idea of the project could lead to more noticeable changes in practice and policy.
+
 
 \subsection{Future Vision}
 
-This research project embarked on an extensive effort to clarify the complexity of the transparency of DNS abuse. Taking into account obstacles such as the dynamic nature of abuse methods and the availability of data, the effort achieved significant achievements in highlighting important areas for development and setting the stage for future breakthroughs. The initiative is an essential move toward a more transparent and uniform strategy to mitigating DNS abuse, acknowledging the contributions and the need for continued research and cooperation. To move forward, all parties involved must work together to accept the recommendations and create a more secure, safe online environment.
+This research project embarked on an extensive effort to clarify the complexity of the transparency of DNS abuse. Taking into account obstacles such as the dynamic nature of abuse methods and the availability of data, the effort achieved significant achievements in highlighting important areas for development and setting the stage for future breakthroughs. This development would represent a significant step forward in creating greater transparency and consistency in efforts to mitigate DNS abuse in recognition of the work being done and research and cooperation that will continue. Consequently, the way forward demands that all actors work together toward the recommendations for having a more secure, safe online environment.
