@@ -27,3 +27,9 @@ This research project adds to the current conversation on DNS abuse by providing
 reform plan and a detailed grasp of its complexities. It establishes the foundation for more
 successful mitigation of DNS abuse by promoting transparency, which we hope will result in
 a more secure and reliable Internet.
+
+## Components : 
+
+- [**Report**](https://github.com/azizosharke/FinalYearCapstoneProject/blob/main/main.pdf) .
+- [**System**](https://github.com/azizosharke/FinalYearCapstoneProject/tree/main/System) .
+
