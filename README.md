@@ -30,6 +30,5 @@ a more secure and reliable Internet.
 
 ## Components : 
 
-- [**Report**](https://github.com/azizosharke/FinalYearCapstoneProject/blob/main/main.pdf) .
-- [**System**](https://github.com/azizosharke/FinalYearCapstoneProject/tree/main/System) .
-
+- [**Report**](https://github.com/azizosharke/FinalYearCapstoneProject/blob/main/main.pdf) 
+- [**System**](https://github.com/azizosharke/FinalYearCapstoneProject/tree/main/System) 
